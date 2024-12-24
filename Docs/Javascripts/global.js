@@ -120,3 +120,5 @@ leafOpen.addEventListener('click', () => {
 });
 
 
+const currentYear = new Date().getFullYear();
+document.getElementById("year").textContent = currentYear;
