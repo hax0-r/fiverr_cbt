@@ -92,15 +92,13 @@ closeMenu.addEventListener('click', () => {
 
 
 
-// Function to handle the display of the leaf popup
 function handleLeafVisibility() {
     if (window.innerWidth <= 769) {
-        // On small screens, show the leaf popup when scrolling
         window.addEventListener('scroll', () => {
             if (window.scrollY >= 100) {
-                leaf.style.display = "block";  // Show the popup
+                leaf.style.display = "block";  
             } else {
-                leaf.style.display = "none";  // Hide the popup when scrolling above 100px
+                leaf.style.display = "none";  
             }
         });
     } else {
