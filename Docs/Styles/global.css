@@ -102,3 +102,25 @@ img, button, iframe, a {
     display: none; 
   }
   
+
+  @keyframes float {
+    0% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+
+    50% {
+        -webkit-transform: translateY(-16px);
+        transform: translateY(-16px);
+    }
+
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+
+.float {
+    -webkit-animation: float 4s ease-in-out infinite;
+    animation: float 4s ease-in-out infinite;
+}

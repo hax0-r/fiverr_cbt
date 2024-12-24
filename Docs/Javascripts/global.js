@@ -9,6 +9,11 @@ const menuForm = document.getElementById("menuForm");
 const policyForm = document.getElementById("policyForm");
 const closeMenu = document.getElementById("closeMenu");
 
+const leaf = document.getElementById("leaf");
+const leafOpen = document.getElementById("leafOpen");
+const leafHeight = document.getElementById("leafHeight");
+
+
 Array.from(openContactForm).forEach(button => {
     button.addEventListener('click', () => {
         overlay.style.display = 'block';
@@ -74,6 +79,7 @@ overlayMenu.addEventListener('click', () => {
         menuForm.style.display = 'none';
     }, 500);
 });
+
 closeMenu.addEventListener('click', () => {
     overlayMenu.style.opacity = '0';
     menuForm.style.opacity = '0';
@@ -83,3 +89,34 @@ closeMenu.addEventListener('click', () => {
         menuForm.style.display = 'none';
     }, 500);
 });
+
+
+
+// Function to handle the display of the leaf popup
+function handleLeafVisibility() {
+    if (window.innerWidth <= 769) {
+        // On small screens, show the leaf popup when scrolling
+        window.addEventListener('scroll', () => {
+            if (window.scrollY >= 100) {
+                leaf.style.display = "block";  // Show the popup
+            } else {
+                leaf.style.display = "none";  // Hide the popup when scrolling above 100px
+            }
+        });
+    } else {
+        leaf.style.display = "none";
+        window.removeEventListener('scroll', handleLeafVisibility);
+    }
+}
+
+handleLeafVisibility();
+
+window.addEventListener('resize', handleLeafVisibility);
+
+leafOpen.addEventListener('click', () => {
+    leaf.style.left = leaf.style.left === "-205px" ? "0px" : "-205px";
+    leaf.classList.remove("float");
+    leafHeight.style.height = leafHeight.style.height === "95vh" ? "2.5rem" : "95vh";
+});
+
+

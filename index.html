@@ -71,7 +71,13 @@
     </div>
 
     <div class="md:pt-16 pt-8 flex overflow-x-hidden items-center">
-        <img src="./Docs/Assets/CBT.png" class="-translate-x-1 md:block hidden max-w-[15rem] w-full" alt="">
+        <div class="relative">
+            <img src="./Docs/Assets/CBT.png" class="-translate-x-1 md:block hidden max-w-[15rem] w-full" alt="">
+            <a href="" class="block w-[80%]  absolute h-[20%] top-[23%] left-[10%] opacity-0"></a>
+            <a href="" class="block w-[80%]  absolute h-[20%] top-[50%] left-[10%] opacity-0"></a>
+            <a href="" class="block w-[20%] absolute h-[8%] bottom-[7%] left-[25%] opacity-0"></a>
+            <a href="" class="block w-[20%] absolute h-[8%] bottom-[7%] left-[55%] opacity-0"></a>
+        </div>
         <div class="w-full max-w-7xl p-4">
             <h2 class="md:text-5xl text-3xl font-medium text-center md:pb-10 pb-5 ">Why <span class="font-bold">Guided
                     Travel?</span>
@@ -87,7 +93,7 @@
                     </p>
                     <div class="flex md:pt-10 pt-6 items-center justify-center">
                         <button
-                            class="bg-gradient-to-r text-white font-medium from-[#63b94d] to-[#1a77cc] flex items-center justify-center pl-10 p-1.5 text-nowrap  rounded-full gap-10 openContactForm">
+                            class="bg-gradient-to-r text-white font-semibold from-[#63b94d] to-[#1a77cc] flex items-center justify-center uppercase pl-10 p-1.5 text-nowrap  rounded-full gap-10 openContactForm">
                             Contact josh
                             <i class="fa-solid fa-arrow-right bg-white text-black p-3 px-[13px] rounded-full"></i>
                         </button>
@@ -455,18 +461,20 @@
 
         </div>
     </div>
+
     <div id="policyForm" style="display: none;"
         class="fixed w-full h-screen top-0 left-0 z-10 transition-all duration-500 p-5 fastFadeIn flex items-center justify-center">
         <div class="fixed fastFadeIn bg-[#0000009f] w-full h-screen top-0 left-0  transition-all duration-500 hidden"
             id="overlayPolicy"></div>
-        <div class="bg-gradient-to-r from-[#1a77cc] to-[#63b94d] max-w-4xl text-white font-medium text-center max-h-[85vh] overflow-auto text-xs z-20 w-full p-5 rounded-2xl policy-div-class">
+        <div
+            class="bg-gradient-to-r from-[#1a77cc] to-[#63b94d] max-w-4xl text-white font-medium text-center max-h-[85vh] overflow-auto text-xs z-20 w-full p-5 rounded-2xl policy-div-class">
 
             <h2 class="text-center font-semibold text-white text-xl pb-4 ">Terms & Conditions</h2>
             <p>
                 At Best Costa Rica Tours, we value your privacy and are dedicated to safeguarding any information we
-                collect about you when using our website, applications, and services. 
+                collect about you when using our website, applications, and services.
                 <span class="block text-center font-semibold pt-2 pb-0.5">1. Personal Information We Collect</span>
-                
+
                 We collect personal information necessary for the provision of our services, as follows:
                 Personal Information You Provide: We collect your personal information when required to complete
                 bookings, such as for National Park tickets or border tax payments, especially for travel to Nicaragua.
@@ -478,10 +486,10 @@
                 channels.
                 <span class="block text-center font-semibold pt-2 pb-0.5">2. How We Use Personal Information</span>
                 We use your personal information for the following purposes:
-               <br> To provide, administer, and improve our services
-               <br> To communicate with you effectively
-               <br> To prevent fraud and misuse of our services
-               <br> To comply with legal obligations and protect the safety and security of our systems
+                <br> To provide, administer, and improve our services
+                <br> To communicate with you effectively
+                <br> To prevent fraud and misuse of our services
+                <br> To comply with legal obligations and protect the safety and security of our systems
                 To improve and conduct research for better service delivery
                 <span class="block text-center font-semibold pt-2 pb-0.5">3. Disclosure of Personal Information</span>
                 We may share your personal information with third parties in the following circumstances:
@@ -493,16 +501,30 @@
                 required by law.
                 <span class="block text-center font-semibold pt-2 pb-0.5">4. Your Rights</span>
                 Under applicable law, you may have the following rights regarding your personal information:
-               <br> The right to know what personal information we collect and how we process it
-               <br> The right to request the deletion or correction of your personal information
-               <br> The right to be free from discrimination when exercising your privacy rights
-               <br> We do not sell or share your personal information for advertising purposes, nor do we use sensitive
+                <br> The right to know what personal information we collect and how we process it
+                <br> The right to request the deletion or correction of your personal information
+                <br> The right to be free from discrimination when exercising your privacy rights
+                <br> We do not sell or share your personal information for advertising purposes, nor do we use sensitive
                 information to infer consumer characteristics.
                 <span class="block text-center font-semibold pt-2 pb-0.5">Exercising Your Rights</span>
                 If you wish to exercise your rights under privacy laws, you can submit a request through the same method
                 you initially contacted us.
             </p>
 
+        </div>
+    </div>
+
+    <!-- ==========for mobile=============== -->
+
+    <div style="left: -205px; display: none;" class="fixed top-5 transition-all duration-500 float cursor-pointer z-40" id="leaf">
+        <div class="relative">
+            <div class="h-10 transition-all duration-500 overflow-hidden" id="leafHeight">
+                <img src="./Docs/Assets/CBT.png" class="-translate-x-1 fadeIn md:block  hidden w-[15rem] overflow-hidden" id="leafOpen" alt="">
+            </div>
+            <a href="" class="block w-[80%]  absolute h-[20%] top-[23%] left-[10%] opacity-0"></a>
+            <a href="" class="block w-[80%]  absolute h-[20%] top-[50%] left-[10%] opacity-0"></a>
+            <a href="" class="block w-[20%] absolute h-[8%] bottom-[7%] left-[25%] opacity-0"></a>
+            <a href="" class="block w-[20%] absolute h-[8%] bottom-[7%] left-[55%] opacity-0"></a>
         </div>
     </div>
 
