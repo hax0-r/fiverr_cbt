@@ -1,0 +1,1563 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fort Lauderdale Shuttle</title>
+    <link rel="shortcut icon" href="./Docs/Assets/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./Docs/Styles/global.css">
+    <script defer src="https://unpkg.com/alpinejs@3.2.3/dist/cdn.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+
+    <div class="overflow-hidden z-20 min-h-screen pt-6 relative px-4 "
+        style="background: url(./Docs/Assets/La-Fortuna-Main.jpg) center/cover no-repeat;">
+        <div
+            class="bg-gradient-to-r from-[#0197b1] to-[#7dd858] flex items-center justify-between px-5 py-3 rounded-lg max-w-7xl w-full mx-auto  gap-4">
+            <h2 class="font-semibold text-lg text-white">Best Costa Rica Tours </h2>
+            <div class="xl:flex hidden items-center gap-4">
+                <ul class="text-white flex items-center gap-5 font-medium">
+                    <li><a href="./guanacaste.html" class="">Guanacaste Tours</a></li>
+                    <li><a href="./lafortuna.html" class="text-[#c1ff72]">La Fortuna Tours</a></li>
+                    <li><a href="./monteverde.html" class="">Monte Verde Tours</a></li>
+                    <li><a href="./samara.html" class="">Samara Tours</a></li>
+                    <li><a href="./shuttles.html" class="">Shuttle Service</a></li>
+                </ul>
+                <button
+                    class="text-white openContactForm border-2 border-white rounded-full px-6 py-2 cursor-pointer hover:bg-white hover:text-[#63b94d] transition-all duration-500 text-nowrap">Contact
+                    Us
+                </button>
+            </div>
+
+            <i class="fa-solid fa-bars text-white text-2xl cursor-pointer openMenuForm xl:hidden"></i>
+
+        </div>
+
+        <div
+            class=" min-h-[75vh] pb-6 max-w-7xl w-full mx-auto md:px-5 flex justify-center md:flex-col flex-col-reverse md:gap-20 gap-10">
+
+
+            <div class="w-full md:mt-10 flex items-end justify-center  mx-auto">
+                <button
+                    class="bg-gradient-to-r text-white font-medium from-[#63b94d] to-[#1a77cc] flex items-center justify-center pl-10 p-1.5  rounded-full gap-10 openContactForm">
+                    Contact Josh
+                    <i class="fa-solid fa-arrow-right bg-white text-black p-3 px-[13px] rounded-full"></i>
+                </button>
+            </div>
+            <h2
+                class="barlow font-bold md:leading-[5rem] md:text-[100px] text-6xl text-white gap-4 uppercase text-center">
+                <span class="block barlow">Best <span class="md:inline hidden">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span>
+                    Tours</span>
+                <span class="barlow ">Fortuna</span>
+            </h2>
+        </div>
+
+        <img src="./Docs/Assets/Division.png" class="absolute w-full max-w-[100%] md:-bottom-7 -bottom-2 left-0" alt="">
+
+    </div>
+
+
+    <div class="md:pt-16 transition-all relative duration-500 pt-8 flex overflow-x-hidden">
+        <div class="fixed z-10 top-5 left-0">
+            <div class="relative w-[15rem]">
+                <img src="./Docs/Assets/CBT.png" class="-translate-x-1 md:block hidden max-w-[15rem] w-full" alt="">
+                <a href="https://www.tripadvisor.com/img/cdsi/img2/badges/ollie-11424-2.gif"
+                    class="block w-[80%]  absolute h-[20%] top-[23%] left-[10%] opacity-0"></a>
+                <a href="https://www.facebook.com/bestcostaricatours/reviews"
+                    class="block w-[80%]  absolute h-[20%] top-[50%] left-[10%] opacity-0"></a>
+                <a href="https://api.whatsapp.com/message/5WVX5BF7W2AUK1?autoload=1&app_absent=0    "
+                    class="block w-[20%] absolute h-[8%] bottom-[7%] left-[25%] opacity-0"></a>
+                <a href="https://www.facebook.com/messages/e2ee/t/8057290370994120"
+                    class="block w-[20%] absolute h-[8%] bottom-[7%] left-[55%] opacity-0"></a>
+            </div>
+        </div>
+        <div class="w-full  transition-all duration-500 mx-auto max-w-7xl p-4 flex ">
+            <div class="flex  md:max-w-[80%] md:pl-10 ml-auto w-full justify-center items-start my-2">
+                <div class="w-full my-1">
+                    <ul class="flex flex-col">
+                        <li class="bg-gradient-to-r from-[#0097b2] to-[#7ed957] my-2 text-white rounded-xl"
+                            x-data="accordion(1)">
+                            <h2 @click="handleClick()"
+                                class="flex flex-row rounded-lg overflow-hidden justify-between items-center font-semibold p-3 cursor-pointer">
+                                <span class="md:text-lg ">Full Day Arenal Combo</span>
+                                <div class="flex items-center py-1 gap-5">
+                                    <button
+                                        class="uppercase openContactForm md:block hidden bg-gradient-to-r from-[#5170ff] to-[#ff66c4] px-5 rounded-full py-3">Contact
+                                        josh</button>
+                                    <i :class="handleRotate()"
+                                        class="fa-solid fa-arrow-down w-10 h-10 flex items-center justify-center rounded-full bg-[#0097b2] text-[#7ed957] text-xl transition-all duration-500"></i>
+                                </div>
+                            </h2>
+                            <div x-ref="tab" :style="handleToggle()"
+                                class=" overflow-hidden relative flex   max-h-0 duration-500 transition-all">
+                                <div class="w-20 absolute h-10 md:left-7 bottom-0   bg-white "></div>
+                                <div class="w-20 absolute h-10 md:right-7 bottom-0   bg-white "></div>
+                                <div class="w-40 md:block hidden bg-white"></div>
+
+                                <div
+                                    class="bg-gradient-to-r text-sm text-zinc-800 from-[#5de0e6] rounded-b-3xl  to-[#004aad] relative p-5">
+                                    <p class="p-3 rounded-2xl z-10 relative bg-white">
+                                        <b>Activity #1:</b> Hanging Bridges <br>
+                                        Begin with a walk through the rainforest on the Arenal Hanging Bridges, enjoying
+                                        views of the volcano and wildlife like monkeys and toucans. <br>
+                                        <b>Activity #2:</b> Arenal Waterfall <br>
+                                        Next, visit the stunning Arenal Waterfall. Hike down to the base and take in the
+                                        breathtaking view surrounded by tropical rainforest. <br>
+                                        <b>Activity #3:</b> Arenal Volcano Hike <br>
+                                        Explore volcanic trails on a guided hike through Arenal Volcano National Park,
+                                        seeing old lava flows and learning about the area’s geology. <br>
+                                        <b>Lunch</b> <br>
+                                        Enjoy a delicious Costa Rican lunch to recharge before continuing your
+                                        adventure. <br>
+                                        Experience the best of Arenal with this exciting combo of nature and adventure!
+                                        <img src="./Docs/Assets/icon1.png" class="absolute -top-3 -left-3 h-8" alt="">
+                                    </p>
+                                    <div class="flex gap-4 md:flex-row flex-col mt-3">
+                                        <div class="">
+
+                                            <p class=" rounded-2xl !leading-relaxed z-10 relative bg-white p-3"><b>The
+                                                    tour includes:</b>
+                                                lunch, transportation, a knowledgeable guide, and all the
+                                                activities listed.
+                                                <br><br>
+                                                <b>We recommend bringing:</b> a camera, swimwear, towels, binoculars,
+                                                ponchos,
+                                                insect repellent, sunscreen, a change of clothes, hiking shoes or boots,
+                                                and
+                                                water.
+                                                <img src="./Docs/Assets/icon2.webp"
+                                                    class="absolute -top-3 -left-3 h-7 -rotate-12" alt="">
+
+                                            </p>
+                                            <p class=" rounded-2xl relative !leading-relaxed bg-white p-3 mt-3">
+                                                <b>From Downtown Area:</b> $150 per person + tax
+                                                <br><br>
+                                                <b> Kids Price (5 to 10):</b> $115 per kid + tax
+                                                <br><br>
+                                                <b> From Outside Downtown:</b> $150 per person + tax (plus the extra
+                                                transportation)
+                                                <br><br>
+                                                <b>Note:</b> A 13% sales tax will be added to all prices
+                                                <img src="./Docs/Assets/icon3.png"
+                                                    class="absolute -top-3 -left-3 h-7 -rotate-12" alt="">
+
+                                            </p>
+                                        </div>
+                                        <div class="">
+                                            <p
+                                                class=" rounded-2xl md:text-nowrap !leading-relaxed bg-white p-3 relative pt-7">
+                                                <b>Pick Up:</b> <br>
+                                                Around 8:00am <br>
+                                                <b>Return:</b> <br>
+                                                Around 3:30pm
+                                                <img src="./Docs/Assets/icon4.png"
+                                                    class="absolute top-1 right-1 h-7 rotate-[25deg]" alt="">
+                                            </p>
+                                            <img src="./Docs/Assets/imgs.svg"
+                                                class="max-w-[20rem] cursor-pointer w-full mx-auto  my-3" alt="">
+                                            <p class="text-white font-medium text-[16px] text-center cursor-pointer">
+                                                *Click to see <br>
+                                                more pictures</p>
+
+                                        </div>
+                                    </div>
+                                    <div class="bg-gradient-to-r  from-[#5de0e6]  to-[#004aad] w-full h-5 rounded-3xl">
+                                    </div>
+                                </div>
+                                <div class="w-40 md:block hidden bg-white"></div>
+                            </div>
+                        </li>
+
+                        <li class="bg-gradient-to-r from-[#0097b2] to-[#7ed957] my-2 text-white rounded-xl"
+                            x-data="accordion(2)">
+                            <h2 @click="handleClick()"
+                                class="flex flex-row rounded-lg overflow-hidden justify-between items-center font-semibold p-3 cursor-pointer">
+                                <span class="md:text-lg ">Rio Celeste & Sloths</span>
+                                <div class="flex items-center py-1 gap-5">
+                                    <button
+                                        class="uppercase openContactForm md:block hidden bg-gradient-to-r from-[#5170ff] to-[#ff66c4] px-5 rounded-full py-3">Contact
+                                        josh</button>
+                                    <i :class="handleRotate()"
+                                        class="fa-solid fa-arrow-down w-10 h-10 flex items-center justify-center rounded-full bg-[#0097b2] text-[#7ed957] text-xl transition-all duration-500"></i>
+                                </div>
+                            </h2>
+                            <div x-ref="tab" :style="handleToggle()"
+                                class=" overflow-hidden relative flex   max-h-0 duration-500 transition-all">
+                                <div class="w-20 absolute h-10 md:left-7 bottom-0   bg-white "></div>
+                                <div class="w-20 absolute h-10 md:right-7 bottom-0   bg-white "></div>
+                                <div class="w-40 md:block hidden bg-white"></div>
+
+                                <div
+                                    class="bg-gradient-to-r text-sm text-zinc-800 from-[#5de0e6] rounded-b-3xl  to-[#004aad] relative p-5">
+                                    <p class="p-3  text-center    rounded-2xl z-10 relative bg-white">
+                                        Embark on a 4-hour hike through the lush rainforest near Tenorio Volcano and
+                                        uncover the hidden beauty of Costa Rica. Along the trail, visit the stunning
+                                        lagoon and Los Teñideros, a magical spot where two streams with different
+                                        mineral compositions meet, turning the water into a vibrant turquoise blue. The
+                                        adventure culminates at the breathtaking Rio Celeste Waterfall, a must-see
+                                        natural wonder. <br>
+                                        Afterward, visit a Sloth Sanctuary, where you’ll have the chance to see these
+                                        adorable creatures up close in their natural habitat. Then, enjoy a guided
+                                        Coffee and Chocolate Tour, learning about the production of two of Costa Rica's
+                                        most beloved exports. <br>
+                                        Finish the day with a delicious traditional Costa Rican lunch, and explore Don
+                                        Alexis Farm, home to cacao, pineapple, corn, and banana plantations.
+                                        <img src="./Docs/Assets/icon1.png" class="absolute -top-3 -left-3 h-8" alt="">
+                                    </p>
+                                    <div class="flex gap-4 md:flex-row flex-col mt-3">
+                                        <div class="">
+
+                                            <p class=" rounded-2xl !leading-relaxed z-10 relative bg-white p-3">
+                                                <b>The
+                                                    tour includes:</b>
+                                                lunch, transportation, a knowledgeable guide, and all the
+                                                activities listed.
+                                                <br><br>
+                                                <b>We recommend bringing:</b> a camera, swimwear, towels, binoculars,
+                                                ponchos,
+                                                insect repellent, sunscreen, a change of clothes, hiking shoes or boots,
+                                                and
+                                                water.
+                                                <img src="./Docs/Assets/icon2.webp"
+                                                    class="absolute -top-3 -left-3 h-7 -rotate-12" alt="">
+
+                                            </p>
+                                            <p class=" rounded-2xl relative !leading-relaxed bg-white p-3 mt-3">
+                                                <b>From Downtown Area:</b> $150 per person + tax
+                                                <br><br>
+                                                <b> Kids Price (5 to 10):</b> $115 per kid + tax
+                                                <br><br>
+                                                <b> From Outside Downtown:</b> $150 per person + tax (plus the extra
+                                                transportation)
+                                                <br><br>
+                                                <b>Note:</b> A 13% sales tax will be added to all prices
+                                                <img src="./Docs/Assets/icon3.png"
+                                                    class="absolute -top-3 -left-3 h-7 -rotate-12" alt="">
+                                            </p>
+                                        </div>
+                                        <div class="">
+                                            <p
+                                                class=" rounded-2xl md:text-nowrap !leading-relaxed bg-white p-3 relative pt-7">
+                                                <b>Pick Up:</b> <br>
+                                                Around 7:00am <br>
+                                                <b>Return:</b> <br>
+                                                Around 4:00pm
+                                                <img src="./Docs/Assets/icon4.png"
+                                                    class="absolute top-1 right-1 h-7 rotate-[25deg]" alt="">
+                                            </p>
+                                            <img src="./Docs/Assets/imgs.svg"
+                                                class="max-w-[20rem] cursor-pointer w-full mx-auto  my-3" alt="">
+                                            <p class="text-white font-medium text-[16px] text-center cursor-pointer">
+                                                *Click to see <br>
+                                                more pictures</p>
+
+                                        </div>
+                                    </div>
+                                    <div class="bg-gradient-to-r  from-[#5de0e6]  to-[#004aad] w-full h-5 rounded-3xl">
+                                    </div>
+                                </div>
+                                <div class="w-40 md:block hidden bg-white"></div>
+                            </div>
+                        </li>
+
+                        <li class="bg-gradient-to-r from-[#0097b2] to-[#7ed957] my-2 text-white rounded-xl"
+                            x-data="accordion(3)">
+                            <h2 @click="handleClick()"
+                                class="flex flex-row rounded-lg overflow-hidden justify-between items-center font-semibold p-3 cursor-pointer">
+                                <span class="md:text-lg ">Arenal Mini Combos</span>
+                                <div class="flex items-center py-1 gap-5">
+                                    <button
+                                        class="uppercase openContactForm md:block hidden bg-gradient-to-r from-[#5170ff] to-[#ff66c4] px-5 rounded-full py-3">Contact
+                                        josh</button>
+                                    <i :class="handleRotate()"
+                                        class="fa-solid fa-arrow-down w-10 h-10 flex items-center justify-center rounded-full bg-[#0097b2] text-[#7ed957] text-xl transition-all duration-500"></i>
+                                </div>
+                            </h2>
+                            <div x-ref="tab" :style="handleToggle()"
+                                class=" overflow-hidden relative flex   max-h-0 duration-500 transition-all">
+                                <div class="w-20 absolute h-10 md:left-7 bottom-0   bg-white "></div>
+                                <div class="w-20 absolute h-10 md:right-7 bottom-0   bg-white "></div>
+                                <div class="w-40 md:block hidden bg-white"></div>
+
+                                <div
+                                    class="bg-gradient-to-r text-sm text-zinc-800 from-[#5de0e6] rounded-b-3xl  to-[#004aad] relative p-5">
+                                    <p class="p-3  rounded-2xl z-10 relative bg-white">
+                                        <b class="text-center block pb-2">You can choose one of this 4 options</b>
+                                        <b>Hanging Bridges + Arenal Waterfall + Lunch</b> <br>
+                                        Walk through the Arenal Hanging Bridges with stunning views of the rainforest,
+                                        then visit the breathtaking Arenal Waterfall. After a swim or scenic view, enjoy
+                                        a delicious Costa Rican lunch to recharge. <br>
+                                        <b>Hanging Bridges + Volcano Hike + Lunch</b> <br>
+                                        Explore the Arenal Hanging Bridges, then embark on a guided hike through Arenal
+                                        Volcano National Park, where you’ll learn about volcanic landscapes and local
+                                        wildlife. End with a traditional Costa Rican lunch. <br>
+                                        <b>Arenal Waterfall + Volcano Hike + Lunch</b> <br>
+                                        Visit the impressive Arenal Waterfall, followed by a guided hike through the
+                                        Arenal Volcano National Park. Discover volcanic trails and scenic views before
+                                        enjoying a hearty Costa Rican lunch. <br>
+                                        <b> Peñas Blancas Safari + Arenal Waterfall + Lunch</b> <br>
+                                        Take a wildlife safari through Penas Blancas to spot monkeys and sloths, then
+                                        visit the stunning Arenal Waterfall. End the adventure with a delicious local
+                                        lunch to refuel.
+                                        <img src="./Docs/Assets/icon1.png" class="absolute -top-3 -left-3 h-8" alt="">
+                                    </p>
+                                    <div class="flex gap-4 md:flex-row flex-col mt-3">
+                                        <div class="">
+
+                                            <p class=" rounded-2xl !leading-relaxed z-10 relative bg-white p-3"><b>The
+                                                    tour includes:</b>
+                                                lunch, transportation, a knowledgeable guide, and all the
+                                                activities listed.
+                                                <br><br>
+                                                <b>We recommend bringing:</b> a camera, swimwear, towels, binoculars,
+                                                ponchos,
+                                                insect repellent, sunscreen, a change of clothes, hiking shoes or boots,
+                                                and
+                                                water.
+                                                <img src="./Docs/Assets/icon2.webp"
+                                                    class="absolute -top-3 -left-3 h-7 -rotate-12" alt="">
+
+                                            </p>
+                                            <p class=" rounded-2xl relative !leading-relaxed bg-white p-3 mt-3">
+                                                <b>From Downtown Area:</b> $150 per person + tax
+                                                <br><br>
+                                                <b> Kids Price (5 to 10):</b> $115 per kid + tax
+                                                <br><br>
+                                                <b> From Outside Downtown:</b> $150 per person + tax (plus the extra
+                                                transportation)
+                                                <br><br>
+                                                <b>Note:</b> A 13% sales tax will be added to all prices
+                                                <img src="./Docs/Assets/icon3.png"
+                                                    class="absolute -top-3 -left-3 h-7 -rotate-12" alt="">
+                                            </p>
+                                        </div>
+                                        <div class="">
+                                            <p
+                                                class=" rounded-2xl md:text-nowrap !leading-relaxed bg-white p-3 relative pt-7">
+                                                <b>Pick Up:</b> <br>
+                                                Around 8:00am <br>
+                                                <b>Return:</b> <br>
+                                                Around 2:00pm
+                                                <img src="./Docs/Assets/icon4.png"
+                                                    class="absolute top-1 right-1 h-7 rotate-[25deg]" alt="">
+                                            </p>
+                                            <img src="./Docs/Assets/imgs.svg"
+                                                class="max-w-[20rem] cursor-pointer w-full mx-auto  my-3" alt="">
+                                            <p class="text-white font-medium text-[16px] text-center cursor-pointer">
+                                                *Click to see <br>
+                                                more pictures</p>
+
+                                        </div>
+                                    </div>
+                                    <div class="bg-gradient-to-r  from-[#5de0e6]  to-[#004aad] w-full h-5 rounded-3xl">
+                                    </div>
+                                </div>
+                                <div class="w-40 md:block hidden bg-white"></div>
+                            </div>
+                        </li>
+
+                        <li class="bg-gradient-to-r from-[#0097b2] to-[#7ed957] my-2 text-white rounded-xl"
+                            x-data="accordion(4)">
+                            <h2 @click="handleClick()"
+                                class="flex flex-row rounded-lg overflow-hidden justify-between items-center font-semibold p-3 cursor-pointer">
+                                <span class="md:text-lg ">Arenal Horse Ride</span>
+                                <div class="flex items-center py-1 gap-5">
+                                    <button
+                                        class="uppercase openContactForm md:block hidden bg-gradient-to-r from-[#5170ff] to-[#ff66c4] px-5 rounded-full py-3">Contact
+                                        josh</button>
+                                    <i :class="handleRotate()"
+                                        class="fa-solid fa-arrow-down w-10 h-10 flex items-center justify-center rounded-full bg-[#0097b2] text-[#7ed957] text-xl transition-all duration-500"></i>
+                                </div>
+                            </h2>
+                            <div x-ref="tab" :style="handleToggle()"
+                                class=" overflow-hidden relative flex   max-h-0 duration-500 transition-all">
+                                <div class="w-20 absolute h-10 md:left-7 bottom-0   bg-white "></div>
+                                <div class="w-20 absolute h-10 md:right-7 bottom-0   bg-white "></div>
+                                <div class="w-40 md:block hidden bg-white"></div>
+
+                                <div
+                                    class="bg-gradient-to-r text-sm text-zinc-800 from-[#5de0e6] rounded-b-3xl  to-[#004aad] relative p-5">
+                                    <p class="p-3  text-center    rounded-2xl z-10 relative bg-white">
+                                        <b>Arenal Volcano Horseback Riding Tour</b> <br>
+                                        Enjoy a scenic 3-hour horseback ride through Arenal Volcano National Park,
+                                        crossing a private farm surrounded by rainforest. Take in panoramic views of the
+                                        Arenal Volcano and canyon, and spot wildlife like monkeys and toucans along the
+                                        way. Expert guides will share fascinating insights into the local flora and
+                                        fauna, making this tour perfect for all ages.
+                                        <br> <br>
+                                        <b>Horseback Riding to the Arenal River Canyon</b> <br>
+                                        Embark on a scenic horseback ride to the stunning Arenal River Canyon, crossing
+                                        a private farm and lush rainforest. This family-friendly tour offers river
+                                        crossings and trails with opportunities to spot local wildlife, including
+                                        monkeys and toucans. Your guide will provide valuable information about the
+                                        region’s ecosystem, ensuring an unforgettable experience.
+                                        <img src="./Docs/Assets/icon1.png" class="absolute -top-3 -left-3 h-8" alt="">
+                                    </p>
+                                    <div class="flex gap-4 md:flex-row flex-col mt-3">
+                                        <div class="">
+
+                                            <p class=" rounded-2xl !leading-relaxed z-10 relative bg-white p-3">
+                                                <b> The tour includes:</b> Riding equipment, transportation, a
+                                                knowledgeable
+                                                guide, and all the activities listed.
+                                                <br><br>
+                                                <b> We recommend bringing:</b> a camera, binoculars, insect repellent,
+                                                sunscreen, hiking shoes or boots, and water.
+                                                <img src="./Docs/Assets/icon2.webp"
+                                                    class="absolute -top-3 -left-3 h-7 -rotate-12" alt="">
+
+                                            </p>
+                                            <p class=" rounded-2xl relative !leading-relaxed bg-white p-3 mt-3">
+                                                <b> From Downtown Area:</b> $65 per person + tax
+                                                <br><br>
+                                                <b> From Outside Downtown:</b> $65 per person + tax (plus the extra
+                                                transportation)
+                                                <br><br>
+                                                <b>Note:</b> A 13% sales tax will be added to all prices.
+                                                <img src="./Docs/Assets/icon3.png"
+                                                    class="absolute -top-3 -left-3 h-7 -rotate-12" alt="">
+
+                                            </p>
+                                        </div>
+                                        <div class="">
+                                            <p
+                                                class=" rounded-2xl md:text-nowrap !leading-relaxed bg-white p-3 relative pt-7">
+                                                <b>Pick Up:</b> <br>
+                                                8:30am to 1:30pm<br>
+                                                <b>Duration:</b> <br>
+                                                3 hours
+                                                <img src="./Docs/Assets/icon4.png"
+                                                    class="absolute top-1 right-1 h-7 rotate-[25deg]" alt="">
+                                            </p>
+                                            <img src="./Docs/Assets/imgs.svg"
+                                                class="max-w-[20rem] cursor-pointer w-full mx-auto  my-3" alt="">
+                                            <p class="text-white font-medium text-[16px] text-center cursor-pointer">
+                                                *Click to see <br>
+                                                more pictures</p>
+
+                                        </div>
+                                    </div>
+                                    <div class="bg-gradient-to-r  from-[#5de0e6]  to-[#004aad] w-full h-5 rounded-3xl">
+                                    </div>
+                                </div>
+                                <div class="w-40 md:block hidden bg-white"></div>
+                            </div>
+                        </li>
+
+                        <li class="bg-gradient-to-r from-[#0097b2] to-[#7ed957] my-2 text-white rounded-xl"
+                            x-data="accordion(5)">
+                            <h2 @click="handleClick()"
+                                class="flex flex-row rounded-lg overflow-hidden justify-between items-center font-semibold p-3 cursor-pointer">
+                                <span class="md:text-lg ">Mistico Hanging Bridges</span>
+                                <div class="flex items-center py-1 gap-5">
+                                    <button
+                                        class="uppercase openContactForm md:block hidden bg-gradient-to-r from-[#5170ff] to-[#ff66c4] px-5 rounded-full py-3">Contact
+                                        josh</button>
+                                    <i :class="handleRotate()"
+                                        class="fa-solid fa-arrow-down w-10 h-10 flex items-center justify-center rounded-full bg-[#0097b2] text-[#7ed957] text-xl transition-all duration-500"></i>
+                                </div>
+                            </h2>
+                            <div x-ref="tab" :style="handleToggle()"
+                                class=" overflow-hidden relative flex   max-h-0 duration-500 transition-all">
+                                <div class="w-20 absolute h-10 md:left-7 bottom-0   bg-white "></div>
+                                <div class="w-20 absolute h-10 md:right-7 bottom-0   bg-white "></div>
+                                <div class="w-40 md:block hidden bg-white"></div>
+
+                                <div
+                                    class="bg-gradient-to-r text-sm text-zinc-800 from-[#5de0e6] rounded-b-3xl  to-[#004aad] relative p-5">
+                                    <p class="p-3  text-center    rounded-2xl z-10 relative bg-white">
+                                        Your day begins with a visit to the Mistico Hanging Bridges, one of the most
+                                        popular and breathtaking attractions in Costa Rica. This guided tour offers a
+                                        2-hour hike through the lush rainforest, providing an unforgettable opportunity
+                                        to immerse yourself in the natural beauty of the region. As you stroll along the
+                                        well-maintained trails, you'll cross several suspension bridges that offer
+                                        stunning views of the rainforest canopy, the Arenal Volcano, and the surrounding
+                                        landscape. <br>
+                                        The Mistico Hanging Bridges offer a unique vantage point to observe a diverse
+                                        range of wildlife in their natural habitat. Keep your eyes peeled for howler
+                                        monkeys, capuchin monkeys, toucans, wild turkeys, sloths, and a variety of
+                                        vibrant tropical birds. Your expert guide will share fascinating insights into
+                                        the flora and fauna of the rainforest, including the many species of plants and
+                                        animals that thrive in this rich ecosystem. <br>
+                                        This hike is a perfect opportunity to connect with nature and enjoy the stunning
+                                        beauty of Costa Rica’s rainforests, all while learning about the local wildlife
+                                        and conservation efforts in the area.
+                                        <img src="./Docs/Assets/icon1.png" class="absolute -top-3 -left-3 h-8" alt="">
+                                    </p>
+                                    <div class="flex gap-4 md:flex-row flex-col mt-3">
+                                        <div class="">
+
+                                            <p class=" rounded-2xl !leading-relaxed z-10 relative bg-white p-3">
+                                                <b> The tour includes:</b> Riding equipment, transportation, a
+                                                knowledgeable
+                                                guide, and all the activities listed.
+                                                <br><br>
+                                                <b> We recommend bringing:</b> a camera, binoculars, insect repellent,
+                                                sunscreen, hiking shoes or boots, and water.
+                                                <img src="./Docs/Assets/icon2.webp"
+                                                    class="absolute -top-3 -left-3 h-7 -rotate-12" alt="">
+
+                                            </p>
+                                            <p class=" rounded-2xl relative !leading-relaxed bg-white p-3 mt-3"><b>From
+                                                    RiU
+                                                    Hotels and Coco Beach:</b>
+                                                $110 per person + tax <br><br>
+                                                <b>Kids Price:</b> $70 per kid + tax (7 to 12 years old)
+                                                Kids 0 to 6 years old go free <br><br>
+
+
+                                                <b>Note:</b> A 13% sales tax will be added to all prices.
+                                                <img src="./Docs/Assets/icon3.png"
+                                                    class="absolute -top-3 -left-3 h-7 -rotate-12" alt="">
+
+                                            </p>
+                                        </div>
+                                        <div class="">
+                                            <p
+                                                class=" rounded-2xl md:text-nowrap !leading-relaxed bg-white p-3 relative pt-7">
+                                                <b>Pick Up:</b> <br>
+                                                Around 7:30am
+                                                <br>
+                                                <b>Return:</b> <br>
+                                                Around 11:00am
+                                                <img src="./Docs/Assets/icon4.png"
+                                                    class="absolute top-1 right-1 h-7 rotate-[25deg]" alt="">
+                                            </p>
+                                            <img src="./Docs/Assets/imgs.svg"
+                                                class="max-w-[20rem] cursor-pointer w-full mx-auto  my-3" alt="">
+                                            <p class="text-white font-medium text-[16px] text-center cursor-pointer">
+                                                *Click to see <br>
+                                                more pictures</p>
+
+                                        </div>
+                                    </div>
+                                    <div class="bg-gradient-to-r  from-[#5de0e6]  to-[#004aad] w-full h-5 rounded-3xl">
+                                    </div>
+                                </div>
+                                <div class="w-40 md:block hidden bg-white"></div>
+                            </div>
+                        </li>
+
+                        <li class="bg-gradient-to-r from-[#0097b2] to-[#7ed957] my-2 text-white rounded-xl"
+                            x-data="accordion(6)">
+                            <h2 @click="handleClick()"
+                                class="flex flex-row rounded-lg overflow-hidden justify-between items-center font-semibold p-3 cursor-pointer">
+                                <span class="md:text-lg ">Arenal Waterfall</span>
+                                <div class="flex items-center py-1 gap-5">
+                                    <button
+                                        class="uppercase openContactForm md:block hidden bg-gradient-to-r from-[#5170ff] to-[#ff66c4] px-5 rounded-full py-3">Contact
+                                        josh</button>
+                                    <i :class="handleRotate()"
+                                        class="fa-solid fa-arrow-down w-10 h-10 flex items-center justify-center rounded-full bg-[#0097b2] text-[#7ed957] text-xl transition-all duration-500"></i>
+                                </div>
+                            </h2>
+                            <div x-ref="tab" :style="handleToggle()"
+                                class=" overflow-hidden relative flex   max-h-0 duration-500 transition-all">
+                                <div class="w-20 absolute h-10 md:left-7 bottom-0   bg-white "></div>
+                                <div class="w-20 absolute h-10 md:right-7 bottom-0   bg-white "></div>
+                                <div class="w-40 md:block hidden bg-white"></div>
+
+                                <div
+                                    class="bg-gradient-to-r text-sm text-zinc-800 from-[#5de0e6] rounded-b-3xl  to-[#004aad] relative p-5">
+                                    <p class="p-3  text-center    rounded-2xl z-10 relative bg-white">
+                                        Immerse yourself in the stunning beauty of Costa Rica on the Arenal Waterfall
+                                        Tour, perfect for nature lovers, adventure seekers, and those eager to explore
+                                        breathtaking landscapes. <br>
+                                        This tour will take you to one of the region’s most magnificent waterfalls,
+                                        where you’ll be surrounded by lush tropical rainforest. Enjoy a refreshing swim
+                                        in the crystal-clear waters of the waterfall’s pool and soak in the serene
+                                        atmosphere of this natural paradise. As you hike through the vibrant rainforest,
+                                        you’ll experience the tranquility and beauty of Costa Rica’s untouched
+                                        wilderness. <br>
+                                        Throughout the tour, your expert guide will share fascinating insights into the
+                                        local flora and fauna, deepening your connection to the ecosystem. Whether
+                                        you're looking for adventure or relaxation, the Arenal Waterfall Tour offers the
+                                        perfect balance of both, making it a must-see on your Costa Rican adventure.
+                                        <img src="./Docs/Assets/icon1.png" class="absolute -top-3 -left-3 h-8" alt="">
+                                    </p>
+                                    <div class="flex gap-4 md:flex-row flex-col mt-3">
+                                        <div class="">
+
+                                            <p class=" rounded-2xl !leading-relaxed z-10 relative bg-white p-3"><b>The
+                                                    tour includes:</b>
+                                                open bar, tasty snacks after snorkeling, a fun waterslide, and exciting
+                                                snorkeling activities at a pristine white sand beach.
+
+                                                <br><br>
+                                                <b>We recommend bringing:</b> a camera, swimwear, towels, sunscreen and
+                                                a change of clothes.
+                                                <img src="./Docs/Assets/icon2.webp"
+                                                    class="absolute -top-3 -left-3 h-7 -rotate-12" alt="">
+
+                                            </p>
+                                            <p class=" rounded-2xl relative !leading-relaxed bg-white p-3 mt-3">
+                                                <b>From Downtown Area:</b> $150 per person + tax
+                                                <br><br>
+                                                <b> Kids Price (5 to 10):</b> $115 per kid + tax
+                                                <br><br>
+                                                <b> From Outside Downtown:</b> $150 per person + tax (plus the extra
+                                                transportation)
+                                                <br><br>
+                                                <b>Note:</b> A 13% sales tax will be added to all prices
+                                                <img src="./Docs/Assets/icon3.png"
+                                                    class="absolute -top-3 -left-3 h-7 -rotate-12" alt="">
+                                            </p>
+                                        </div>
+                                        <div class="">
+                                            <p
+                                                class=" rounded-2xl md:text-nowrap !leading-relaxed bg-white p-3 relative">
+                                                <b>Pick Up:</b> <br>
+                                                7:30 am, 11:30pm & <br> 2:30pm
+                                                <br>
+                                                <b>Duration:</b> <br>
+                                                Around 3 Hours
+                                                <img src="./Docs/Assets/icon5.svg" class="absolute -top-2 -right-2 h-9 "
+                                                    alt="">
+                                            </p>
+                                            <img src="./Docs/Assets/imgs.svg"
+                                                class="max-w-[20rem] cursor-pointer w-full mx-auto  my-3" alt="">
+                                            <p class="text-white font-medium text-[16px] text-center cursor-pointer">
+                                                *Click to see <br>
+                                                more pictures</p>
+
+                                        </div>
+                                    </div>
+                                    <div class="bg-gradient-to-r  from-[#5de0e6]  to-[#004aad] w-full h-5 rounded-3xl">
+                                    </div>
+                                </div>
+                                <div class="w-40 md:block hidden bg-white"></div>
+                            </div>
+                        </li>
+
+                        <li class="bg-gradient-to-r from-[#0097b2] to-[#7ed957] my-2 text-white rounded-xl"
+                            x-data="accordion(7)">
+                            <h2 @click="handleClick()"
+                                class="flex flex-row rounded-lg overflow-hidden justify-between items-center font-semibold p-3 cursor-pointer">
+                                <span class="md:text-lg ">River Safari Balsa</span>
+                                <div class="flex items-center py-1 gap-5">
+                                    <button
+                                        class="uppercase openContactForm md:block hidden bg-gradient-to-r from-[#5170ff] to-[#ff66c4] px-5 rounded-full py-3">Contact
+                                        josh</button>
+                                    <i :class="handleRotate()"
+                                        class="fa-solid fa-arrow-down w-10 h-10 flex items-center justify-center rounded-full bg-[#0097b2] text-[#7ed957] text-xl transition-all duration-500"></i>
+                                </div>
+                            </h2>
+                            <div x-ref="tab" :style="handleToggle()"
+                                class=" overflow-hidden relative flex   max-h-0 duration-500 transition-all">
+                                <div class="w-20 absolute h-10 md:left-7 bottom-0   bg-white "></div>
+                                <div class="w-20 absolute h-10 md:right-7 bottom-0   bg-white "></div>
+                                <div class="w-40 md:block hidden bg-white"></div>
+
+                                <div
+                                    class="bg-gradient-to-r text-sm text-zinc-800 from-[#5de0e6] rounded-b-3xl  to-[#004aad] relative p-5">
+                                    <p class="p-3  text-center    rounded-2xl z-10 relative bg-white">
+                                        Embark on a serene Safari Float along the Río Peñas Blancas, just 30 minutes
+                                        from La Fortuna, where you'll discover abundant wildlife and stunning tropical
+                                        landscapes. This easy-going boat tour takes you near Arenal Volcano, where
+                                        you'll spot a variety of Costa Rican wildlife, including monkeys, toucans,
+                                        kingfishers, poison dart frogs, caimans, and more. <br>
+                                        With the help of your naturalist guide, you’ll board an inflatable raft and
+                                        float along the riverbanks, enjoying a relaxing ride while learning about the
+                                        region’s flora and fauna. Keep your camera and binoculars handy—this is a
+                                        wildlife lover’s paradise! After the tour, enjoy a delicious lunch before
+                                        returning to your hotel. <br>
+                                        Ideal for families, birdwatchers, and nature enthusiasts, this half-day Safari
+                                        Float Tour offers the perfect blend of adventure, wildlife viewing, and
+                                        relaxation.
+                                        <img src="./Docs/Assets/icon1.png" class="absolute -top-3 -left-3 h-8" alt="">
+                                    </p>
+                                    <div class="flex gap-4 md:flex-row flex-col mt-3">
+                                        <div class="">
+
+                                            <p class=" rounded-2xl !leading-relaxed z-10 relative bg-white p-3">
+                                                <b>The tour includes:</b> transportation, lunch, an expert guide, and
+                                                all the
+                                                activities listed.
+                                                <br><br>
+                                                <b>We recommend bringing:</b> a camera, ponchos, insect repellent,
+                                                hiking shoes
+                                                or boots, and water
+
+                                                <img src="./Docs/Assets/icon2.webp"
+                                                    class="absolute -top-3 -left-3 h-7 -rotate-12" alt="">
+
+                                            </p>
+                                            <p class=" rounded-2xl relative !leading-relaxed bg-white p-3 mt-3">
+                                                <b>From Downtown Area:</b> $150 per person + tax
+                                                <br><br>
+                                                <b> Kids Price (5 to 10):</b> $115 per kid + tax
+                                                <br><br>
+                                                <b> From Outside Downtown:</b> $150 per person + tax (plus the extra
+                                                transportation)
+                                                <br><br>
+                                                <b>Note:</b> A 13% sales tax will be added to all prices
+                                                <img src="./Docs/Assets/icon3.png"
+                                                    class="absolute -top-3 -left-3 h-7 -rotate-12" alt="">
+                                            </p>
+                                        </div>
+                                        <div class="">
+                                            <p
+                                                class=" rounded-2xl md:text-nowrap !leading-relaxed bg-white p-3 relative pt-7">
+                                                <b>Pick Up:</b> <br>
+                                                Around 7:30pm <br>
+                                                <b>Duration:</b> <br>
+                                                Around 2:00pm
+                                                <img src="./Docs/Assets/icon4.png"
+                                                    class="absolute top-1 right-1 h-7 rotate-[25deg]" alt="">
+                                            </p>
+                                            <img src="./Docs/Assets/imgs.svg"
+                                                class="max-w-[20rem] cursor-pointer w-full mx-auto  my-3" alt="">
+                                            <p class="text-white font-medium text-[16px] text-center cursor-pointer">
+                                                *Click to see <br>
+                                                more pictures</p>
+
+                                        </div>
+                                    </div>
+                                    <div class="bg-gradient-to-r  from-[#5de0e6]  to-[#004aad] w-full h-5 rounded-3xl">
+                                    </div>
+                                </div>
+                                <div class="w-40 md:block hidden bg-white"></div>
+                            </div>
+                        </li>
+
+                        <li class="bg-gradient-to-r from-[#0097b2] to-[#7ed957] my-2 text-white rounded-xl"
+                            x-data="accordion(8)">
+                            <h2 @click="handleClick()"
+                                class="flex flex-row rounded-lg overflow-hidden justify-between items-center font-semibold p-3 cursor-pointer">
+                                <span class="md:text-lg ">Coffee & Chocolate Tour</span>
+                                <div class="flex items-center py-1 gap-5">
+                                    <button
+                                        class="uppercase openContactForm md:block hidden bg-gradient-to-r from-[#5170ff] to-[#ff66c4] px-5 rounded-full py-3">Contact
+                                        josh</button>
+                                    <i :class="handleRotate()"
+                                        class="fa-solid fa-arrow-down w-10 h-10 flex items-center justify-center rounded-full bg-[#0097b2] text-[#7ed957] text-xl transition-all duration-500"></i>
+                                </div>
+                            </h2>
+                            <div x-ref="tab" :style="handleToggle()"
+                                class=" overflow-hidden relative flex   max-h-0 duration-500 transition-all">
+                                <div class="w-20 absolute h-10 md:left-7 bottom-0   bg-white "></div>
+                                <div class="w-20 absolute h-10 md:right-7 bottom-0   bg-white "></div>
+                                <div class="w-40 md:block hidden bg-white"></div>
+
+                                <div
+                                    class="bg-gradient-to-r text-sm text-zinc-800 from-[#5de0e6] rounded-b-3xl  to-[#004aad] relative p-5">
+                                    <div class="p-3  text-center    rounded-2xl z-10 relative bg-white">
+
+                                        <p class="">
+                                            Experience the best of Costa Rican culture with our Coffee and Chocolate
+                                            Tour, a unique combination of two popular experiences in one. Begin by
+                                            learning about the fascinating history of coffee, from its global origins to
+                                            its vital role in Costa Rica's development. Discover how coffee shaped the
+                                            country’s economy and culture, and witness every step of the coffee-making
+                                            process, from seed to the perfect cup. <br>
+                                            The second part of the tour focuses on Costa Rica’s rich chocolate heritage.
+                                            Explore the journey of cacao, starting with the cocoa fruit and progressing
+                                            to its transformation into delicious chocolate. Engage in the
+                                            chocolate-making process and enjoy the aromas, flavors, and history behind
+                                            one of Costa Rica’s most cherished treats. <br>
+                                            This family-friendly tour is fully accessible, with concrete trails
+                                            throughout the property, making it easy for strollers and wheelchairs to
+                                            navigate. Whether you’re a coffee or chocolate lover, this tour offers a
+                                            fascinating and educational experience for visitors of all ages.
+                                        </p>
+                                    </div>
+                                    <div class="flex gap-4 md:flex-row flex-col mt-3">
+                                        <div class="">
+
+                                            <p class=" rounded-2xl !leading-relaxed z-10 relative bg-white p-3"><b>The
+                                                    tour includes:</b>
+                                                lunch, transportation, a knowledgeable guide, and all the
+                                                activities listed.
+                                                <br><br>
+                                                <b>We recommend bringing:</b> a camera, swimwear, towels, binoculars,
+                                                ponchos,
+                                                insect repellent, sunscreen, a change of clothes, hiking shoes or boots,
+                                                and
+                                                water.
+                                                <img src="./Docs/Assets/icon2.webp"
+                                                    class="absolute -top-3 -left-3 h-7 -rotate-12" alt="">
+
+                                            </p>
+                                            <p class=" rounded-2xl relative !leading-relaxed bg-white p-3 mt-3">
+                                                <b>From Downtown Area:</b> $150 per person + tax
+                                                <br><br>
+                                                <b> Kids Price (5 to 10):</b> $115 per kid + tax
+                                                <br><br>
+                                                <b> From Outside Downtown:</b> $150 per person + tax (plus the extra
+                                                transportation)
+                                                <br><br>
+                                                <b>Note:</b> A 13% sales tax will be added to all prices
+                                                <img src="./Docs/Assets/icon3.png"
+                                                    class="absolute -top-3 -left-3 h-7 -rotate-12" alt="">
+                                            </p>
+                                        </div>
+                                        <div class="">
+                                            <p
+                                                class=" rounded-2xl md:text-nowrap !leading-relaxed bg-white p-3 relative pt-7">
+                                                <b>Pick Up:</b> <br>
+                                                10:00am & 2:00pm
+                                                <br>
+                                                <b>Duration:</b> <br>
+                                                3 Hours
+                                                <img src="./Docs/Assets/icon4.png"
+                                                    class="absolute top-1 right-1 h-7 rotate-[25deg]" alt="">
+                                            </p>
+                                            <img src="./Docs/Assets/imgs.svg"
+                                                class="max-w-[20rem] cursor-pointer w-full mx-auto  my-3" alt="">
+                                            <p class="text-white font-medium text-[16px] text-center cursor-pointer">
+                                                *Click to see <br>
+                                                more pictures</p>
+
+                                        </div>
+                                    </div>
+                                    <div class="bg-gradient-to-r  from-[#5de0e6]  to-[#004aad] w-full h-5 rounded-3xl">
+                                    </div>
+                                </div>
+                                <div class="w-40 md:block hidden bg-white"></div>
+                            </div>
+                        </li>
+
+                        <li class="bg-gradient-to-r from-[#0097b2] to-[#7ed957] my-2 text-white rounded-xl"
+                            x-data="accordion(9)">
+                            <h2 @click="handleClick()"
+                                class="flex flex-row rounded-lg overflow-hidden justify-between items-center font-semibold p-3 cursor-pointer">
+                                <span class="md:text-lg ">Night Hiking Arenal</span>
+                                <div class="flex items-center py-1 gap-5">
+                                    <button
+                                        class="uppercase openContactForm md:block hidden bg-gradient-to-r from-[#5170ff] to-[#ff66c4] px-5 rounded-full py-3">Contact
+                                        josh</button>
+                                    <i :class="handleRotate()"
+                                        class="fa-solid fa-arrow-down w-10 h-10 flex items-center justify-center rounded-full bg-[#0097b2] text-[#7ed957] text-xl transition-all duration-500"></i>
+                                </div>
+                            </h2>
+                            <div x-ref="tab" :style="handleToggle()"
+                                class=" overflow-hidden relative flex   max-h-0 duration-500 transition-all">
+                                <div class="w-20 absolute h-10 md:left-7 bottom-0   bg-white "></div>
+                                <div class="w-20 absolute h-10 md:right-7 bottom-0   bg-white "></div>
+                                <div class="w-40 md:block hidden bg-white"></div>
+
+                                <div
+                                    class="bg-gradient-to-r text-sm text-zinc-800 from-[#5de0e6] rounded-b-3xl  to-[#004aad] relative p-5">
+                                    <div class="p-3  text-center    rounded-2xl z-10 relative bg-white">
+
+                                        <p class="">
+                                            Explore Arenal’s unique wild frog sanctuary during its most active hours,
+                                            the night, when colorful tree frogs and other rainforest wildlife emerge.
+                                            Home to over 28 species of frogs, the sanctuary is nestled within Arenal
+                                            Oasis, a private wildlife reserve. This reserve features fresh spring-fed
+                                            ponds, which are carefully maintained by the Rojas Bonilla family. Their
+                                            dedication to preserving native Arenal plants creates the perfect habitat
+                                            for frogs, connecting the rainforests of Arenal Volcano and El Río Burio.
+                                            <br>
+                                            The night tour takes you through the sanctuary’s tranquil trails, allowing
+                                            you to observe the vibrant wildlife of the rainforest under the guidance of
+                                            trained naturalists. As you walk along the flat trails, you’ll learn about
+                                            the various species living in the area, with your guide pointing out hidden
+                                            creatures in the dense rainforest. <br>
+                                            Support and learn about the conservation efforts in this one-of-a-kind frog
+                                            sanctuary in the Arenal Volcano region.
+                                        </p>
+                                        <img src="./Docs/Assets/icon1.png" class="absolute -top-3 -left-3 h-8" alt="">
+                                    </div>
+                                    <div class="flex gap-4 md:flex-row flex-col mt-3">
+                                        <div class="">
+                                            <p class=" rounded-2xl !leading-relaxed z-10 relative bg-white p-3"><b>The
+                                                    tour includes:</b>
+                                                lunch, transportation, a knowledgeable guide, and all the
+                                                activities listed.
+                                                <br><br>
+                                                <b>We recommend bringing:</b> a camera, swimwear, towels, binoculars,
+                                                ponchos,
+                                                insect repellent, sunscreen, a change of clothes, hiking shoes or boots,
+                                                and
+                                                water.
+                                                <img src="./Docs/Assets/icon2.webp"
+                                                    class="absolute -top-3 -left-3 h-7 -rotate-12" alt="">
+
+                                            </p>
+                                            <p class=" rounded-2xl relative !leading-relaxed bg-white p-3 mt-3">
+                                                <b>From Downtown Area:</b> $150 per person + tax
+                                                <br><br>
+                                                <b> Kids Price (5 to 10):</b> $115 per kid + tax
+                                                <br><br>
+                                                <b> From Outside Downtown:</b> $150 per person + tax (plus the extra
+                                                transportation)
+                                                <br><br>
+                                                <b>Note:</b> A 13% sales tax will be added to all prices
+                                                <img src="./Docs/Assets/icon3.png"
+                                                    class="absolute -top-3 -left-3 h-7 -rotate-12" alt="">
+                                            </p>
+                                        </div>
+                                        <div class="">
+                                            <p
+                                                class=" rounded-2xl md:text-nowrap !leading-relaxed bg-white p-3 relative pt-7">
+                                                <b>Pick Up:</b> <br>
+                                                Around 5:45pm <br>
+                                                <b>Return:</b> <br>
+                                                Around 8:30pm
+                                                <img src="./Docs/Assets/icon4.png"
+                                                    class="absolute top-1 right-1 h-7 rotate-[25deg]" alt="">
+                                            </p>
+                                            <img src="./Docs/Assets/imgs.svg"
+                                                class="max-w-[20rem] cursor-pointer w-full mx-auto  my-3" alt="">
+                                            <p class="text-white font-medium text-[16px] text-center cursor-pointer">
+                                                *Click to see <br>
+                                                more pictures</p>
+
+                                        </div>
+                                    </div>
+                                    <div class="bg-gradient-to-r  from-[#5de0e6]  to-[#004aad] w-full h-5 rounded-3xl">
+                                    </div>
+                                </div>
+                                <div class="w-40 md:block hidden bg-white"></div>
+                            </div>
+                        </li>
+
+                        <li class="bg-gradient-to-r from-[#0097b2] to-[#7ed957] my-2 text-white rounded-xl"
+                            x-data="accordion(10)">
+                            <h2 @click="handleClick()"
+                                class="flex flex-row rounded-lg overflow-hidden justify-between items-center font-semibold p-3 cursor-pointer">
+                                <span class="md:text-lg ">River Tubing</span>
+                                <div class="flex items-center py-1 gap-5">
+                                    <button
+                                        class="uppercase openContactForm md:block hidden bg-gradient-to-r from-[#5170ff] to-[#ff66c4] px-5 rounded-full py-3">Contact
+                                        josh</button>
+                                    <i :class="handleRotate()"
+                                        class="fa-solid fa-arrow-down w-10 h-10 flex items-center justify-center rounded-full bg-[#0097b2] text-[#7ed957] text-xl transition-all duration-500"></i>
+                                </div>
+                            </h2>
+                            <div x-ref="tab" :style="handleToggle()"
+                                class=" overflow-hidden relative flex   max-h-0 duration-500 transition-all">
+                                <div class="w-20 absolute h-10 md:left-7 bottom-0   bg-white "></div>
+                                <div class="w-20 absolute h-10 md:right-7 bottom-0   bg-white "></div>
+                                <div class="w-40 md:block hidden bg-white"></div>
+
+                                <div
+                                    class="bg-gradient-to-r text-sm text-zinc-800 from-[#5de0e6] rounded-b-3xl  to-[#004aad] relative p-5">
+                                    <p class="p-3  text-center    rounded-2xl z-10 relative bg-white">
+                                        Embark on an exciting Arenal River tubing adventure, just a 10-minute drive from
+                                        the main reception, in one of the top activities near Arenal Volcano. This
+                                        thrilling experience offers crystal-clear rapids and breathtaking views of the
+                                        surrounding rainforest. <br>
+                                        Your journey begins with a 10-minute walk through lush forest to Maleku Village,
+                                        located at the base of the Arenal River. Here, local natives will share a
+                                        fascinating 20-minute introduction to their unique culture, traditions, and
+                                        medicine. <br>
+                                        Next, take a short hike to the river where you'll receive a safety briefing
+                                        before jumping into your rafting tube. Feel the rush of adrenaline as you
+                                        navigate the Arenal River's rapids, surrounded by the stunning rainforest. After
+                                        the tubing adventure, we head back to the base for a quick stop at the changing
+                                        rooms before continuing with your next exciting activity.
+                                        Perfect for adventure lovers and nature enthusiasts, this Arenal tubing tour
+                                        combines adrenaline, culture, and the natural beauty of Costa Rica.
+                                        <img src="./Docs/Assets/icon1.png" class="absolute -top-3 -left-3 h-8" alt="">
+                                    </p>
+                                    <div class="flex gap-4 md:flex-row flex-col mt-3">
+                                        <div class="">
+
+                                            <p class=" rounded-2xl !leading-relaxed z-10 relative bg-white p-3"><b>The
+                                                    tour includes:</b>
+                                                lunch, transportation, a knowledgeable guide, and all the
+                                                activities listed.
+                                                <br><br>
+                                                <b>We recommend bringing:</b> a camera, swimwear, towels, binoculars,
+                                                ponchos,
+                                                insect repellent, sunscreen, a change of clothes, hiking shoes or boots,
+                                                and
+                                                water.
+                                                <img src="./Docs/Assets/icon2.webp"
+                                                    class="absolute -top-3 -left-3 h-7 -rotate-12" alt="">
+
+                                            </p>
+                                            <p class=" rounded-2xl relative !leading-relaxed bg-white p-3 mt-3">
+                                                <b> From Downtown Area:</b> $62 per person + tax
+
+                                                <b> Kids:</b> only older than 10 years old
+
+                                                <b>From Outside Downtown:</b> $62 per person + tax (plus the extra
+                                                transportation)
+
+                                                <b> Note:</b> A 13% sales tax will be added to all prices
+                                                <img src="./Docs/Assets/icon3.png"
+                                                    class="absolute -top-3 -left-3 h-7 -rotate-12" alt="">
+
+                                            </p>
+                                        </div>
+                                        <div class="">
+                                            <p
+                                                class=" rounded-2xl md:text-nowrap !leading-relaxed bg-white p-3 relative pt-7">
+                                                <b>Pick Up:</b> <br>
+                                                8:00am, 10:00am, <br> 1:00pm & 3:00pm
+                                                <br>
+                                                <b>Duration:</b> <br>
+                                                Around 2 Hours
+                                                <img src="./Docs/Assets/icon4.png"
+                                                    class="absolute top-1 right-1 h-7 rotate-[25deg]" alt="">
+                                            </p>
+                                            <img src="./Docs/Assets/imgs.svg"
+                                                class="max-w-[20rem] cursor-pointer w-full mx-auto  my-3" alt="">
+                                            <p class="text-white font-medium text-[16px] text-center cursor-pointer">
+                                                *Click to see <br>
+                                                more pictures</p>
+
+                                        </div>
+                                    </div>
+                                    <div class="bg-gradient-to-r  from-[#5de0e6]  to-[#004aad] w-full h-5 rounded-3xl">
+                                    </div>
+                                </div>
+                                <div class="w-40 md:block hidden bg-white"></div>
+                            </div>
+                        </li>
+
+                        <li class="bg-gradient-to-r from-[#0097b2] to-[#7ed957] my-2 text-white rounded-xl"
+                            x-data="accordion(11)">
+                            <h2 @click="handleClick()"
+                                class="flex flex-row rounded-lg overflow-hidden justify-between items-center font-semibold p-3 cursor-pointer">
+                                <span class="md:text-lg ">Rafting Class II & III</span>
+                                <div class="flex items-center py-1 gap-5">
+                                    <button
+                                        class="uppercase openContactForm md:block hidden bg-gradient-to-r from-[#5170ff] to-[#ff66c4] px-5 rounded-full py-3">Contact
+                                        josh</button>
+                                    <i :class="handleRotate()"
+                                        class="fa-solid fa-arrow-down w-10 h-10 flex items-center justify-center rounded-full bg-[#0097b2] text-[#7ed957] text-xl transition-all duration-500"></i>
+                                </div>
+                            </h2>
+                            <div x-ref="tab" :style="handleToggle()"
+                                class=" overflow-hidden relative flex   max-h-0 duration-500 transition-all">
+                                <div class="w-20 absolute h-10 md:left-7 bottom-0   bg-white "></div>
+                                <div class="w-20 absolute h-10 md:right-7 bottom-0   bg-white "></div>
+                                <div class="w-40 md:block hidden bg-white"></div>
+
+                                <div
+                                    class="bg-gradient-to-r text-sm text-zinc-800 from-[#5de0e6] rounded-b-3xl  to-[#004aad] relative p-5">
+                                    <p class="p-3  text-center    rounded-2xl z-10 relative bg-white">
+                                        Looking for an exciting yet mild rafting adventure for the whole family? Our
+                                        family-friendly white water rafting tour on the Rio Balsa in Arenal, Costa Rica
+                                        is the perfect option! This half-day rafting tour offers thrilling Class II-III
+                                        rapids, ideal for families with children ages 8-12. <br>
+                                        The adventure begins with a 30-minute drive from your hotel to the put-in spot,
+                                        where your river guide will provide a safety briefing and equipment explanation.
+                                        Once you're ready, embark on your 2-hour rafting journey through the lush
+                                        rainforest, navigating fun rapids like "Magnetic Rock" and "Dredges." <br>
+                                        Along the way, enjoy the stunning scenery and wildlife, including monkeys,
+                                        sloths, and toucans. Take a break to swim, refresh with tropical fruits, and
+                                        cool down with cold drinks. After your rafting adventure, enjoy a delicious
+                                        traditional Costa Rican lunch at a country estate, rounding off your Arenal
+                                        family rafting tour with a relaxing meal. <br>
+                                        Book your family rafting adventure today and experience the thrill of Costa
+                                        Rica’s rivers in a safe, fun environment for all ages!
+                                        <img src="./Docs/Assets/icon1.png" class="absolute -top-3 -left-3 h-8" alt="">
+                                    </p>
+                                    <div class="flex gap-4 md:flex-row flex-col mt-3">
+                                        <div class="">
+
+                                            <p class=" rounded-2xl !leading-relaxed z-10 relative bg-white p-3">
+                                                <b> The tour includes:</b> transportation, lunch, an expert guide, and
+                                                all the
+                                                activities listed.
+                                                <br><br>
+                                                <b> We recommend bringing:</b> bathing suit, T-shirt, sunscreen, change
+                                                of
+                                                clothes, and secure shoes like water shoes or sports sandals.
+                                                <img src="./Docs/Assets/icon2.webp"
+                                                    class="absolute -top-3 -left-3 h-7 -rotate-12" alt="">
+
+                                            </p>
+                                            <p class=" rounded-2xl relative !leading-relaxed bg-white p-3 mt-3">
+                                                <b> From Downtown Area:</b> $62 per person + tax
+
+                                                <b> Kids:</b> only older than 10 years old
+
+                                                <b>From Outside Downtown:</b> $62 per person + tax (plus the extra
+                                                transportation)
+
+                                                <b> Note:</b> A 13% sales tax will be added to all prices
+                                                <img src="./Docs/Assets/icon3.png"
+                                                    class="absolute -top-3 -left-3 h-7 -rotate-12" alt="">
+
+                                            </p>
+                                        </div>
+                                        <div class="">
+                                            <p
+                                                class=" rounded-2xl md:text-nowrap !leading-relaxed bg-white p-3 relative pt-7">
+                                                <b>Pick Up:</b> <br>
+                                                Around 8:00am <br>
+                                                <b>Return:</b> <br>
+                                                Around 11:00am
+                                                <img src="./Docs/Assets/icon4.png"
+                                                    class="absolute top-1 right-1 h-7 rotate-[25deg]" alt="">
+                                            </p>
+                                            <img src="./Docs/Assets/imgs.svg"
+                                                class="max-w-[20rem] cursor-pointer w-full mx-auto  my-3" alt="">
+                                            <p class="text-white font-medium text-[16px] text-center cursor-pointer">
+                                                *Click to see <br>
+                                                more pictures</p>
+
+                                        </div>
+                                    </div>
+                                    <div class="bg-gradient-to-r  from-[#5de0e6]  to-[#004aad] w-full h-5 rounded-3xl">
+                                    </div>
+                                </div>
+                                <div class="w-40 md:block hidden bg-white"></div>
+                            </div>
+                        </li>
+
+                        <li class="bg-gradient-to-r from-[#0097b2] to-[#7ed957] my-2 text-white rounded-xl"
+                            x-data="accordion(12)">
+                            <h2 @click="handleClick()"
+                                class="flex flex-row rounded-lg overflow-hidden justify-between items-center font-semibold p-3 cursor-pointer">
+                                <span class="md:text-lg ">Rafting Class III & IV</span>
+                                <div class="flex items-center py-1 gap-5">
+                                    <button
+                                        class="uppercase openContactForm md:block hidden bg-gradient-to-r from-[#5170ff] to-[#ff66c4] px-5 rounded-full py-3">Contact
+                                        josh</button>
+                                    <i :class="handleRotate()"
+                                        class="fa-solid fa-arrow-down w-10 h-10 flex items-center justify-center rounded-full bg-[#0097b2] text-[#7ed957] text-xl transition-all duration-500"></i>
+                                </div>
+                            </h2>
+                            <div x-ref="tab" :style="handleToggle()"
+                                class=" overflow-hidden relative flex   max-h-0 duration-500 transition-all">
+                                <div class="w-20 absolute h-10 md:left-7 bottom-0   bg-white "></div>
+                                <div class="w-20 absolute h-10 md:right-7 bottom-0   bg-white "></div>
+                                <div class="w-40 md:block hidden bg-white"></div>
+
+                                <div
+                                    class="bg-gradient-to-r text-sm text-zinc-800 from-[#5de0e6] rounded-b-3xl  to-[#004aad] relative p-5">
+                                    <div class="p-3  text-center    rounded-2xl z-10 relative bg-white">
+
+                                        <p class="">
+                                            Experience the excitement of white-water rafting in Costa Rica on the Rio
+                                            Sarapiqui, known for its Class III-IV rapids. This thrilling 13 km (9 miles)
+                                            adventure takes you through stunning scenery, fed by the waters from Poas
+                                            Volcano. Ideal for families and beginners, this adventure offers the perfect
+                                            combination of adrenaline and nature. <br>
+                                            Accompanied by expert river guides and safety kayakers, you’ll navigate
+                                            continuous rapids while taking in the majestic rainforest. The Sarapiqui
+                                            River, located in Heredia Province, is a 1.5-hour scenic drive from La
+                                            Fortuna. Along the way, you'll encounter local wildlife such as toucans,
+                                            sloths, and monkeys. <br>
+                                            The adventure includes a mid-trip break with tropical snacks and fruits.
+                                            Afterward, continue rafting through exciting rapids before finishing at the
+                                            “take-out” spot. You’ll be greeted with cold drinks, a dry towel, and a
+                                            delicious typical Costa Rican lunch to complete the experience. This
+                                            unforgettable rafting tour is perfect for those seeking adventure and nature
+                                            during their Costa Rica holiday.
+                                        </p>
+
+                                        <img src="./Docs/Assets/icon1.png" class="absolute -top-3 -left-3 h-8" alt="">
+                                    </div>
+                                    <div class="flex gap-4 md:flex-row flex-col mt-3">
+                                        <div class="">
+
+                                            <p class=" rounded-2xl !leading-relaxed z-10 relative bg-white p-3">
+                                                <b> The tour includes:</b> transportation, lunch, an expert guide, and
+                                                all the
+                                                activities listed.
+                                                <br><br>
+                                                <b> We recommend bringing:</b> bathing suit, T-shirt, sunscreen, change
+                                                of
+                                                clothes, and secure shoes like water shoes or sports sandals.
+                                                <img src="./Docs/Assets/icon2.webp"
+                                                    class="absolute -top-3 -left-3 h-7 -rotate-12" alt="">
+
+                                            </p>
+                                            <p class=" rounded-2xl relative !leading-relaxed bg-white p-3 mt-3">
+                                                <b> From Downtown Area:</b> $62 per person + tax
+
+                                                <b> Kids:</b> only older than 10 years old
+
+                                                <b>From Outside Downtown:</b> $62 per person + tax (plus the extra
+                                                transportation)
+
+                                                <b> Note:</b> A 13% sales tax will be added to all prices
+                                                <img src="./Docs/Assets/icon3.png"
+                                                    class="absolute -top-3 -left-3 h-7 -rotate-12" alt="">
+
+                                            </p>
+                                        </div>
+                                        <div class="">
+                                            <p
+                                                class=" rounded-2xl md:text-nowrap !leading-relaxed bg-white p-3 relative pt-7">
+                                                <b>Pick Up:</b> <br>
+                                                Around 8:30am
+                                                <br>
+                                                <b>Return:</b> <br>
+                                                Around 4:00pm
+                                                <img src="./Docs/Assets/icon4.png"
+                                                    class="absolute top-1 right-1 h-7 rotate-[25deg]" alt="">
+                                            </p>
+                                            <img src="./Docs/Assets/imgs.svg"
+                                                class="max-w-[20rem] cursor-pointer w-full mx-auto  my-3" alt="">
+                                            <p class="text-white font-medium text-[16px] text-center cursor-pointer">
+                                                *Click to see <br>
+                                                more pictures</p>
+
+                                        </div>
+                                    </div>
+                                    <div class="bg-gradient-to-r  from-[#5de0e6]  to-[#004aad] w-full h-5 rounded-3xl">
+                                    </div>
+                                </div>
+                                <div class="w-40 md:block hidden bg-white"></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="bg-[#13072e] md:mt-10 mt-5 z-20 relative">
+        <div class="max-w-7xl text-white w-full mx-auto p-4 pt-7 flex items-end justify-between">
+            <a href="./index.html">
+                <img src="./Docs/Assets/favicon.png" class="md:h-28 h-24 rounded-full" alt="">
+            </a>
+            <ul class="font-medium lg:flex hidden items-center gap-5 ">
+                <li><a href="./guanacaste.html" class="hover:underline">Guanacaste Tours</a></li>
+                <li><a href="./monteverde.html" class="hover:underline">Monte Verde Tours</a></li>
+                <li><a href="./lafortuna.html" class="hover:underline">La Fortuna Tours</a></li>
+                <li><a href="./samara.html" class="hover:underline">Samara Tours</a></li>
+            </ul>
+            <button
+                class="bg-white text-black font-medium flex items-center justify-center md:px-8 px-5  rounded-full md:gap-5 gap-3 md:py-3 py-2.5 openContactForm">
+                Contact Josh
+                <i class="fa-solid fa-arrow-right text-black  rounded-full"></i>
+            </button>
+        </div>
+
+        <div class="bg-white rounded-t-[2rem] md:pt-14 pt-8 p-4 mt-5">
+            <div class="max-w-7xl mx-auto text-[#13072e] w-full">
+                <div class=" grid md:grid-cols-6 gap-5 gap-y-8  sm:grid-cols-3 grid-cols-1 w-full">
+                    <div class="sm:col-span-2 md:pr-7">
+                        <h2 class="pb-2 font-bold text-xl">Best Costa Rica Tours</h2>
+                        <p>At Best Costa Rica Tours, we specialize in providing personalized and unforgettable Costa
+                            Rica
+                            tours for individuals, families, and groups. Whether you’re looking for adventure tours,
+                            eco-tours, or cultural experiences, our team of knowledgeable guides will help you explore
+                            Costa
+                            Rica’s diverse landscapes, rich wildlife, and vibrant culture. <br>
+                            From the lush rainforests of Monteverde to the iconic beaches of Guanacaste, and the
+                            majestic
+                            Arenal Volcano in La Fortuna, we offer custom itineraries tailored to your interests. Let us
+                            design the perfect Costa Rica vacation package to suit your needs and make your trip truly
+                            special.</p>
+                    </div>
+                    <div class="mx-auto w-full md:px-5">
+                        <h2 class="pb-4 font-bold text-xl">Quick Links</h2>
+                        <ul class="flex flex-col gap-1 ">
+                            <li><a href="" class="hover:underline"> Guanacaste tours</a></li>
+                            <li><a href="" class="hover:underline"> Monte Verde Tours</a></li>
+                            <li><a href="" class="hover:underline"> La Fortuna Tours</a></li>
+                            <li><a href="" class="hover:underline"> Samara Tours</a></li>
+                            <li><a href="" class="hover:underline"> Shuttle Service</a></li>
+                        </ul>
+                        <h2 class="pb-3 md:pt-7 pt-3 font-bold text-xl">Phone</h2>
+                        <ul class="flex flex-col gap-1">
+                            <li><a href="tel:+50685581959" class="hover:underline">+506-8558-1959</a></li>
+                            <li><a href="tel:+17029009068" class="hover:underline">+1-702-900-9068</a></li>
+                        </ul>
+                    </div>
+                    <div class="mx-auto w-full md:pl-5">
+                        <h2 class="pb-4 font-bold text-xl">Social</h2>
+                        <ul class="flex flex-col gap-1 ">
+                            <li><a href="https://www.facebook.com/bestcostaricatours/reviews"
+                                    class="hover:underline">Facebook</a></li>
+                            <li><a href="https://www.instagram.com/joshbesttours?igsh=MXh1eWxwdXFkY2xxNQ%3D%3D"
+                                    class="hover:underline">Instagram</a></li>
+                            <li><a href="https://www.tiktok.com/@joshbesttours?_t=ZM-8sO0kyF4hMr&_r=1"
+                                    class="hover:underline">TikTok</a></li>
+                            <li><a href="https://api.whatsapp.com/message/5WVX5BF7W2AUK1?autoload=1&app_absent=0"
+                                    class="hover:underline">Whatsapp</a></li>
+                            <li class="select-none md:block hidden"> &nbsp;</li>
+                        </ul>
+                        <h2 class="pb-3 md:pt-7 pt-3 font-bold text-xl">Email</h2>
+                        <ul class="flex flex-col gap-1">
+                            <li><a href="mailto:joshbesttours@gmail.com"
+                                    class="hover:underline">joshbesttours@gmail.com</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="sm:col-span-2 md:pr-6  md:text-end space-y-1">
+                        <p class="font-bold"> Guanacaste tours</p>
+                        <p class="font-bold"> Best tours in Guanacaste</p>
+                        <p class="font-bold"> Guanacaste adventure tours</p>
+                        <p class="font-bold"> Top things to do in Guanacaste</p>
+                        <p class="font-bold"> Guanacaste beach tours</p>
+                        <p class="font-bold"> Monteverde tours</p>
+                        <p class="font-bold"> Monteverde cloud forest tours</p>
+                        <p class="font-bold"> Monteverde adventure activities</p>
+                        <p class="font-bold"> Monteverde hiking tours</p>
+                        <p class="font-bold"> Things to do in Monteverde</p>
+                        <p class="font-bold"> La Fortuna tours</p>
+                        <p class="font-bold"> La Fortuna volcano tours</p>
+                        <p class="font-bold"> La Fortuna adventure tours</p>
+                        <p class="font-bold"> Best La Fortuna tours</p>
+                        <p class="font-bold"> Samara Costa Rica tours</p>
+                    </div>
+                </div>
+                <div
+                    class="border-zinc-400 flex py-3 text-center gap-4 md:mt-8 mt-6 items-center justify-between md:flex-row flex-col border-t-2">
+                    <p>Best Costa Rica Tours. All Rights Reserved <span id="year"></span></p>
+                    <p class="cursor-pointer openPolicy">Terms & Conditions</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+    <!-- =========components============ -->
+
+    <div id="contactForm" style="display: none;"
+        class="fixed w-full z-30 h-screen top-0 left-0 transition-all duration-500 p-5 fastFadeIn flex items-center justify-center">
+        <div class="fixed fastFadeIn bg-[#0000009f] w-full h-screen top-0 left-0  transition-all duration-500 hidden"
+            id="overlay"></div>
+        <div class="bg-gradient-to-r from-[#1a77cc] to-[#63b94d] max-w-[40rem] z-20 w-full p-5 rounded-2xl">
+            <h2 class="text-center font-bold text-2xl text-white">Book your tour today!</h2>
+            <div class="text-white mt-10 md:px-10">
+                <form method="POST" action="https://api.web3forms.com/submit">
+                    <input type="hidden" name="access_key" value="8111d4bf-3877-4f90-8e4c-527b2ee652ad" id="">
+                    <div class="flex items-center justify-between sm:gap-5 gap-0">
+                        <label for="name" class="font-bold text-lg">Name</label>
+                        <input type="text" id="name" name="name"
+                            class="p-3 text-black w-full sm:max-w-[26rem] max-w-[11.5rem] rounded-full" required>
+                    </div>
+                    <div class="flex items-center justify-between sm:gap-5 gap-0 mt-5 ">
+                        <label for="phone" class="font-bold text-lg text-nowrap">Phone #</label>
+                        <input type="number" id="phone" name="phone"
+                            class="p-3 text-black w-full sm:max-w-[26rem] max-w-[11.5rem] rounded-full" required>
+                    </div>
+                    <div class="flex items-center justify-between sm:gap-5 gap-0 mt-5 ">
+                        <label for="email" class="font-bold text-lg text-nowrap">E-mail</label>
+                        <input type="email" id="email" name="email"
+                            class="p-3 text-black w-full sm:max-w-[26rem] max-w-[11.5rem] rounded-full" required>
+                    </div>
+                    <div class="flex justify-between sm:gap-5 gap-0 mt-5 ">
+                        <label for="Message" class="font-bold block mt-1 text-lg text-nowrap">Message</label>
+                        <textarea type="text" id="Message" name="Message"
+                            class="p-3 text-black resize-none w-full sm:max-w-[26rem] max-w-[11.5rem] rounded-3xl"
+                            required rows="4"></textarea>
+                    </div>
+                    <div class="flex items-center justify-end mt-2 mx-auto">
+                        <button type="submit"
+                            class="bg-white text-black rounded-full px-5 py-2 flex items-center justify-center gap-3 font-medium">
+                            Send
+                        </button>
+                    </div>
+                </form>
+
+                <div class="flex mt-3 items-center justify-center max-w-md mx-auto flex-col gap-1">
+                    <h2 class="font-bold text-xl">Toll Free or Text at</h2>
+                    <div class="">
+                        <a href="tel:+1-702-900-9068" class="font-semibold text-lg block">+1-702-900-9068</a>
+                    </div>
+
+                </div>
+                <div class="flex mt-5 items-center justify-between  mx-auto md:flex-row flex-col gap-2">
+                    <a href="https://api.whatsapp.com/message/5WVX5BF7W2AUK1?autoload=1&app_absent=0">
+                        <button
+                            class="bg-white text-black rounded-full px-5 py-2 flex items-center justify-center gap-3 font-medium">
+                            <i class="fa-brands fa-whatsapp text-3xl text-[#1ba553]"></i>
+                            Whatsapp
+                        </button>
+                    </a>
+                    <a href="https://www.facebook.com/bestcostaricatours/reviews">
+                        <button
+                            class="bg-white text-black rounded-full px-9 py-2.5 flex items-center gap-3 font-medium">
+                            <img src="./Docs/Assets/message.png" class="h-8" alt="">
+                            Msgr
+                        </button>
+                    </a>
+                    <a href="mailto:joshbesttours@gmail.com">
+                        <button
+                            class="bg-white text-black rounded-full px-9 py-2.5 flex items-center justify-center gap-3 font-medium">
+                            <img src="./Docs/Assets/mail.webp" class="h-8" alt="">
+                            E-Mail
+                        </button>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="menuForm" style="display: none;"
+        class="fixed w-full h-screen top-0 left-0 z-30 transition-all duration-500 p-5 fastFadeIn flex items-center justify-center">
+        <div class="fixed fastFadeIn bg-[#0000009f] w-full h-screen top-0 left-0  transition-all duration-500 hidden"
+            id="overlayMenu"></div>
+        <div class="bg-gradient-to-r from-[#1a77cc] to-[#63b94d] max-w-[30rem] z-20 w-full p-5 rounded-2xl">
+
+            <div class="flex justify-end">
+                <i id="closeMenu"
+                    class="fa-solid fa-arrow-right bg-white text-[#63b94d] w-10 h-10 rounded-full flex items-center justify-center text-lg cursor-pointer"></i>
+
+            </div>
+
+            <div class="flex items-center justify-center  flex-col">
+
+                <button class="text-white py-2.5 px-5 rounded-full border-2 border-white font-medium">
+                    Contact Josh
+                </button>
+                <p class="text-white pt-4 font-semibold fira text-lg">Toll Free or Text at</p>
+                <a href="tel:+1-702-900-9068" class="text-white font-semibold fira">+1-702-900-9068</a>
+            </div>
+
+            <a href="./guanacaste.html"
+                class="block text-center mt-3 rounded-full px-6 py-2.5 bg-white font-semibold">Guanacaste Tours</a>
+            <a href="./lafortuna.html"
+                class="block text-center rounded-full px-6 py-2.5 mt-2.5 bg-white font-semibold">La Fortuna Tours</a>
+            <a href="./monteverde.html"
+                class="block text-center rounded-full px-6 py-2.5 mt-2.5 bg-white font-semibold">Monte Verde Tours</a>
+            <a href="./samara.html"
+                class="block text-center rounded-full px-6 py-2.5 mt-2.5 bg-white font-semibold">Samara Tours</a>
+            <a href="./shuttles.html"
+                class="block text-center rounded-full px-6 py-2.5 mt-2.5 bg-white font-semibold">Shuttle Service</a>
+
+            <div class="text-white mt-5 md:px-10">
+                <div class="flex mt-5 items-center  justify-center max-w-[22rem] mx-auto flex-wrap gap-2">
+                    <a href="https://api.whatsapp.com/message/5WVX5BF7W2AUK1?autoload=1&app_absent=0">
+                        <button
+                            class="bg-white text-black rounded-full px-5 py-2 flex items-center justify-center gap-3 font-medium">
+                            <i class="fa-brands fa-whatsapp text-2xl text-[#1ba553]"></i>
+                            Whatsapp
+                        </button>
+                    </a>
+                    <a href="https://www.facebook.com/bestcostaricatours/reviews">
+                        <button
+                            class="bg-white text-black rounded-full px-9 py-2.5 flex items-center justify-center gap-3 font-medium">
+                            <img src="./Docs/Assets/message.png" class="h-6" alt="">
+                            Msgr
+                        </button>
+                    </a>
+                    <a href="mailto:joshbesttours@gmail.com">
+                        <button
+                            class="bg-white text-black rounded-full px-9 py-2.5 flex items-center justify-center gap-3 font-medium">
+                            <img src="./Docs/Assets/mail.webp" class="h-6" alt="">
+                            E-Mail
+                        </button>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="policyForm" style="display: none;"
+        class="fixed w-full h-screen top-0 left-0 z-30 transition-all duration-500 p-5 fastFadeIn flex items-center justify-center">
+        <div class="fixed fastFadeIn bg-[#0000009f] w-full h-screen top-0 left-0  transition-all duration-500 hidden"
+            id="overlayPolicy"></div>
+        <div
+            class="bg-gradient-to-r from-[#1a77cc] to-[#63b94d] max-w-4xl text-white font-medium text-center max-h-[85vh] overflow-auto text-xs z-20 w-full p-5 rounded-2xl policy-div-class">
+
+            <h2 class="text-center font-semibold text-white text-xl pb-4 ">Terms & Conditions</h2>
+            <p>
+                At Best Costa Rica Tours, we value your privacy and are dedicated to safeguarding any information we
+                collect about you when using our website, applications, and services.
+                <span class="block text-center font-semibold pt-2 pb-0.5">1. Personal Information We Collect</span>
+
+                We collect personal information necessary for the provision of our services, as follows:
+                Personal Information You Provide: We collect your personal information when required to complete
+                bookings, such as for National Park tickets or border tax payments, especially for travel to Nicaragua.
+                This information is collected only when needed and is not stored. <br>
+                Communication Information: If you contact us, we gather your contact details and the contents of any
+                messages you send. <br>
+                Social Media Information: If you interact with us on social media platforms like Facebook, Instagram,
+                Twitter, or LinkedIn, we may collect contact details and other personal information shared through these
+                channels.
+                <span class="block text-center font-semibold pt-2 pb-0.5">2. How We Use Personal Information</span>
+                We use your personal information for the following purposes:
+                <br> To provide, administer, and improve our services
+                <br> To communicate with you effectively
+                <br> To prevent fraud and misuse of our services
+                <br> To comply with legal obligations and protect the safety and security of our systems
+                To improve and conduct research for better service delivery
+                <span class="block text-center font-semibold pt-2 pb-0.5">3. Disclosure of Personal Information</span>
+                We may share your personal information with third parties in the following circumstances:
+                Service Providers: We may share your information with third-party service providers who help us with
+                business operations. They only access, process, or store personal information as necessary to perform
+                their services. <br>
+                Legal Requirements: We may disclose your personal information to comply with legal obligations, protect
+                our rights or property, prevent fraud or illegal activity, ensure public safety, or as otherwise
+                required by law.
+                <span class="block text-center font-semibold pt-2 pb-0.5">4. Your Rights</span>
+                Under applicable law, you may have the following rights regarding your personal information:
+                <br> The right to know what personal information we collect and how we process it
+                <br> The right to request the deletion or correction of your personal information
+                <br> The right to be free from discrimination when exercising your privacy rights
+                <br> We do not sell or share your personal information for advertising purposes, nor do we use sensitive
+                information to infer consumer characteristics.
+                <span class="block text-center font-semibold pt-2 pb-0.5">Exercising Your Rights</span>
+                If you wish to exercise your rights under privacy laws, you can submit a request through the same method
+                you initially contacted us.
+            </p>
+
+        </div>
+    </div>
+
+    <!-- ==========for mobile=============== -->
+
+    <div style="left: -205px; display: none;" class="fixed top-5 transition-all duration-500 float cursor-pointer z-40"
+        id="leaf">
+        <div class="relative">
+            <div class="h-10 transition-all duration-500 overflow-hidden" id="leafHeight">
+                <img src="./Docs/Assets/CBT.png"
+                    class="-translate-x-1 fadeIn md:hidden block   w-[15rem] overflow-hidden" id="leafOpen" alt="">
+            </div>
+            <a href="https://www.tripadvisor.com/img/cdsi/img2/badges/ollie-11424-2.gif"
+                class="block w-[80%]  absolute h-[20%] top-[20%] left-[5%]  "></a>
+            <a href="https://www.facebook.com/bestcostaricatours/reviews"
+                class="block w-[80%]  absolute h-[20%] top-[45%] left-[5%]  "></a>
+            <a href="https://api.whatsapp.com/message/5WVX5BF7W2AUK1?autoload=1&app_absent=0"
+                class="block w-[20%] absolute h-[8%] bottom-[16%] left-[25%] "></a>
+            <a href="https://www.facebook.com/messages/e2ee/t/8057290370994120"
+                class="block w-[20%] absolute h-[8%] bottom-[16%] left-[55%] "></a>
+        </div>
+    </div>
+
+
+
+    <script src="./Docs/Javascripts/global.js"></script>
+    <script src="./Docs/Javascripts/global.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+        integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+        integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+</body>
+<script>
+    document.addEventListener('alpine:init', () => {
+        Alpine.store('accordion', {
+            tab: 1
+        });
+
+        Alpine.data('accordion', (idx) => ({
+            init() {
+                this.idx = idx;
+            },
+            idx: -1,
+            handleClick() {
+                this.$store.accordion.tab = this.$store.accordion.tab === this.idx ? 0 : this.idx;
+            },
+            handleRotate() {
+                return this.$store.accordion.tab === this.idx ? 'rotate-180' : '';
+            },
+            handleToggle() {
+                return this.$store.accordion.tab === this.idx ? `max-height: ${this.$refs.tab.scrollHeight}px` : '';
+            }
+        }));
+    })
+</script>
+
+</html>
