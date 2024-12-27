@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fort Lauderdale Shuttle</title>
+    <title>Best Costa Rica Tours</title>
     <link rel="shortcut icon" href="./Docs/Assets/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="./Docs/Styles/global.css">
     <script defer src="https://unpkg.com/alpinejs@3.2.3/dist/cdn.min.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 
 <body>
@@ -20,7 +21,7 @@
         style="background: url(./Docs/Assets/GuanacasteMain.jpg) center/cover no-repeat;">
         <div
             class="bg-gradient-to-r from-[#0197b1] to-[#7dd858] flex items-center justify-between px-5 py-3 rounded-lg max-w-7xl w-full mx-auto  gap-4">
-            <h2 class="font-semibold text-lg text-white">Best Costa Rica Tours </h2>
+             <a href="./index.html" class="font-semibold block text-lg text-white">Best Costa Rica Tours </a>
             <div class="xl:flex hidden items-center gap-4">
                 <ul class="text-white flex items-center gap-5 font-medium">
                     <li><a href="./guanacaste.html" class="text-[#c1ff72]">Guanacaste Tours</a></li>
@@ -153,7 +154,7 @@
 
                                             </p>
                                         </div>
-                                        <div class="">
+                                        <div class="md:max-w-[15rem] w-full">
                                             <p
                                                 class=" rounded-2xl md:text-nowrap !leading-relaxed bg-white p-3 relative pt-7">
                                                 <b>Pick Up:</b> <br>
@@ -163,15 +164,28 @@
                                                 <img src="./Docs/Assets/icon4.png"
                                                     class="absolute top-1 right-1 h-7 rotate-[25deg]" alt="">
                                             </p>
-                                            <img src="./Docs/Assets/imgs.svg"
-                                                class="max-w-[20rem] cursor-pointer w-full mx-auto  my-3" alt="">
-                                            <p class="text-white font-medium text-[16px] text-center cursor-pointer">
+                                            <div class="slider-container mt-5">
+                                                <div class="swiper mySwiper">
+                                                    <div class="swiper-wrapper">
+                                                        <div class="swiper-slide"><img src="./Docs/Assets/guanacaste/slide (1).jpg" alt=""></div>
+                                                        <div class="swiper-slide"><img src="./Docs/Assets/guanacaste/slide (2).jpg" alt=""></div>
+                                                        <div class="swiper-slide"><img src="./Docs/Assets/guanacaste/slide (3).jpg" alt=""></div>
+                                                        <div class="swiper-slide"><img src="./Docs/Assets/guanacaste/slide (4).jpg" alt=""></div>
+                                                        <div class="swiper-slide"><img src="./Docs/Assets/guanacaste/slide (5).jpg" alt=""></div>
+                                                        <div class="swiper-slide"><img src="./Docs/Assets/guanacaste/slide (6).jpg" alt=""></div>
+                                                        <div class="swiper-slide"><img src="./Docs/Assets/guanacaste/slide (7).jpg" alt=""></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- <img src="./Docs/Assets/imgs.svg"
+                                                class="max-w-[20rem] cursor-pointer w-full mx-auto  my-3" alt=""> -->
+                                            <!-- <p class="text-white font-medium text-[16px] text-center cursor-pointer">
                                                 *Click to see <br>
-                                                more pictures</p>
+                                                more pictures</p> -->
 
                                         </div>
                                     </div>
-                                    <div class="bg-gradient-to-r  from-[#5de0e6]  to-[#004aad] w-full h-5 rounded-3xl">
+                                    <div class="bg-gradient-to-r  from-[#5de0e6]  to-[#004aad] w-full h- rounded-3xl">
                                     </div>
                                 </div>
                                 <div class="w-40 md:block hidden bg-white"></div>
@@ -1737,40 +1751,43 @@
 
     <!-- ==========for mobile=============== -->
 
-    <div style="left: -205px; display: none;" class="fixed top-5 transition-all duration-500 float cursor-pointer z-40"
-        id="leaf">
-        <div class="relative">
-            <div class="h-10 transition-all duration-500 overflow-hidden" id="leafHeight">
-                <img src="./Docs/Assets/CBT.png"
-                    class="-translate-x-1 fadeIn md:hidden block   w-[15rem] overflow-hidden" id="leafOpen" alt="">
-            </div>
-            <a href="https://www.tripadvisor.com/img/cdsi/img2/badges/ollie-11424-2.gif"
-                class="block w-[80%]  absolute h-[20%] top-[20%] left-[5%]  "></a>
-            <a href="https://www.facebook.com/bestcostaricatours/reviews"
-                class="block w-[80%]  absolute h-[20%] top-[45%] left-[5%]  "></a>
-            <a href="https://api.whatsapp.com/message/5WVX5BF7W2AUK1?autoload=1&app_absent=0"
-                class="block w-[20%] absolute h-[8%] bottom-[16%] left-[25%] "></a>
-            <a href="https://www.facebook.com/messages/e2ee/t/8057290370994120"
-                class="block w-[20%] absolute h-[8%] bottom-[16%] left-[55%] "></a>
+    <div style="left: -240px; display: none;" class="fixed top-5 transition-all duration-500 float cursor-pointer z-40"
+    id="leaf">
+    <div class="relative">
+        <div class="h-20 transition-all duration-500 overflow-hidden" id="leafHeight">
+            <img src="./Docs/Assets/CBT.png" style="width: 288px;"
+                class="-translate-x-1 fadeIn md:hidden block   overflow-hidden" id="leafOpen" alt="">
         </div>
+        <a href="https://www.tripadvisor.com/img/cdsi/img2/badges/ollie-11424-2.gif"
+            class="block w-[80%]  absolute h-[20%] top-[20%] left-[5%] "></a>
+        <a href="https://www.facebook.com/bestcostaricatours/reviews"
+            class="block w-[80%]  absolute h-[20%] top-[45%] left-[5%] "></a>
+        <a href="https://api.whatsapp.com/message/5WVX5BF7W2AUK1?autoload=1&app_absent=0"
+            class="block w-[20%] absolute h-[8%] bottom-[16%] left-[25%] "></a>
+        <a href="https://www.facebook.com/messages/e2ee/t/8057290370994120"
+            class="block w-[20%] absolute h-[8%] bottom-[16%] left-[55%] "></a>
     </div>
+</div>
 
 
 
     <script src="./Docs/Javascripts/global.js"></script>
     <script src="./Docs/Javascripts/global.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
-        integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
-        integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
 
 </body>
 <script>
+
+    var swiper = new Swiper(".mySwiper", {
+        effect: "cards",
+        grabCursor: true,
+    });
+
+
     document.addEventListener('alpine:init', () => {
         Alpine.store('accordion', {
-            tab: 0
+            tab: 1
         });
 
         Alpine.data('accordion', (idx) => ({

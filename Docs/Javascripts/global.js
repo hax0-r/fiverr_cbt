@@ -112,9 +112,10 @@ handleLeafVisibility();
 window.addEventListener('resize', handleLeafVisibility);
 
 leafOpen.addEventListener('click', () => {
-    leaf.style.left = leaf.style.left === "-205px" ? "0px" : "-205px";
+    leaf.style.left = leaf.style.left === "-240px" ? "0px" : "-240px";
     leaf.classList.remove("float");
-    leafHeight.style.height = leafHeight.style.height === "95vh" ? "2.5rem" : "95vh";
+    leafOpen.style.width = leafOpen.style.width === "288px" ? "250px" : "288px" 
+    leafHeight.style.height = leafHeight.style.height === "95vh" ? "5rem" : "95vh";
 });
 
 
