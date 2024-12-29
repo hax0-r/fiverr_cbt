@@ -11,6 +11,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./Docs/Styles/global.css">
     <script defer src="https://unpkg.com/alpinejs@3.2.3/dist/cdn.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
@@ -20,7 +21,7 @@
         style="background: url(./Docs/Assets/La-Fortuna-Main.jpg) center/cover no-repeat;">
         <div
             class="bg-gradient-to-r from-[#0197b1] to-[#7dd858] flex items-center justify-between px-5 py-3 rounded-lg max-w-7xl w-full mx-auto  gap-4">
-             <a href="./index.html" class="font-semibold block text-lg text-white">Best Costa Rica Tours </a>
+            <a href="./index.html" class="font-semibold block text-lg text-white">Best Costa Rica Tours </a>
             <div class="xl:flex hidden items-center gap-4">
                 <ul class="text-white flex items-center gap-5 font-medium">
                     <li><a href="./guanacaste.html" class="">Guanacaste Tours</a></li>
@@ -118,23 +119,42 @@
                                         Experience the best of Arenal with this exciting combo of nature and adventure!
                                         <img src="./Docs/Assets/icon1.png" class="absolute -top-3 -left-3 h-8" alt="">
                                     </p>
-                                    <div class="flex gap-4 md:flex-row flex-col mt-3">
+
+
+                                    <!-- ============== -->
+                                    <div class="flex gap-4 flex-col mt-3">
                                         <div class="">
 
-                                            <p class=" rounded-2xl !leading-relaxed z-10 relative bg-white p-3"><b>The
-                                                    tour includes:</b>
-                                                lunch, transportation, a knowledgeable guide, and all the
-                                                activities listed.
-                                                <br><br>
-                                                <b>We recommend bringing:</b> a camera, swimwear, towels, binoculars,
-                                                ponchos,
-                                                insect repellent, sunscreen, a change of clothes, hiking shoes or boots,
-                                                and
-                                                water.
-                                                <img src="./Docs/Assets/icon2.webp"
-                                                    class="absolute -top-3 -left-3 h-7 -rotate-12" alt="">
+                                            <div class="grid md:grid-cols-3 gap-3">
 
-                                            </p>
+                                                <p
+                                                    class="md:col-span-2 rounded-2xl !leading-relaxed z-10 relative bg-white p-3">
+                                                    <b>The
+                                                        tour includes:</b>
+                                                    lunch, transportation, a knowledgeable guide, and all the
+                                                    activities listed.
+                                                    <br><br>
+                                                    <b>We recommend bringing:</b> a camera, swimwear, towels,
+                                                    binoculars,
+                                                    ponchos,
+                                                    insect repellent, sunscreen, a change of clothes, hiking shoes or
+                                                    boots,
+                                                    and
+                                                    water.
+                                                    <img src="./Docs/Assets/icon2.webp"
+                                                        class="absolute -top-3 -left-3 h-7 -rotate-12" alt="">
+
+                                                </p>
+                                                <p
+                                                    class=" rounded-2xl md:text-nowrap !leading-relaxed bg-white p-3 relative pt-7">
+                                                    <b>Pick Up:</b> <br>
+                                                    Around 8:00am <br>
+                                                    <b>Return:</b> <br>
+                                                    Around 3:30pm
+                                                    <img src="./Docs/Assets/icon4.png"
+                                                        class="absolute top-1 right-1 h-7 rotate-[25deg]" alt="">
+                                                </p>
+                                            </div>
                                             <p class=" rounded-2xl relative !leading-relaxed bg-white p-3 mt-3">
                                                 <b>From Downtown Area:</b> $150 per person + tax
                                                 <br><br>
@@ -146,27 +166,50 @@
                                                 <b>Note:</b> A 13% sales tax will be added to all prices
                                                 <img src="./Docs/Assets/icon3.png"
                                                     class="absolute -top-3 -left-3 h-7 -rotate-12" alt="">
-
                                             </p>
-                                        </div>
-                                        <div class="">
-                                            <p
-                                                class=" rounded-2xl md:text-nowrap !leading-relaxed bg-white p-3 relative pt-7">
-                                                <b>Pick Up:</b> <br>
-                                                Around 8:00am <br>
-                                                <b>Return:</b> <br>
-                                                Around 3:30pm
-                                                <img src="./Docs/Assets/icon4.png"
-                                                    class="absolute top-1 right-1 h-7 rotate-[25deg]" alt="">
-                                            </p>
-                                            <img src="./Docs/Assets/imgs.svg"
-                                                class="max-w-[20rem] cursor-pointer w-full mx-auto  my-3" alt="">
-                                            <p class="text-white font-medium text-[16px] text-center cursor-pointer">
-                                                *Click to see <br>
-                                                more pictures</p>
 
+                                            <div
+                                                class="slider-container mt-5 mx-auto flex items-center justify-center w-full ">
+                                                <div
+                                                    class="swiper mySwiper md:h-[20rem] md:w-[25rem] h-[15rem] w-[15rem]">
+                                                    <div class="swiper-wrapper">
+                                                        <div class="swiper-slide"><img
+                                                                src="./Docs/Assets/guanacaste/Volcano-crater/image (1).jpg"
+                                                                alt="">
+                                                        </div>
+                                                        <div class="swiper-slide"><img
+                                                                src="./Docs/Assets/guanacaste/Volcano-crater/image (2).jpg"
+                                                                alt="">
+                                                        </div>
+                                                        <div class="swiper-slide"><img
+                                                                src="./Docs/Assets/guanacaste/Volcano-crater/image (3).jpg"
+                                                                alt="">
+                                                        </div>
+                                                        <div class="swiper-slide"><img
+                                                                src="./Docs/Assets/guanacaste/Volcano-crater/image (4).jpg"
+                                                                alt="">
+                                                        </div>
+                                                        <div class="swiper-slide"><img
+                                                                src="./Docs/Assets/guanacaste/Volcano-crater/image (5).jpg"
+                                                                alt="">
+                                                        </div>
+                                                        <div class="swiper-slide"><img
+                                                                src="./Docs/Assets/guanacaste/Volcano-crater/image (6).jpg"
+                                                                alt="">
+                                                        </div>
+                                                        <div class="swiper-slide"><img
+                                                                src="./Docs/Assets/guanacaste/Volcano-crater/image (7).jpg"
+                                                                alt="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
+                                    <!-- ============= -->
+
+
+
                                     <div class="bg-gradient-to-r  from-[#5de0e6]  to-[#004aad] w-full h-5 rounded-3xl">
                                     </div>
                                 </div>
@@ -210,24 +253,41 @@
                                         Alexis Farm, home to cacao, pineapple, corn, and banana plantations.
                                         <img src="./Docs/Assets/icon1.png" class="absolute -top-3 -left-3 h-8" alt="">
                                     </p>
-                                    <div class="flex gap-4 md:flex-row flex-col mt-3">
+
+                                    <!-- ============== -->
+                                    <div class="flex gap-4 flex-col mt-3">
                                         <div class="">
 
-                                            <p class=" rounded-2xl !leading-relaxed z-10 relative bg-white p-3">
-                                                <b>The
-                                                    tour includes:</b>
-                                                lunch, transportation, a knowledgeable guide, and all the
-                                                activities listed.
-                                                <br><br>
-                                                <b>We recommend bringing:</b> a camera, swimwear, towels, binoculars,
-                                                ponchos,
-                                                insect repellent, sunscreen, a change of clothes, hiking shoes or boots,
-                                                and
-                                                water.
-                                                <img src="./Docs/Assets/icon2.webp"
-                                                    class="absolute -top-3 -left-3 h-7 -rotate-12" alt="">
+                                            <div class="grid md:grid-cols-3 gap-3">
 
-                                            </p>
+                                                <p
+                                                    class="md:col-span-2 rounded-2xl !leading-relaxed z-10 relative bg-white p-3">
+                                                    <b>The
+                                                        tour includes:</b>
+                                                    lunch, transportation, a knowledgeable guide, and all the
+                                                    activities listed.
+                                                    <br><br>
+                                                    <b>We recommend bringing:</b> a camera, swimwear, towels,
+                                                    binoculars,
+                                                    ponchos,
+                                                    insect repellent, sunscreen, a change of clothes, hiking shoes or
+                                                    boots,
+                                                    and
+                                                    water.
+                                                    <img src="./Docs/Assets/icon2.webp"
+                                                        class="absolute -top-3 -left-3 h-7 -rotate-12" alt="">
+
+                                                </p>
+                                                <p
+                                                    class=" rounded-2xl md:text-nowrap !leading-relaxed bg-white p-3 relative pt-7">
+                                                    <b>Pick Up:</b> <br>
+                                                    Around 7:00am <br>
+                                                    <b>Return:</b> <br>
+                                                    Around 4:00pm
+                                                    <img src="./Docs/Assets/icon4.png"
+                                                        class="absolute top-1 right-1 h-7 rotate-[25deg]" alt="">
+                                                </p>
+                                            </div>
                                             <p class=" rounded-2xl relative !leading-relaxed bg-white p-3 mt-3">
                                                 <b>From Downtown Area:</b> $150 per person + tax
                                                 <br><br>
@@ -240,25 +300,48 @@
                                                 <img src="./Docs/Assets/icon3.png"
                                                     class="absolute -top-3 -left-3 h-7 -rotate-12" alt="">
                                             </p>
-                                        </div>
-                                        <div class="">
-                                            <p
-                                                class=" rounded-2xl md:text-nowrap !leading-relaxed bg-white p-3 relative pt-7">
-                                                <b>Pick Up:</b> <br>
-                                                Around 7:00am <br>
-                                                <b>Return:</b> <br>
-                                                Around 4:00pm
-                                                <img src="./Docs/Assets/icon4.png"
-                                                    class="absolute top-1 right-1 h-7 rotate-[25deg]" alt="">
-                                            </p>
-                                            <img src="./Docs/Assets/imgs.svg"
-                                                class="max-w-[20rem] cursor-pointer w-full mx-auto  my-3" alt="">
-                                            <p class="text-white font-medium text-[16px] text-center cursor-pointer">
-                                                *Click to see <br>
-                                                more pictures</p>
 
+                                            <div
+                                                class="slider-container mt-5 mx-auto flex items-center justify-center w-full ">
+                                                <div
+                                                    class="swiper mySwiper md:h-[20rem] md:w-[25rem] h-[15rem] w-[15rem]">
+                                                    <div class="swiper-wrapper">
+                                                        <div class="swiper-slide"><img
+                                                                src="./Docs/Assets/guanacaste/Volcano-crater/image (1).jpg"
+                                                                alt="">
+                                                        </div>
+                                                        <div class="swiper-slide"><img
+                                                                src="./Docs/Assets/guanacaste/Volcano-crater/image (2).jpg"
+                                                                alt="">
+                                                        </div>
+                                                        <div class="swiper-slide"><img
+                                                                src="./Docs/Assets/guanacaste/Volcano-crater/image (3).jpg"
+                                                                alt="">
+                                                        </div>
+                                                        <div class="swiper-slide"><img
+                                                                src="./Docs/Assets/guanacaste/Volcano-crater/image (4).jpg"
+                                                                alt="">
+                                                        </div>
+                                                        <div class="swiper-slide"><img
+                                                                src="./Docs/Assets/guanacaste/Volcano-crater/image (5).jpg"
+                                                                alt="">
+                                                        </div>
+                                                        <div class="swiper-slide"><img
+                                                                src="./Docs/Assets/guanacaste/Volcano-crater/image (6).jpg"
+                                                                alt="">
+                                                        </div>
+                                                        <div class="swiper-slide"><img
+                                                                src="./Docs/Assets/guanacaste/Volcano-crater/image (7).jpg"
+                                                                alt="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
+                                    <!-- ============= -->
+
+
                                     <div class="bg-gradient-to-r  from-[#5de0e6]  to-[#004aad] w-full h-5 rounded-3xl">
                                     </div>
                                 </div>
@@ -307,23 +390,41 @@
                                         lunch to refuel.
                                         <img src="./Docs/Assets/icon1.png" class="absolute -top-3 -left-3 h-8" alt="">
                                     </p>
-                                    <div class="flex gap-4 md:flex-row flex-col mt-3">
+
+
+                                    <!-- ============== -->
+                                    <div class="flex gap-4 flex-col mt-3">
                                         <div class="">
 
-                                            <p class=" rounded-2xl !leading-relaxed z-10 relative bg-white p-3"><b>The
-                                                    tour includes:</b>
-                                                lunch, transportation, a knowledgeable guide, and all the
-                                                activities listed.
-                                                <br><br>
-                                                <b>We recommend bringing:</b> a camera, swimwear, towels, binoculars,
-                                                ponchos,
-                                                insect repellent, sunscreen, a change of clothes, hiking shoes or boots,
-                                                and
-                                                water.
-                                                <img src="./Docs/Assets/icon2.webp"
-                                                    class="absolute -top-3 -left-3 h-7 -rotate-12" alt="">
+                                            <div class="grid md:grid-cols-3 gap-3">
 
-                                            </p>
+                                                <p
+                                                    class="md:col-span-2 rounded-2xl !leading-relaxed z-10 relative bg-white p-3">
+                                                    <b>The
+                                                        tour includes:</b>
+                                                    lunch, transportation, a knowledgeable guide, and all the
+                                                    activities listed.
+                                                    <br><br>
+                                                    <b>We recommend bringing:</b> a camera, swimwear, towels,
+                                                    binoculars,
+                                                    ponchos,
+                                                    insect repellent, sunscreen, a change of clothes, hiking shoes or
+                                                    boots,
+                                                    and
+                                                    water.
+                                                    <img src="./Docs/Assets/icon2.webp"
+                                                        class="absolute -top-3 -left-3 h-7 -rotate-12" alt="">
+                                                </p>
+                                                <p
+                                                    class=" rounded-2xl md:text-nowrap !leading-relaxed bg-white p-3 relative pt-7">
+                                                    <b>Pick Up:</b> <br>
+                                                    Around 8:00am <br>
+                                                    <b>Return:</b> <br>
+                                                    Around 2:00pm
+                                                    <img src="./Docs/Assets/icon4.png"
+                                                        class="absolute top-1 right-1 h-7 rotate-[25deg]" alt="">
+                                                </p>
+                                            </div>
                                             <p class=" rounded-2xl relative !leading-relaxed bg-white p-3 mt-3">
                                                 <b>From Downtown Area:</b> $150 per person + tax
                                                 <br><br>
@@ -336,25 +437,48 @@
                                                 <img src="./Docs/Assets/icon3.png"
                                                     class="absolute -top-3 -left-3 h-7 -rotate-12" alt="">
                                             </p>
-                                        </div>
-                                        <div class="">
-                                            <p
-                                                class=" rounded-2xl md:text-nowrap !leading-relaxed bg-white p-3 relative pt-7">
-                                                <b>Pick Up:</b> <br>
-                                                Around 8:00am <br>
-                                                <b>Return:</b> <br>
-                                                Around 2:00pm
-                                                <img src="./Docs/Assets/icon4.png"
-                                                    class="absolute top-1 right-1 h-7 rotate-[25deg]" alt="">
-                                            </p>
-                                            <img src="./Docs/Assets/imgs.svg"
-                                                class="max-w-[20rem] cursor-pointer w-full mx-auto  my-3" alt="">
-                                            <p class="text-white font-medium text-[16px] text-center cursor-pointer">
-                                                *Click to see <br>
-                                                more pictures</p>
 
+                                            <div
+                                                class="slider-container mt-5 mx-auto flex items-center justify-center w-full ">
+                                                <div
+                                                    class="swiper mySwiper md:h-[20rem] md:w-[25rem] h-[15rem] w-[15rem]">
+                                                    <div class="swiper-wrapper">
+                                                        <div class="swiper-slide"><img
+                                                                src="./Docs/Assets/guanacaste/Volcano-crater/image (1).jpg"
+                                                                alt="">
+                                                        </div>
+                                                        <div class="swiper-slide"><img
+                                                                src="./Docs/Assets/guanacaste/Volcano-crater/image (2).jpg"
+                                                                alt="">
+                                                        </div>
+                                                        <div class="swiper-slide"><img
+                                                                src="./Docs/Assets/guanacaste/Volcano-crater/image (3).jpg"
+                                                                alt="">
+                                                        </div>
+                                                        <div class="swiper-slide"><img
+                                                                src="./Docs/Assets/guanacaste/Volcano-crater/image (4).jpg"
+                                                                alt="">
+                                                        </div>
+                                                        <div class="swiper-slide"><img
+                                                                src="./Docs/Assets/guanacaste/Volcano-crater/image (5).jpg"
+                                                                alt="">
+                                                        </div>
+                                                        <div class="swiper-slide"><img
+                                                                src="./Docs/Assets/guanacaste/Volcano-crater/image (6).jpg"
+                                                                alt="">
+                                                        </div>
+                                                        <div class="swiper-slide"><img
+                                                                src="./Docs/Assets/guanacaste/Volcano-crater/image (7).jpg"
+                                                                alt="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
+                                    <!-- ============= -->
+
+
                                     <div class="bg-gradient-to-r  from-[#5de0e6]  to-[#004aad] w-full h-5 rounded-3xl">
                                     </div>
                                 </div>
@@ -399,20 +523,38 @@
                                         region’s ecosystem, ensuring an unforgettable experience.
                                         <img src="./Docs/Assets/icon1.png" class="absolute -top-3 -left-3 h-8" alt="">
                                     </p>
-                                    <div class="flex gap-4 md:flex-row flex-col mt-3">
+
+
+
+
+                                    <!-- ============== -->
+                                    <div class="flex gap-4 flex-col mt-3">
                                         <div class="">
 
-                                            <p class=" rounded-2xl !leading-relaxed z-10 relative bg-white p-3">
-                                                <b> The tour includes:</b> Riding equipment, transportation, a
-                                                knowledgeable
-                                                guide, and all the activities listed.
-                                                <br><br>
-                                                <b> We recommend bringing:</b> a camera, binoculars, insect repellent,
-                                                sunscreen, hiking shoes or boots, and water.
-                                                <img src="./Docs/Assets/icon2.webp"
-                                                    class="absolute -top-3 -left-3 h-7 -rotate-12" alt="">
+                                            <div class="grid md:grid-cols-3 gap-3">
 
-                                            </p>
+                                                <p
+                                                    class="md:col-span-2 rounded-2xl !leading-relaxed z-10 relative bg-white p-3">
+                                                    <b> The tour includes:</b> Riding equipment, transportation, a
+                                                    knowledgeable
+                                                    guide, and all the activities listed.
+                                                    <br><br>
+                                                    <b> We recommend bringing:</b> a camera, binoculars, insect
+                                                    repellent,
+                                                    sunscreen, hiking shoes or boots, and water.
+                                                    <img src="./Docs/Assets/icon2.webp"
+                                                        class="absolute -top-3 -left-3 h-7 -rotate-12" alt="">
+                                                </p>
+                                                <p
+                                                    class=" rounded-2xl md:text-nowrap !leading-relaxed bg-white p-3 relative pt-7">
+                                                    <b>Pick Up:</b> <br>
+                                                    8:30am to 1:30pm<br>
+                                                    <b>Duration:</b> <br>
+                                                    3 hours
+                                                    <img src="./Docs/Assets/icon4.png"
+                                                        class="absolute top-1 right-1 h-7 rotate-[25deg]" alt="">
+                                                </p>
+                                            </div>
                                             <p class=" rounded-2xl relative !leading-relaxed bg-white p-3 mt-3">
                                                 <b> From Downtown Area:</b> $65 per person + tax
                                                 <br><br>
@@ -422,27 +564,48 @@
                                                 <b>Note:</b> A 13% sales tax will be added to all prices.
                                                 <img src="./Docs/Assets/icon3.png"
                                                     class="absolute -top-3 -left-3 h-7 -rotate-12" alt="">
-
                                             </p>
-                                        </div>
-                                        <div class="">
-                                            <p
-                                                class=" rounded-2xl md:text-nowrap !leading-relaxed bg-white p-3 relative pt-7">
-                                                <b>Pick Up:</b> <br>
-                                                8:30am to 1:30pm<br>
-                                                <b>Duration:</b> <br>
-                                                3 hours
-                                                <img src="./Docs/Assets/icon4.png"
-                                                    class="absolute top-1 right-1 h-7 rotate-[25deg]" alt="">
-                                            </p>
-                                            <img src="./Docs/Assets/imgs.svg"
-                                                class="max-w-[20rem] cursor-pointer w-full mx-auto  my-3" alt="">
-                                            <p class="text-white font-medium text-[16px] text-center cursor-pointer">
-                                                *Click to see <br>
-                                                more pictures</p>
 
+                                            <div
+                                                class="slider-container mt-5 mx-auto flex items-center justify-center w-full ">
+                                                <div
+                                                    class="swiper mySwiper md:h-[20rem] md:w-[25rem] h-[15rem] w-[15rem]">
+                                                    <div class="swiper-wrapper">
+                                                        <div class="swiper-slide"><img
+                                                                src="./Docs/Assets/guanacaste/Volcano-crater/image (1).jpg"
+                                                                alt="">
+                                                        </div>
+                                                        <div class="swiper-slide"><img
+                                                                src="./Docs/Assets/guanacaste/Volcano-crater/image (2).jpg"
+                                                                alt="">
+                                                        </div>
+                                                        <div class="swiper-slide"><img
+                                                                src="./Docs/Assets/guanacaste/Volcano-crater/image (3).jpg"
+                                                                alt="">
+                                                        </div>
+                                                        <div class="swiper-slide"><img
+                                                                src="./Docs/Assets/guanacaste/Volcano-crater/image (4).jpg"
+                                                                alt="">
+                                                        </div>
+                                                        <div class="swiper-slide"><img
+                                                                src="./Docs/Assets/guanacaste/Volcano-crater/image (5).jpg"
+                                                                alt="">
+                                                        </div>
+                                                        <div class="swiper-slide"><img
+                                                                src="./Docs/Assets/guanacaste/Volcano-crater/image (6).jpg"
+                                                                alt="">
+                                                        </div>
+                                                        <div class="swiper-slide"><img
+                                                                src="./Docs/Assets/guanacaste/Volcano-crater/image (7).jpg"
+                                                                alt="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
+                                    <!-- ============= -->
+
                                     <div class="bg-gradient-to-r  from-[#5de0e6]  to-[#004aad] w-full h-5 rounded-3xl">
                                     </div>
                                 </div>
@@ -490,21 +653,41 @@
                                         and conservation efforts in the area.
                                         <img src="./Docs/Assets/icon1.png" class="absolute -top-3 -left-3 h-8" alt="">
                                     </p>
-                                    <div class="flex gap-4 md:flex-row flex-col mt-3">
+
+
+
+
+                                    <!-- ============== -->
+                                    <div class="flex gap-4 flex-col mt-3">
                                         <div class="">
 
-                                            <p class=" rounded-2xl !leading-relaxed z-10 relative bg-white p-3">
-                                                <b> The tour includes:</b> Riding equipment, transportation, a
-                                                knowledgeable
-                                                guide, and all the activities listed.
-                                                <br><br>
-                                                <b> We recommend bringing:</b> a camera, binoculars, insect repellent,
-                                                sunscreen, hiking shoes or boots, and water.
-                                                <img src="./Docs/Assets/icon2.webp"
-                                                    class="absolute -top-3 -left-3 h-7 -rotate-12" alt="">
+                                            <div class="grid md:grid-cols-3 gap-3">
 
-                                            </p>
-                                            <p class=" rounded-2xl relative !leading-relaxed bg-white p-3 mt-3"><b>From
+                                                <p
+                                                    class="md:col-span-2 rounded-2xl !leading-relaxed z-10 relative bg-white p-3">
+                                                    <b> The tour includes:</b> Riding equipment, transportation, a
+                                                    knowledgeable
+                                                    guide, and all the activities listed.
+                                                    <br><br>
+                                                    <b> We recommend bringing:</b> a camera, binoculars, insect
+                                                    repellent,
+                                                    sunscreen, hiking shoes or boots, and water.
+                                                    <img src="./Docs/Assets/icon2.webp"
+                                                        class="absolute -top-3 -left-3 h-7 -rotate-12" alt="">
+                                                </p>
+                                                <p
+                                                    class=" rounded-2xl md:text-nowrap !leading-relaxed bg-white p-3 relative pt-7">
+                                                    <b>Pick Up:</b> <br>
+                                                    Around 7:30am
+                                                    <br>
+                                                    <b>Return:</b> <br>
+                                                    Around 11:00am
+                                                    <img src="./Docs/Assets/icon4.png"
+                                                        class="absolute top-1 right-1 h-7 rotate-[25deg]" alt="">
+                                                </p>
+                                            </div>
+                                            <p class=" rounded-2xl relative !leading-relaxed bg-white p-3 mt-3">
+                                                <b>From
                                                     RiU
                                                     Hotels and Coco Beach:</b>
                                                 $110 per person + tax <br><br>
@@ -515,28 +698,50 @@
                                                 <b>Note:</b> A 13% sales tax will be added to all prices.
                                                 <img src="./Docs/Assets/icon3.png"
                                                     class="absolute -top-3 -left-3 h-7 -rotate-12" alt="">
-
                                             </p>
-                                        </div>
-                                        <div class="">
-                                            <p
-                                                class=" rounded-2xl md:text-nowrap !leading-relaxed bg-white p-3 relative pt-7">
-                                                <b>Pick Up:</b> <br>
-                                                Around 7:30am
-                                                <br>
-                                                <b>Return:</b> <br>
-                                                Around 11:00am
-                                                <img src="./Docs/Assets/icon4.png"
-                                                    class="absolute top-1 right-1 h-7 rotate-[25deg]" alt="">
-                                            </p>
-                                            <img src="./Docs/Assets/imgs.svg"
-                                                class="max-w-[20rem] cursor-pointer w-full mx-auto  my-3" alt="">
-                                            <p class="text-white font-medium text-[16px] text-center cursor-pointer">
-                                                *Click to see <br>
-                                                more pictures</p>
 
+                                            <div
+                                                class="slider-container mt-5 mx-auto flex items-center justify-center w-full ">
+                                                <div
+                                                    class="swiper mySwiper md:h-[20rem] md:w-[25rem] h-[15rem] w-[15rem]">
+                                                    <div class="swiper-wrapper">
+                                                        <div class="swiper-slide"><img
+                                                                src="./Docs/Assets/guanacaste/Volcano-crater/image (1).jpg"
+                                                                alt="">
+                                                        </div>
+                                                        <div class="swiper-slide"><img
+                                                                src="./Docs/Assets/guanacaste/Volcano-crater/image (2).jpg"
+                                                                alt="">
+                                                        </div>
+                                                        <div class="swiper-slide"><img
+                                                                src="./Docs/Assets/guanacaste/Volcano-crater/image (3).jpg"
+                                                                alt="">
+                                                        </div>
+                                                        <div class="swiper-slide"><img
+                                                                src="./Docs/Assets/guanacaste/Volcano-crater/image (4).jpg"
+                                                                alt="">
+                                                        </div>
+                                                        <div class="swiper-slide"><img
+                                                                src="./Docs/Assets/guanacaste/Volcano-crater/image (5).jpg"
+                                                                alt="">
+                                                        </div>
+                                                        <div class="swiper-slide"><img
+                                                                src="./Docs/Assets/guanacaste/Volcano-crater/image (6).jpg"
+                                                                alt="">
+                                                        </div>
+                                                        <div class="swiper-slide"><img
+                                                                src="./Docs/Assets/guanacaste/Volcano-crater/image (7).jpg"
+                                                                alt="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
+                                    <!-- ============= -->
+
+
+
                                     <div class="bg-gradient-to-r  from-[#5de0e6]  to-[#004aad] w-full h-5 rounded-3xl">
                                     </div>
                                 </div>
@@ -581,21 +786,39 @@
                                         perfect balance of both, making it a must-see on your Costa Rican adventure.
                                         <img src="./Docs/Assets/icon1.png" class="absolute -top-3 -left-3 h-8" alt="">
                                     </p>
-                                    <div class="flex gap-4 md:flex-row flex-col mt-3">
+
+
+                                    <!-- ============== -->
+                                    <div class="flex gap-4 flex-col mt-3">
                                         <div class="">
 
-                                            <p class=" rounded-2xl !leading-relaxed z-10 relative bg-white p-3"><b>The
-                                                    tour includes:</b>
-                                                open bar, tasty snacks after snorkeling, a fun waterslide, and exciting
-                                                snorkeling activities at a pristine white sand beach.
+                                            <div class="grid md:grid-cols-3 gap-3">
 
-                                                <br><br>
-                                                <b>We recommend bringing:</b> a camera, swimwear, towels, sunscreen and
-                                                a change of clothes.
-                                                <img src="./Docs/Assets/icon2.webp"
-                                                    class="absolute -top-3 -left-3 h-7 -rotate-12" alt="">
+                                                <p
+                                                    class="md:col-span-2 rounded-2xl !leading-relaxed z-10 relative bg-white p-3">
+                                                    <b>The
+                                                        tour includes:</b>
+                                                    open bar, tasty snacks after snorkeling, a fun waterslide, and
+                                                    exciting
+                                                    snorkeling activities at a pristine white sand beach.
 
-                                            </p>
+                                                    <br><br>
+                                                    <b>We recommend bringing:</b> a camera, swimwear, towels, sunscreen
+                                                    and
+                                                    a change of clothes.
+                                                    <img src="./Docs/Assets/icon2.webp"
+                                                        class="absolute -top-3 -left-3 h-7 -rotate-12" alt="">
+                                                </p>
+                                                <p
+                                                    class=" rounded-2xl md:text-nowrap !leading-relaxed bg-white p-3 relative pt-7">
+                                                    <b>Pick Up:</b> <br>
+                                                    7:30 am, 11:30pm & <br> 2:30pm
+                                                    <br>
+                                                    <b>Duration:</b> <br>
+                                                    Around 3 Hours
+                                                    <img src="./Docs/Assets/icon5.svg"
+                                                        class="absolute -top-2 -right-2 h-9 " alt="">
+                                            </div>
                                             <p class=" rounded-2xl relative !leading-relaxed bg-white p-3 mt-3">
                                                 <b>From Downtown Area:</b> $150 per person + tax
                                                 <br><br>
@@ -608,26 +831,47 @@
                                                 <img src="./Docs/Assets/icon3.png"
                                                     class="absolute -top-3 -left-3 h-7 -rotate-12" alt="">
                                             </p>
-                                        </div>
-                                        <div class="">
-                                            <p
-                                                class=" rounded-2xl md:text-nowrap !leading-relaxed bg-white p-3 relative">
-                                                <b>Pick Up:</b> <br>
-                                                7:30 am, 11:30pm & <br> 2:30pm
-                                                <br>
-                                                <b>Duration:</b> <br>
-                                                Around 3 Hours
-                                                <img src="./Docs/Assets/icon5.svg" class="absolute -top-2 -right-2 h-9 "
-                                                    alt="">
-                                            </p>
-                                            <img src="./Docs/Assets/imgs.svg"
-                                                class="max-w-[20rem] cursor-pointer w-full mx-auto  my-3" alt="">
-                                            <p class="text-white font-medium text-[16px] text-center cursor-pointer">
-                                                *Click to see <br>
-                                                more pictures</p>
 
+                                            <div
+                                                class="slider-container mt-5 mx-auto flex items-center justify-center w-full ">
+                                                <div
+                                                    class="swiper mySwiper md:h-[20rem] md:w-[25rem] h-[15rem] w-[15rem]">
+                                                    <div class="swiper-wrapper">
+                                                        <div class="swiper-slide"><img
+                                                                src="./Docs/Assets/guanacaste/Volcano-crater/image (1).jpg"
+                                                                alt="">
+                                                        </div>
+                                                        <div class="swiper-slide"><img
+                                                                src="./Docs/Assets/guanacaste/Volcano-crater/image (2).jpg"
+                                                                alt="">
+                                                        </div>
+                                                        <div class="swiper-slide"><img
+                                                                src="./Docs/Assets/guanacaste/Volcano-crater/image (3).jpg"
+                                                                alt="">
+                                                        </div>
+                                                        <div class="swiper-slide"><img
+                                                                src="./Docs/Assets/guanacaste/Volcano-crater/image (4).jpg"
+                                                                alt="">
+                                                        </div>
+                                                        <div class="swiper-slide"><img
+                                                                src="./Docs/Assets/guanacaste/Volcano-crater/image (5).jpg"
+                                                                alt="">
+                                                        </div>
+                                                        <div class="swiper-slide"><img
+                                                                src="./Docs/Assets/guanacaste/Volcano-crater/image (6).jpg"
+                                                                alt="">
+                                                        </div>
+                                                        <div class="swiper-slide"><img
+                                                                src="./Docs/Assets/guanacaste/Volcano-crater/image (7).jpg"
+                                                                alt="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
+                                    <!-- ============= -->
+
                                     <div class="bg-gradient-to-r  from-[#5de0e6]  to-[#004aad] w-full h-5 rounded-3xl">
                                     </div>
                                 </div>
@@ -672,22 +916,36 @@
                                         relaxation.
                                         <img src="./Docs/Assets/icon1.png" class="absolute -top-3 -left-3 h-8" alt="">
                                     </p>
-                                    <div class="flex gap-4 md:flex-row flex-col mt-3">
+
+                                    <!-- ============== -->
+                                    <div class="flex gap-4 flex-col mt-3">
                                         <div class="">
 
-                                            <p class=" rounded-2xl !leading-relaxed z-10 relative bg-white p-3">
-                                                <b>The tour includes:</b> transportation, lunch, an expert guide, and
-                                                all the
-                                                activities listed.
-                                                <br><br>
-                                                <b>We recommend bringing:</b> a camera, ponchos, insect repellent,
-                                                hiking shoes
-                                                or boots, and water
+                                            <div class="grid md:grid-cols-3 gap-3">
 
-                                                <img src="./Docs/Assets/icon2.webp"
-                                                    class="absolute -top-3 -left-3 h-7 -rotate-12" alt="">
+                                                <p
+                                                    class="md:col-span-2 rounded-2xl !leading-relaxed z-10 relative bg-white p-3">
+                                                    <b>The tour includes:</b> transportation, lunch, an expert guide,
+                                                    and
+                                                    all the
+                                                    activities listed.
+                                                    <br><br>
+                                                    <b>We recommend bringing:</b> a camera, ponchos, insect repellent,
+                                                    hiking shoes
+                                                    or boots, and water
 
-                                            </p>
+                                                    <img src="./Docs/Assets/icon2.webp"
+                                                        class="absolute -top-3 -left-3 h-7 -rotate-12" alt="">
+                                                </p>
+                                                <p
+                                                    class=" rounded-2xl md:text-nowrap !leading-relaxed bg-white p-3 relative pt-7">
+                                                    <b>Pick Up:</b> <br>
+                                                    Around 7:30pm <br>
+                                                    <b>Duration:</b> <br>
+                                                    Around 2:00pm
+                                                    <img src="./Docs/Assets/icon4.png"
+                                                        class="absolute top-1 right-1 h-7 rotate-[25deg]" alt="">
+                                            </div>
                                             <p class=" rounded-2xl relative !leading-relaxed bg-white p-3 mt-3">
                                                 <b>From Downtown Area:</b> $150 per person + tax
                                                 <br><br>
@@ -700,25 +958,47 @@
                                                 <img src="./Docs/Assets/icon3.png"
                                                     class="absolute -top-3 -left-3 h-7 -rotate-12" alt="">
                                             </p>
-                                        </div>
-                                        <div class="">
-                                            <p
-                                                class=" rounded-2xl md:text-nowrap !leading-relaxed bg-white p-3 relative pt-7">
-                                                <b>Pick Up:</b> <br>
-                                                Around 7:30pm <br>
-                                                <b>Duration:</b> <br>
-                                                Around 2:00pm
-                                                <img src="./Docs/Assets/icon4.png"
-                                                    class="absolute top-1 right-1 h-7 rotate-[25deg]" alt="">
-                                            </p>
-                                            <img src="./Docs/Assets/imgs.svg"
-                                                class="max-w-[20rem] cursor-pointer w-full mx-auto  my-3" alt="">
-                                            <p class="text-white font-medium text-[16px] text-center cursor-pointer">
-                                                *Click to see <br>
-                                                more pictures</p>
 
+                                            <div
+                                                class="slider-container mt-5 mx-auto flex items-center justify-center w-full ">
+                                                <div
+                                                    class="swiper mySwiper md:h-[20rem] md:w-[25rem] h-[15rem] w-[15rem]">
+                                                    <div class="swiper-wrapper">
+                                                        <div class="swiper-slide"><img
+                                                                src="./Docs/Assets/guanacaste/Volcano-crater/image (1).jpg"
+                                                                alt="">
+                                                        </div>
+                                                        <div class="swiper-slide"><img
+                                                                src="./Docs/Assets/guanacaste/Volcano-crater/image (2).jpg"
+                                                                alt="">
+                                                        </div>
+                                                        <div class="swiper-slide"><img
+                                                                src="./Docs/Assets/guanacaste/Volcano-crater/image (3).jpg"
+                                                                alt="">
+                                                        </div>
+                                                        <div class="swiper-slide"><img
+                                                                src="./Docs/Assets/guanacaste/Volcano-crater/image (4).jpg"
+                                                                alt="">
+                                                        </div>
+                                                        <div class="swiper-slide"><img
+                                                                src="./Docs/Assets/guanacaste/Volcano-crater/image (5).jpg"
+                                                                alt="">
+                                                        </div>
+                                                        <div class="swiper-slide"><img
+                                                                src="./Docs/Assets/guanacaste/Volcano-crater/image (6).jpg"
+                                                                alt="">
+                                                        </div>
+                                                        <div class="swiper-slide"><img
+                                                                src="./Docs/Assets/guanacaste/Volcano-crater/image (7).jpg"
+                                                                alt="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
+                                    <!-- ============= -->
+
                                     <div class="bg-gradient-to-r  from-[#5de0e6]  to-[#004aad] w-full h-5 rounded-3xl">
                                     </div>
                                 </div>
@@ -767,23 +1047,41 @@
                                             fascinating and educational experience for visitors of all ages.
                                         </p>
                                     </div>
-                                    <div class="flex gap-4 md:flex-row flex-col mt-3">
+
+                                    <!-- ============== -->
+                                    <div class="flex gap-4 flex-col mt-3">
                                         <div class="">
 
-                                            <p class=" rounded-2xl !leading-relaxed z-10 relative bg-white p-3"><b>The
-                                                    tour includes:</b>
-                                                lunch, transportation, a knowledgeable guide, and all the
-                                                activities listed.
-                                                <br><br>
-                                                <b>We recommend bringing:</b> a camera, swimwear, towels, binoculars,
-                                                ponchos,
-                                                insect repellent, sunscreen, a change of clothes, hiking shoes or boots,
-                                                and
-                                                water.
-                                                <img src="./Docs/Assets/icon2.webp"
-                                                    class="absolute -top-3 -left-3 h-7 -rotate-12" alt="">
+                                            <div class="grid md:grid-cols-3 gap-3">
 
-                                            </p>
+                                                <p
+                                                    class="md:col-span-2 rounded-2xl !leading-relaxed z-10 relative bg-white p-3">
+                                                    <b>The
+                                                        tour includes:</b>
+                                                    lunch, transportation, a knowledgeable guide, and all the
+                                                    activities listed.
+                                                    <br><br>
+                                                    <b>We recommend bringing:</b> a camera, swimwear, towels,
+                                                    binoculars,
+                                                    ponchos,
+                                                    insect repellent, sunscreen, a change of clothes, hiking shoes
+                                                    or boots,
+                                                    and
+                                                    water.
+                                                    <img src="./Docs/Assets/icon2.webp"
+                                                        class="absolute -top-3 -left-3 h-7 -rotate-12" alt="">
+                                                    class="absolute -top-3 -left-3 h-7 -rotate-12" alt="">
+                                                </p>
+                                                <p
+                                                    class=" rounded-2xl md:text-nowrap !leading-relaxed bg-white p-3 relative pt-7">
+                                                    <b>Pick Up:</b> <br>
+                                                    10:00am & 2:00pm
+                                                    <br>
+                                                    <b>Duration:</b> <br>
+                                                    3 Hours
+                                                    <img src="./Docs/Assets/icon4.png"
+                                                        class="absolute top-1 right-1 h-7 rotate-[25deg]" alt="">
+                                            </div>
                                             <p class=" rounded-2xl relative !leading-relaxed bg-white p-3 mt-3">
                                                 <b>From Downtown Area:</b> $150 per person + tax
                                                 <br><br>
@@ -796,26 +1094,46 @@
                                                 <img src="./Docs/Assets/icon3.png"
                                                     class="absolute -top-3 -left-3 h-7 -rotate-12" alt="">
                                             </p>
-                                        </div>
-                                        <div class="">
-                                            <p
-                                                class=" rounded-2xl md:text-nowrap !leading-relaxed bg-white p-3 relative pt-7">
-                                                <b>Pick Up:</b> <br>
-                                                10:00am & 2:00pm
-                                                <br>
-                                                <b>Duration:</b> <br>
-                                                3 Hours
-                                                <img src="./Docs/Assets/icon4.png"
-                                                    class="absolute top-1 right-1 h-7 rotate-[25deg]" alt="">
-                                            </p>
-                                            <img src="./Docs/Assets/imgs.svg"
-                                                class="max-w-[20rem] cursor-pointer w-full mx-auto  my-3" alt="">
-                                            <p class="text-white font-medium text-[16px] text-center cursor-pointer">
-                                                *Click to see <br>
-                                                more pictures</p>
 
+                                            <div
+                                                class="slider-container mt-5 mx-auto flex items-center justify-center w-full ">
+                                                <div
+                                                    class="swiper mySwiper md:h-[20rem] md:w-[25rem] h-[15rem] w-[15rem]">
+                                                    <div class="swiper-wrapper">
+                                                        <div class="swiper-slide"><img
+                                                                src="./Docs/Assets/guanacaste/Volcano-crater/image (1).jpg"
+                                                                alt="">
+                                                        </div>
+                                                        <div class="swiper-slide"><img
+                                                                src="./Docs/Assets/guanacaste/Volcano-crater/image (2).jpg"
+                                                                alt="">
+                                                        </div>
+                                                        <div class="swiper-slide"><img
+                                                                src="./Docs/Assets/guanacaste/Volcano-crater/image (3).jpg"
+                                                                alt="">
+                                                        </div>
+                                                        <div class="swiper-slide"><img
+                                                                src="./Docs/Assets/guanacaste/Volcano-crater/image (4).jpg"
+                                                                alt="">
+                                                        </div>
+                                                        <div class="swiper-slide"><img
+                                                                src="./Docs/Assets/guanacaste/Volcano-crater/image (5).jpg"
+                                                                alt="">
+                                                        </div>
+                                                        <div class="swiper-slide"><img
+                                                                src="./Docs/Assets/guanacaste/Volcano-crater/image (6).jpg"
+                                                                alt="">
+                                                        </div>
+                                                        <div class="swiper-slide"><img
+                                                                src="./Docs/Assets/guanacaste/Volcano-crater/image (7).jpg"
+                                                                alt="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
+                                    <!-- ============= -->
                                     <div class="bg-gradient-to-r  from-[#5de0e6]  to-[#004aad] w-full h-5 rounded-3xl">
                                     </div>
                                 </div>
@@ -863,24 +1181,39 @@
                                             Support and learn about the conservation efforts in this one-of-a-kind frog
                                             sanctuary in the Arenal Volcano region.
                                         </p>
-                                        <img src="./Docs/Assets/icon1.png" class="absolute -top-3 -left-3 h-8" alt="">
                                     </div>
-                                    <div class="flex gap-4 md:flex-row flex-col mt-3">
+                                    <!-- ============== -->
+                                    <div class="flex gap-4 flex-col mt-3">
                                         <div class="">
-                                            <p class=" rounded-2xl !leading-relaxed z-10 relative bg-white p-3"><b>The
-                                                    tour includes:</b>
-                                                lunch, transportation, a knowledgeable guide, and all the
-                                                activities listed.
-                                                <br><br>
-                                                <b>We recommend bringing:</b> a camera, swimwear, towels, binoculars,
-                                                ponchos,
-                                                insect repellent, sunscreen, a change of clothes, hiking shoes or boots,
-                                                and
-                                                water.
-                                                <img src="./Docs/Assets/icon2.webp"
-                                                    class="absolute -top-3 -left-3 h-7 -rotate-12" alt="">
 
-                                            </p>
+                                            <div class="grid md:grid-cols-3 gap-3">
+
+                                                <p
+                                                    class="md:col-span-2 rounded-2xl !leading-relaxed z-10 relative bg-white p-3">
+                                                    <b>The
+                                                        tour includes:</b>
+                                                    lunch, transportation, a knowledgeable guide, and all the
+                                                    activities listed.
+                                                    <br><br>
+                                                    <b>We recommend bringing:</b> a camera, swimwear, towels,
+                                                    binoculars,
+                                                    ponchos,
+                                                    insect repellent, sunscreen, a change of clothes, hiking shoes
+                                                    or boots,
+                                                    and
+                                                    water.
+                                                    <img src="./Docs/Assets/icon2.webp"
+                                                        class="absolute -top-3 -left-3 h-7 -rotate-12" alt="">
+                                                </p>
+                                                <p
+                                                    class=" rounded-2xl md:text-nowrap !leading-relaxed bg-white p-3 relative pt-7">
+                                                    <b>Pick Up:</b> <br>
+                                                    Around 5:45pm <br>
+                                                    <b>Return:</b> <br>
+                                                    Around 8:30pm
+                                                    <img src="./Docs/Assets/icon4.png"
+                                                        class="absolute top-1 right-1 h-7 rotate-[25deg]" alt="">
+                                            </div>
                                             <p class=" rounded-2xl relative !leading-relaxed bg-white p-3 mt-3">
                                                 <b>From Downtown Area:</b> $150 per person + tax
                                                 <br><br>
@@ -893,25 +1226,47 @@
                                                 <img src="./Docs/Assets/icon3.png"
                                                     class="absolute -top-3 -left-3 h-7 -rotate-12" alt="">
                                             </p>
-                                        </div>
-                                        <div class="">
-                                            <p
-                                                class=" rounded-2xl md:text-nowrap !leading-relaxed bg-white p-3 relative pt-7">
-                                                <b>Pick Up:</b> <br>
-                                                Around 5:45pm <br>
-                                                <b>Return:</b> <br>
-                                                Around 8:30pm
-                                                <img src="./Docs/Assets/icon4.png"
-                                                    class="absolute top-1 right-1 h-7 rotate-[25deg]" alt="">
-                                            </p>
-                                            <img src="./Docs/Assets/imgs.svg"
-                                                class="max-w-[20rem] cursor-pointer w-full mx-auto  my-3" alt="">
-                                            <p class="text-white font-medium text-[16px] text-center cursor-pointer">
-                                                *Click to see <br>
-                                                more pictures</p>
 
+                                            <div
+                                                class="slider-container mt-5 mx-auto flex items-center justify-center w-full ">
+                                                <div
+                                                    class="swiper mySwiper md:h-[20rem] md:w-[25rem] h-[15rem] w-[15rem]">
+                                                    <div class="swiper-wrapper">
+                                                        <div class="swiper-slide"><img
+                                                                src="./Docs/Assets/guanacaste/Volcano-crater/image (1).jpg"
+                                                                alt="">
+                                                        </div>
+                                                        <div class="swiper-slide"><img
+                                                                src="./Docs/Assets/guanacaste/Volcano-crater/image (2).jpg"
+                                                                alt="">
+                                                        </div>
+                                                        <div class="swiper-slide"><img
+                                                                src="./Docs/Assets/guanacaste/Volcano-crater/image (3).jpg"
+                                                                alt="">
+                                                        </div>
+                                                        <div class="swiper-slide"><img
+                                                                src="./Docs/Assets/guanacaste/Volcano-crater/image (4).jpg"
+                                                                alt="">
+                                                        </div>
+                                                        <div class="swiper-slide"><img
+                                                                src="./Docs/Assets/guanacaste/Volcano-crater/image (5).jpg"
+                                                                alt="">
+                                                        </div>
+                                                        <div class="swiper-slide"><img
+                                                                src="./Docs/Assets/guanacaste/Volcano-crater/image (6).jpg"
+                                                                alt="">
+                                                        </div>
+                                                        <div class="swiper-slide"><img
+                                                                src="./Docs/Assets/guanacaste/Volcano-crater/image (7).jpg"
+                                                                alt="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
+                                    <!-- ============= -->
+
                                     <div class="bg-gradient-to-r  from-[#5de0e6]  to-[#004aad] w-full h-5 rounded-3xl">
                                     </div>
                                 </div>
@@ -958,56 +1313,96 @@
                                         combines adrenaline, culture, and the natural beauty of Costa Rica.
                                         <img src="./Docs/Assets/icon1.png" class="absolute -top-3 -left-3 h-8" alt="">
                                     </p>
-                                    <div class="flex gap-4 md:flex-row flex-col mt-3">
+
+
+
+                                    <!-- ============== -->
+                                    <div class="flex gap-4 flex-col mt-3">
                                         <div class="">
 
-                                            <p class=" rounded-2xl !leading-relaxed z-10 relative bg-white p-3"><b>The
-                                                    tour includes:</b>
-                                                lunch, transportation, a knowledgeable guide, and all the
-                                                activities listed.
-                                                <br><br>
-                                                <b>We recommend bringing:</b> a camera, swimwear, towels, binoculars,
-                                                ponchos,
-                                                insect repellent, sunscreen, a change of clothes, hiking shoes or boots,
-                                                and
-                                                water.
-                                                <img src="./Docs/Assets/icon2.webp"
-                                                    class="absolute -top-3 -left-3 h-7 -rotate-12" alt="">
+                                            <div class="grid md:grid-cols-3 gap-3">
 
-                                            </p>
+                                                <p
+                                                    class="md:col-span-2 rounded-2xl !leading-relaxed z-10 relative bg-white p-3">
+                                                    <b>The
+                                                        tour includes:</b>
+                                                    lunch, transportation, a knowledgeable guide, and all the
+                                                    activities listed.
+                                                    <br><br>
+                                                    <b>We recommend bringing:</b> a camera, swimwear, towels,
+                                                    binoculars,
+                                                    ponchos,
+                                                    insect repellent, sunscreen, a change of clothes, hiking shoes or
+                                                    boots,
+                                                    and
+                                                    water.
+                                                    <img src="./Docs/Assets/icon2.webp"
+                                                        class="absolute -top-3 -left-3 h-7 -rotate-12" alt="">
+                                                </p>
+                                                <p
+                                                    class=" rounded-2xl md:text-nowrap !leading-relaxed bg-white p-3 relative pt-7">
+                                                    <b>Pick Up:</b> <br>
+                                                    8:00am, 10:00am, <br> 1:00pm & 3:00pm
+                                                    <br>
+                                                    <b>Duration:</b> <br>
+                                                    Around 2 Hours
+                                                    <img src="./Docs/Assets/icon4.png"
+                                                        class="absolute top-1 right-1 h-7 rotate-[25deg]" alt="">
+                                            </div>
                                             <p class=" rounded-2xl relative !leading-relaxed bg-white p-3 mt-3">
                                                 <b> From Downtown Area:</b> $62 per person + tax
-
+                                                <br><br>
                                                 <b> Kids:</b> only older than 10 years old
+                                                <br><br>
 
                                                 <b>From Outside Downtown:</b> $62 per person + tax (plus the extra
                                                 transportation)
+                                                <br><br>
 
                                                 <b> Note:</b> A 13% sales tax will be added to all prices
                                                 <img src="./Docs/Assets/icon3.png"
                                                     class="absolute -top-3 -left-3 h-7 -rotate-12" alt="">
-
                                             </p>
-                                        </div>
-                                        <div class="">
-                                            <p
-                                                class=" rounded-2xl md:text-nowrap !leading-relaxed bg-white p-3 relative pt-7">
-                                                <b>Pick Up:</b> <br>
-                                                8:00am, 10:00am, <br> 1:00pm & 3:00pm
-                                                <br>
-                                                <b>Duration:</b> <br>
-                                                Around 2 Hours
-                                                <img src="./Docs/Assets/icon4.png"
-                                                    class="absolute top-1 right-1 h-7 rotate-[25deg]" alt="">
-                                            </p>
-                                            <img src="./Docs/Assets/imgs.svg"
-                                                class="max-w-[20rem] cursor-pointer w-full mx-auto  my-3" alt="">
-                                            <p class="text-white font-medium text-[16px] text-center cursor-pointer">
-                                                *Click to see <br>
-                                                more pictures</p>
 
+                                            <div
+                                                class="slider-container mt-5 mx-auto flex items-center justify-center w-full ">
+                                                <div
+                                                    class="swiper mySwiper md:h-[20rem] md:w-[25rem] h-[15rem] w-[15rem]">
+                                                    <div class="swiper-wrapper">
+                                                        <div class="swiper-slide"><img
+                                                                src="./Docs/Assets/guanacaste/Volcano-crater/image (1).jpg"
+                                                                alt="">
+                                                        </div>
+                                                        <div class="swiper-slide"><img
+                                                                src="./Docs/Assets/guanacaste/Volcano-crater/image (2).jpg"
+                                                                alt="">
+                                                        </div>
+                                                        <div class="swiper-slide"><img
+                                                                src="./Docs/Assets/guanacaste/Volcano-crater/image (3).jpg"
+                                                                alt="">
+                                                        </div>
+                                                        <div class="swiper-slide"><img
+                                                                src="./Docs/Assets/guanacaste/Volcano-crater/image (4).jpg"
+                                                                alt="">
+                                                        </div>
+                                                        <div class="swiper-slide"><img
+                                                                src="./Docs/Assets/guanacaste/Volcano-crater/image (5).jpg"
+                                                                alt="">
+                                                        </div>
+                                                        <div class="swiper-slide"><img
+                                                                src="./Docs/Assets/guanacaste/Volcano-crater/image (6).jpg"
+                                                                alt="">
+                                                        </div>
+                                                        <div class="swiper-slide"><img
+                                                                src="./Docs/Assets/guanacaste/Volcano-crater/image (7).jpg"
+                                                                alt="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
+                                    <!-- ============= -->
                                     <div class="bg-gradient-to-r  from-[#5de0e6]  to-[#004aad] w-full h-5 rounded-3xl">
                                     </div>
                                 </div>
@@ -1054,53 +1449,96 @@
                                         Rica’s rivers in a safe, fun environment for all ages!
                                         <img src="./Docs/Assets/icon1.png" class="absolute -top-3 -left-3 h-8" alt="">
                                     </p>
-                                    <div class="flex gap-4 md:flex-row flex-col mt-3">
+
+
+                                    <!-- ============== -->
+                                    <div class="flex gap-4 flex-col mt-3">
                                         <div class="">
 
-                                            <p class=" rounded-2xl !leading-relaxed z-10 relative bg-white p-3">
-                                                <b> The tour includes:</b> transportation, lunch, an expert guide, and
-                                                all the
-                                                activities listed.
-                                                <br><br>
-                                                <b> We recommend bringing:</b> bathing suit, T-shirt, sunscreen, change
-                                                of
-                                                clothes, and secure shoes like water shoes or sports sandals.
-                                                <img src="./Docs/Assets/icon2.webp"
-                                                    class="absolute -top-3 -left-3 h-7 -rotate-12" alt="">
+                                            <div class="grid md:grid-cols-3 gap-3">
 
-                                            </p>
+                                                <p
+                                                    class="md:col-span-2 rounded-2xl !leading-relaxed z-10 relative bg-white p-3">
+                                                    <b> The tour includes:</b> transportation, lunch, an expert guide,
+                                                    and
+                                                    all the
+                                                    activities listed.
+                                                    <br><br>
+                                                    <b> We recommend bringing:</b> bathing suit, T-shirt, sunscreen,
+                                                    change
+                                                    of
+                                                    clothes, and secure shoes like water shoes or sports sandals.
+                                                    <img src="./Docs/Assets/icon2.webp"
+                                                        class="absolute -top-3 -left-3 h-7 -rotate-12" alt="">
+                                                </p>
+                                                <p
+                                                    class=" rounded-2xl md:text-nowrap !leading-relaxed bg-white p-3 relative pt-7">
+                                                    <b>Pick Up:</b> <br>
+                                                    Around 8:00am <br>
+                                                    <b>Return:</b> <br>
+                                                    Around 11:00am
+                                                    <img src="./Docs/Assets/icon4.png"
+                                                        class="absolute top-1 right-1 h-7 rotate-[25deg]" alt="">
+                                                </p>
+                                            </div>
                                             <p class=" rounded-2xl relative !leading-relaxed bg-white p-3 mt-3">
                                                 <b> From Downtown Area:</b> $62 per person + tax
-
+                                                <br>
+                                                <br>
                                                 <b> Kids:</b> only older than 10 years old
-
+                                                <br>
+                                                <br>
                                                 <b>From Outside Downtown:</b> $62 per person + tax (plus the extra
                                                 transportation)
-
+                                                <br>
+                                                <br>
                                                 <b> Note:</b> A 13% sales tax will be added to all prices
                                                 <img src="./Docs/Assets/icon3.png"
                                                     class="absolute -top-3 -left-3 h-7 -rotate-12" alt="">
-
                                             </p>
-                                        </div>
-                                        <div class="">
-                                            <p
-                                                class=" rounded-2xl md:text-nowrap !leading-relaxed bg-white p-3 relative pt-7">
-                                                <b>Pick Up:</b> <br>
-                                                Around 8:00am <br>
-                                                <b>Return:</b> <br>
-                                                Around 11:00am
-                                                <img src="./Docs/Assets/icon4.png"
-                                                    class="absolute top-1 right-1 h-7 rotate-[25deg]" alt="">
-                                            </p>
-                                            <img src="./Docs/Assets/imgs.svg"
-                                                class="max-w-[20rem] cursor-pointer w-full mx-auto  my-3" alt="">
-                                            <p class="text-white font-medium text-[16px] text-center cursor-pointer">
-                                                *Click to see <br>
-                                                more pictures</p>
 
+                                            <div
+                                                class="slider-container mt-5 mx-auto flex items-center justify-center w-full ">
+                                                <div
+                                                    class="swiper mySwiper md:h-[20rem] md:w-[25rem] h-[15rem] w-[15rem]">
+                                                    <div class="swiper-wrapper">
+                                                        <div class="swiper-slide"><img
+                                                                src="./Docs/Assets/guanacaste/Volcano-crater/image (1).jpg"
+                                                                alt="">
+                                                        </div>
+                                                        <div class="swiper-slide"><img
+                                                                src="./Docs/Assets/guanacaste/Volcano-crater/image (2).jpg"
+                                                                alt="">
+                                                        </div>
+                                                        <div class="swiper-slide"><img
+                                                                src="./Docs/Assets/guanacaste/Volcano-crater/image (3).jpg"
+                                                                alt="">
+                                                        </div>
+                                                        <div class="swiper-slide"><img
+                                                                src="./Docs/Assets/guanacaste/Volcano-crater/image (4).jpg"
+                                                                alt="">
+                                                        </div>
+                                                        <div class="swiper-slide"><img
+                                                                src="./Docs/Assets/guanacaste/Volcano-crater/image (5).jpg"
+                                                                alt="">
+                                                        </div>
+                                                        <div class="swiper-slide"><img
+                                                                src="./Docs/Assets/guanacaste/Volcano-crater/image (6).jpg"
+                                                                alt="">
+                                                        </div>
+                                                        <div class="swiper-slide"><img
+                                                                src="./Docs/Assets/guanacaste/Volcano-crater/image (7).jpg"
+                                                                alt="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
+                                    <!-- ============= -->
+
+
+
                                     <div class="bg-gradient-to-r  from-[#5de0e6]  to-[#004aad] w-full h-5 rounded-3xl">
                                     </div>
                                 </div>
@@ -1152,54 +1590,93 @@
 
                                         <img src="./Docs/Assets/icon1.png" class="absolute -top-3 -left-3 h-8" alt="">
                                     </div>
-                                    <div class="flex gap-4 md:flex-row flex-col mt-3">
+
+
+                                    <!-- ============== -->
+                                    <div class="flex gap-4 flex-col mt-3">
                                         <div class="">
 
-                                            <p class=" rounded-2xl !leading-relaxed z-10 relative bg-white p-3">
-                                                <b> The tour includes:</b> transportation, lunch, an expert guide, and
-                                                all the
-                                                activities listed.
-                                                <br><br>
-                                                <b> We recommend bringing:</b> bathing suit, T-shirt, sunscreen, change
-                                                of
-                                                clothes, and secure shoes like water shoes or sports sandals.
-                                                <img src="./Docs/Assets/icon2.webp"
-                                                    class="absolute -top-3 -left-3 h-7 -rotate-12" alt="">
+                                            <div class="grid md:grid-cols-3 gap-3">
 
-                                            </p>
+                                                <p
+                                                    class="md:col-span-2 rounded-2xl !leading-relaxed z-10 relative bg-white p-3">
+                                                    <b> The tour includes:</b> transportation, lunch, an expert guide,
+                                                    and
+                                                    all the
+                                                    activities listed.
+                                                    <br><br>
+                                                    <b> We recommend bringing:</b> bathing suit, T-shirt, sunscreen,
+                                                    change
+                                                    of
+                                                    clothes, and secure shoes like water shoes or sports sandals.
+                                                    <img src="./Docs/Assets/icon2.webp"
+                                                        class="absolute -top-3 -left-3 h-7 -rotate-12" alt="">
+                                                </p>
+                                                <p
+                                                    class=" rounded-2xl md:text-nowrap !leading-relaxed bg-white p-3 relative pt-7">
+                                                    <b>Pick Up:</b> <br>
+                                                    Around 8:30am
+                                                    <br>
+                                                    <b>Return:</b> <br>
+                                                    Around 4:00pm
+                                                    <img src="./Docs/Assets/icon4.png"
+                                                        class="absolute top-1 right-1 h-7 rotate-[25deg]" alt="">
+                                            </div>
                                             <p class=" rounded-2xl relative !leading-relaxed bg-white p-3 mt-3">
                                                 <b> From Downtown Area:</b> $62 per person + tax
-
+                                                <br><br>
                                                 <b> Kids:</b> only older than 10 years old
+                                                <br><br>
 
                                                 <b>From Outside Downtown:</b> $62 per person + tax (plus the extra
                                                 transportation)
-
+                                                <br><br>
                                                 <b> Note:</b> A 13% sales tax will be added to all prices
                                                 <img src="./Docs/Assets/icon3.png"
                                                     class="absolute -top-3 -left-3 h-7 -rotate-12" alt="">
-
                                             </p>
-                                        </div>
-                                        <div class="">
-                                            <p
-                                                class=" rounded-2xl md:text-nowrap !leading-relaxed bg-white p-3 relative pt-7">
-                                                <b>Pick Up:</b> <br>
-                                                Around 8:30am
-                                                <br>
-                                                <b>Return:</b> <br>
-                                                Around 4:00pm
-                                                <img src="./Docs/Assets/icon4.png"
-                                                    class="absolute top-1 right-1 h-7 rotate-[25deg]" alt="">
-                                            </p>
-                                            <img src="./Docs/Assets/imgs.svg"
-                                                class="max-w-[20rem] cursor-pointer w-full mx-auto  my-3" alt="">
-                                            <p class="text-white font-medium text-[16px] text-center cursor-pointer">
-                                                *Click to see <br>
-                                                more pictures</p>
 
+                                            <div
+                                                class="slider-container mt-5 mx-auto flex items-center justify-center w-full ">
+                                                <div
+                                                    class="swiper mySwiper md:h-[20rem] md:w-[25rem] h-[15rem] w-[15rem]">
+                                                    <div class="swiper-wrapper">
+                                                        <div class="swiper-slide"><img
+                                                                src="./Docs/Assets/guanacaste/Volcano-crater/image (1).jpg"
+                                                                alt="">
+                                                        </div>
+                                                        <div class="swiper-slide"><img
+                                                                src="./Docs/Assets/guanacaste/Volcano-crater/image (2).jpg"
+                                                                alt="">
+                                                        </div>
+                                                        <div class="swiper-slide"><img
+                                                                src="./Docs/Assets/guanacaste/Volcano-crater/image (3).jpg"
+                                                                alt="">
+                                                        </div>
+                                                        <div class="swiper-slide"><img
+                                                                src="./Docs/Assets/guanacaste/Volcano-crater/image (4).jpg"
+                                                                alt="">
+                                                        </div>
+                                                        <div class="swiper-slide"><img
+                                                                src="./Docs/Assets/guanacaste/Volcano-crater/image (5).jpg"
+                                                                alt="">
+                                                        </div>
+                                                        <div class="swiper-slide"><img
+                                                                src="./Docs/Assets/guanacaste/Volcano-crater/image (6).jpg"
+                                                                alt="">
+                                                        </div>
+                                                        <div class="swiper-slide"><img
+                                                                src="./Docs/Assets/guanacaste/Volcano-crater/image (7).jpg"
+                                                                alt="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
+                                    <!-- ============= -->
+
+
                                     <div class="bg-gradient-to-r  from-[#5de0e6]  to-[#004aad] w-full h-5 rounded-3xl">
                                     </div>
                                 </div>
@@ -1533,9 +2010,16 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
         integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
 
 </body>
 <script>
+
+    var swiper = new Swiper(".mySwiper", {
+        effect: "cards",
+        grabCursor: true,
+    });
     document.addEventListener('alpine:init', () => {
         Alpine.store('accordion', {
             tab: 0
