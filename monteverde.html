@@ -11,6 +11,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./Docs/Styles/global.css">
     <script defer src="https://unpkg.com/alpinejs@3.2.3/dist/cdn.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
@@ -98,7 +99,7 @@
                                 class=" overflow-hidden relative flex   max-h-0 duration-500 transition-all">
                                 <div class="w-20 absolute h-10 md:left-7 bottom-0   bg-white "></div>
                                 <div class="w-20 absolute h-10 md:right-7 bottom-0   bg-white "></div>
-                                <div class="w-40 md:block hidden bg-white"></div>
+                                <div class="w-48 md:block hidden bg-white"></div>
 
                                 <div
                                     class="bg-gradient-to-r text-sm text-zinc-800 from-[#5de0e6] rounded-b-3xl  to-[#004aad] relative p-5">
@@ -117,23 +118,39 @@
                                         famous worldwide.
                                         <img src="./Docs/Assets/icon1.png" class="absolute -top-3 -left-3 h-8" alt="">
                                     </p>
-                                    <div class="flex gap-4 md:flex-row flex-col mt-3">
+                                     <!-- ============== -->
+                                     <div class="flex gap-4 flex-col mt-3">
                                         <div class="">
 
-                                            <p class=" rounded-2xl !leading-relaxed z-10 relative bg-white p-3"><b>The
-                                                    tour includes:</b>
-                                                lunch, transportation, a knowledgeable guide, and all the
-                                                activities listed.
-                                                <br><br>
-                                                <b>We recommend bringing:</b> a camera, swimwear, towels, binoculars,
-                                                ponchos,
-                                                insect repellent, sunscreen, a change of clothes, hiking shoes or boots,
-                                                and
-                                                water.
-                                                <img src="./Docs/Assets/icon2.webp"
-                                                    class="absolute -top-3 -left-3 h-7 -rotate-12" alt="">
+                                            <div class="grid md:grid-cols-3 gap-3">
 
-                                            </p>
+                                                <p
+                                                    class="md:col-span-2 rounded-2xl !leading-relaxed z-10 relative bg-white p-3">
+                                                    <b>The
+                                                        tour includes:</b>
+                                                    lunch, transportation, a knowledgeable guide, and all the
+                                                    activities listed.
+                                                    <br><br>
+                                                    <b>We recommend bringing:</b> a camera, swimwear, towels, binoculars,
+                                                    ponchos,
+                                                    insect repellent, sunscreen, a change of clothes, hiking shoes or boots,
+                                                    and
+                                                    water.
+                                                    <img src="./Docs/Assets/icon2.webp"
+                                                        class="absolute -top-3 -left-3 h-7 -rotate-12" alt="">
+
+                                                </p>
+                                                <p
+                                                    class=" rounded-2xl md:text-nowrap !leading-relaxed bg-white p-3 relative pt-7">
+                                                    <b>Pick Up:</b> <br>
+                                                    8:00am, 10:00am, <br> 1:00pm, 3:00pm
+                                                    <br>
+                                                    <b>Duration:</b> <br>
+                                                    2 hours
+                                                    <img src="./Docs/Assets/icon4.png"
+                                                        class="absolute top-1 right-1 h-7 rotate-[25deg]" alt="">
+                                                </p>
+                                            </div>
                                             <p class=" rounded-2xl relative !leading-relaxed bg-white p-3 mt-3">
                                                 <b>From Downtown Area:</b> $100 per person + tax
                                                 <br><br>
@@ -147,30 +164,53 @@
                                                     class="absolute -top-3 -left-3 h-7 -rotate-12" alt="">
 
                                             </p>
-                                        </div>
-                                        <div class="">
-                                            <p
-                                                class=" rounded-2xl md:text-nowrap !leading-relaxed bg-white p-3 relative pt-7">
-                                                <b>Pick Up:</b> <br>
-                                                8:00am, 10:00am, <br> 1:00pm, 3:00pm
-                                                <br>
-                                                <b>Duration:</b> <br>
-                                                2 hours
-                                                <img src="./Docs/Assets/icon4.png"
-                                                    class="absolute top-1 right-1 h-7 rotate-[25deg]" alt="">
-                                            </p>
-                                            <img src="./Docs/Assets/imgs.svg"
-                                                class="max-w-[20rem] cursor-pointer w-full mx-auto  my-3" alt="">
-                                            <p class="text-white font-medium text-[16px] text-center cursor-pointer">
-                                                *Click to see <br>
-                                                more pictures</p>
 
+                                            <div
+                                                class="slider-container mt-5 mx-auto flex items-center justify-center w-full ">
+                                                <div
+                                                    class="swiper mySwiper md:h-[20rem] md:w-[25rem] h-[15rem] w-[15rem]">
+                                                    <div class="swiper-wrapper">
+                                                        <div class="swiper-slide"><img
+                                                                src="./Docs/Assets/lafortuna/Full-Day/image (1).jpg"
+                                                                alt="">
+                                                        </div>
+                                                        <div class="swiper-slide"><img
+                                                                src="./Docs/Assets/lafortuna/Full-Day/image (1).jpeg"
+                                                                alt="">
+                                                        </div>
+                                                        <div class="swiper-slide"><img
+                                                                src="./Docs/Assets/lafortuna/Full-Day/image (1).png"
+                                                                alt="">
+                                                        </div>
+                                                        <div class="swiper-slide"><img
+                                                                src="./Docs/Assets/lafortuna/Full-Day/image (2).jpg"
+                                                                alt="">
+                                                        </div>
+                                                        <div class="swiper-slide"><img
+                                                                src="./Docs/Assets/lafortuna/Full-Day/image (2).png"
+                                                                alt="">
+                                                        </div>
+                                                        <div class="swiper-slide"><img
+                                                                src="./Docs/Assets/lafortuna/Full-Day/image (3).png"
+                                                                alt="">
+                                                        </div>
+                                                        <div class="swiper-slide"><img
+                                                                src="./Docs/Assets/lafortuna/Full-Day/image (4).png"
+                                                                alt="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
+                                    <!-- ============= -->
+                                    
+                                    
+                                    
                                     <div class="bg-gradient-to-r  from-[#5de0e6]  to-[#004aad] w-full h-5 rounded-3xl">
                                     </div>
                                 </div>
-                                <div class="w-40 md:block hidden bg-white"></div>
+                                <div class="w-48 md:block hidden bg-white"></div>
                             </div>
                         </li>
 
@@ -191,7 +231,7 @@
                                 class=" overflow-hidden relative flex   max-h-0 duration-500 transition-all">
                                 <div class="w-20 absolute h-10 md:left-7 bottom-0   bg-white "></div>
                                 <div class="w-20 absolute h-10 md:right-7 bottom-0   bg-white "></div>
-                                <div class="w-40 md:block hidden bg-white"></div>
+                                <div class="w-48 md:block hidden bg-white"></div>
 
                                 <div
                                     class="bg-gradient-to-r text-sm text-zinc-800 from-[#5de0e6] rounded-b-3xl  to-[#004aad] relative p-5">
@@ -211,59 +251,95 @@
                                         Tour Highlights:
                                         <img src="./Docs/Assets/icon1.png" class="absolute -top-3 -left-3 h-8" alt="">
                                     </p>
-                                    <div class="flex gap-4 md:flex-row flex-col mt-3">
+
+
+                                     <!-- ============== -->
+                                     <div class="flex gap-4 flex-col mt-3">
                                         <div class="">
 
-                                            <p class=" rounded-2xl !leading-relaxed z-10 relative bg-white p-3"><b>The
-                                                    tour includes:</b>
-                                                lunch, transportation, a knowledgeable guide, and all the
-                                                activities listed.
-                                                <br><br>
-                                                <b>We recommend bringing:</b> a camera, swimwear, towels, binoculars,
-                                                ponchos,
-                                                insect repellent, sunscreen, a change of clothes, hiking shoes or boots,
-                                                and
-                                                water.
-                                                <img src="./Docs/Assets/icon2.webp"
-                                                    class="absolute -top-3 -left-3 h-7 -rotate-12" alt="">
+                                            <div class="grid md:grid-cols-3 gap-3">
 
-                                            </p>
+                                                <p
+                                                    class="md:col-span-2 rounded-2xl !leading-relaxed z-10 relative bg-white p-3">
+                                                    <b>The
+                                                        tour includes:</b>
+                                                    lunch, transportation, a knowledgeable guide, and all the
+                                                    activities listed.
+                                                    <br><br>
+                                                    <b>We recommend bringing:</b> a camera, swimwear, towels, binoculars,
+                                                    ponchos,
+                                                    insect repellent, sunscreen, a change of clothes, hiking shoes or boots,
+                                                    and
+                                                    water.
+                                                    <img src="./Docs/Assets/icon2.webp"
+                                                        class="absolute -top-3 -left-3 h-7 -rotate-12" alt="">
+
+                                                </p>
+                                                <p
+                                                    class=" rounded-2xl md:text-nowrap !leading-relaxed bg-white p-3 relative pt-7">
+                                                    <b>Pick Up:</b> <br>
+                                                    8:00am, 10:00am, <br> 1:00pm, 3:00pm
+                                                    <br>
+                                                    <b>Duration:</b> <br>
+                                                    2 hours
+                                                    <img src="./Docs/Assets/icon4.png"
+                                                        class="absolute top-1 right-1 h-7 rotate-[25deg]" alt="">
+                                                </p>
+                                            </div>
                                             <p class=" rounded-2xl relative !leading-relaxed bg-white p-3 mt-3">
-                                                <b>From Downtown Area:</b> $100 per person + tax
-                                                <br><br>
-                                                <b>Kids Price (7 to 12):</b> Half of adult price
-                                                <br><br>
-                                                <b>From Outside Downtown:</b> $100 per person + tax (plus the extra
-                                                transportation)
-                                                <br><br>
-                                                <b>Note:</b> A 13% sales tax will be added to all prices
-                                                <img src="./Docs/Assets/icon3.png"
-                                                    class="absolute -top-3 -left-3 h-7 -rotate-12" alt="">
-
-                                            </p>
-                                        </div>
-                                        <div class="">
-                                            <p
-                                                class=" rounded-2xl md:text-nowrap !leading-relaxed bg-white p-3 relative pt-7">
                                                 <b>Pick Up:</b> <br>
                                                 Around 6:00pm <br>
                                                 <b>Return:</b> <br>
                                                 Around 8:00pm
                                                 <img src="./Docs/Assets/icon4.png"
                                                     class="absolute top-1 right-1 h-7 rotate-[25deg]" alt="">
-                                            </p>
-                                            <img src="./Docs/Assets/imgs.svg"
-                                                class="max-w-[20rem] cursor-pointer w-full mx-auto  my-3" alt="">
-                                            <p class="text-white font-medium text-[16px] text-center cursor-pointer">
-                                                *Click to see <br>
-                                                more pictures</p>
 
+                                            </p>
+
+                                            <div
+                                                class="slider-container mt-5 mx-auto flex items-center justify-center w-full ">
+                                                <div
+                                                    class="swiper mySwiper md:h-[20rem] md:w-[25rem] h-[15rem] w-[15rem]">
+                                                    <div class="swiper-wrapper">
+                                                        <div class="swiper-slide"><img
+                                                                src="./Docs/Assets/lafortuna/Full-Day/image (1).jpg"
+                                                                alt="">
+                                                        </div>
+                                                        <div class="swiper-slide"><img
+                                                                src="./Docs/Assets/lafortuna/Full-Day/image (1).jpeg"
+                                                                alt="">
+                                                        </div>
+                                                        <div class="swiper-slide"><img
+                                                                src="./Docs/Assets/lafortuna/Full-Day/image (1).png"
+                                                                alt="">
+                                                        </div>
+                                                        <div class="swiper-slide"><img
+                                                                src="./Docs/Assets/lafortuna/Full-Day/image (2).jpg"
+                                                                alt="">
+                                                        </div>
+                                                        <div class="swiper-slide"><img
+                                                                src="./Docs/Assets/lafortuna/Full-Day/image (2).png"
+                                                                alt="">
+                                                        </div>
+                                                        <div class="swiper-slide"><img
+                                                                src="./Docs/Assets/lafortuna/Full-Day/image (3).png"
+                                                                alt="">
+                                                        </div>
+                                                        <div class="swiper-slide"><img
+                                                                src="./Docs/Assets/lafortuna/Full-Day/image (4).png"
+                                                                alt="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
+                                    <!-- ============= -->
+                                    
                                     <div class="bg-gradient-to-r  from-[#5de0e6]  to-[#004aad] w-full h-5 rounded-3xl">
                                     </div>
                                 </div>
-                                <div class="w-40 md:block hidden bg-white"></div>
+                                <div class="w-48 md:block hidden bg-white"></div>
                             </div>
                         </li>
 
@@ -284,7 +360,7 @@
                                 class=" overflow-hidden relative flex   max-h-0 duration-500 transition-all">
                                 <div class="w-20 absolute h-10 md:left-7 bottom-0   bg-white "></div>
                                 <div class="w-20 absolute h-10 md:right-7 bottom-0   bg-white "></div>
-                                <div class="w-40 md:block hidden bg-white"></div>
+                                <div class="w-48 md:block hidden bg-white"></div>
 
                                 <div
                                     class="bg-gradient-to-r text-sm text-zinc-800 from-[#5de0e6] rounded-b-3xl  to-[#004aad] relative p-5">
@@ -305,6 +381,90 @@
                                         into the forest’s vibrant nightlife.
                                         <img src="./Docs/Assets/icon1.png" class="absolute -top-3 -left-3 h-8" alt="">
                                     </p>
+
+                                        <!-- ============== -->
+                                        <div class="flex gap-4 flex-col mt-3">
+                                            <div class="">
+    
+                                                <div class="grid md:grid-cols-3 gap-3">
+    
+                                                    <p
+                                                        class="md:col-span-2 rounded-2xl !leading-relaxed z-10 relative bg-white p-3">
+                                                        <b>The
+                                                            tour includes:</b>
+                                                        lunch, transportation, a knowledgeable guide, and all the
+                                                        activities listed.
+                                                        <br><br>
+                                                        <b>We recommend bringing:</b> a camera, swimwear, towels, binoculars,
+                                                        ponchos,
+                                                        insect repellent, sunscreen, a change of clothes, hiking shoes or boots,
+                                                        and
+                                                        water.
+                                                        <img src="./Docs/Assets/icon2.webp"
+                                                            class="absolute -top-3 -left-3 h-7 -rotate-12" alt="">
+    
+                                                    </p>
+                                                    <p
+                                                        class=" rounded-2xl md:text-nowrap !leading-relaxed bg-white p-3 relative pt-7">
+                                                        <b>Pick Up:</b> <br>
+                                                        8:00am, 10:00am, <br> 1:00pm, 3:00pm
+                                                        <br>
+                                                        <b>Duration:</b> <br>
+                                                        2 hours
+                                                        <img src="./Docs/Assets/icon4.png"
+                                                            class="absolute top-1 right-1 h-7 rotate-[25deg]" alt="">
+                                                    </p>
+                                                </div>
+                                                <p class=" rounded-2xl relative !leading-relaxed bg-white p-3 mt-3">
+                                                    <b>Pick Up:</b> <br>
+                                                    Around 6:00pm <br>
+                                                    <b>Return:</b> <br>
+                                                    Around 8:00pm
+                                                    <img src="./Docs/Assets/icon4.png"
+                                                        class="absolute top-1 right-1 h-7 rotate-[25deg]" alt="">
+    
+                                                </p>
+    
+                                                <div
+                                                    class="slider-container mt-5 mx-auto flex items-center justify-center w-full ">
+                                                    <div
+                                                        class="swiper mySwiper md:h-[20rem] md:w-[25rem] h-[15rem] w-[15rem]">
+                                                        <div class="swiper-wrapper">
+                                                            <div class="swiper-slide"><img
+                                                                    src="./Docs/Assets/lafortuna/Full-Day/image (1).jpg"
+                                                                    alt="">
+                                                            </div>
+                                                            <div class="swiper-slide"><img
+                                                                    src="./Docs/Assets/lafortuna/Full-Day/image (1).jpeg"
+                                                                    alt="">
+                                                            </div>
+                                                            <div class="swiper-slide"><img
+                                                                    src="./Docs/Assets/lafortuna/Full-Day/image (1).png"
+                                                                    alt="">
+                                                            </div>
+                                                            <div class="swiper-slide"><img
+                                                                    src="./Docs/Assets/lafortuna/Full-Day/image (2).jpg"
+                                                                    alt="">
+                                                            </div>
+                                                            <div class="swiper-slide"><img
+                                                                    src="./Docs/Assets/lafortuna/Full-Day/image (2).png"
+                                                                    alt="">
+                                                            </div>
+                                                            <div class="swiper-slide"><img
+                                                                    src="./Docs/Assets/lafortuna/Full-Day/image (3).png"
+                                                                    alt="">
+                                                            </div>
+                                                            <div class="swiper-slide"><img
+                                                                    src="./Docs/Assets/lafortuna/Full-Day/image (4).png"
+                                                                    alt="">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- ============= -->
+                                    
                                     <div class="flex gap-4 md:flex-row flex-col mt-3">
                                         <div class="">
 
@@ -357,7 +517,7 @@
                                     <div class="bg-gradient-to-r  from-[#5de0e6]  to-[#004aad] w-full h-5 rounded-3xl">
                                     </div>
                                 </div>
-                                <div class="w-40 md:block hidden bg-white"></div>
+                                <div class="w-48 md:block hidden bg-white"></div>
                             </div>
                         </li>
 
@@ -378,7 +538,7 @@
                                 class=" overflow-hidden relative flex   max-h-0 duration-500 transition-all">
                                 <div class="w-20 absolute h-10 md:left-7 bottom-0   bg-white "></div>
                                 <div class="w-20 absolute h-10 md:right-7 bottom-0   bg-white "></div>
-                                <div class="w-40 md:block hidden bg-white"></div>
+                                <div class="w-48 md:block hidden bg-white"></div>
 
                                 <div
                                     class="bg-gradient-to-r text-sm text-zinc-800 from-[#5de0e6] rounded-b-3xl  to-[#004aad] relative p-5">
@@ -450,7 +610,7 @@
                                     <div class="bg-gradient-to-r  from-[#5de0e6]  to-[#004aad] w-full h-5 rounded-3xl">
                                     </div>
                                 </div>
-                                <div class="w-40 md:block hidden bg-white"></div>
+                                <div class="w-48 md:block hidden bg-white"></div>
                             </div>
                         </li>
 
@@ -471,7 +631,7 @@
                                 class=" overflow-hidden relative flex   max-h-0 duration-500 transition-all">
                                 <div class="w-20 absolute h-10 md:left-7 bottom-0   bg-white "></div>
                                 <div class="w-20 absolute h-10 md:right-7 bottom-0   bg-white "></div>
-                                <div class="w-40 md:block hidden bg-white"></div>
+                                <div class="w-48 md:block hidden bg-white"></div>
 
                                 <div
                                     class="bg-gradient-to-r text-sm text-zinc-800 from-[#5de0e6] rounded-b-3xl  to-[#004aad] relative p-5">
@@ -547,7 +707,7 @@
                                     <div class="bg-gradient-to-r  from-[#5de0e6]  to-[#004aad] w-full h-5 rounded-3xl">
                                     </div>
                                 </div>
-                                <div class="w-40 md:block hidden bg-white"></div>
+                                <div class="w-48 md:block hidden bg-white"></div>
                             </div>
                         </li>
 
@@ -568,7 +728,7 @@
                                 class=" overflow-hidden relative flex   max-h-0 duration-500 transition-all">
                                 <div class="w-20 absolute h-10 md:left-7 bottom-0   bg-white "></div>
                                 <div class="w-20 absolute h-10 md:right-7 bottom-0   bg-white "></div>
-                                <div class="w-40 md:block hidden bg-white"></div>
+                                <div class="w-48 md:block hidden bg-white"></div>
 
                                 <div
                                     class="bg-gradient-to-r text-sm text-zinc-800 from-[#5de0e6] rounded-b-3xl  to-[#004aad] relative p-5">
@@ -639,7 +799,7 @@
                                     <div class="bg-gradient-to-r  from-[#5de0e6]  to-[#004aad] w-full h-5 rounded-3xl">
                                     </div>
                                 </div>
-                                <div class="w-40 md:block hidden bg-white"></div>
+                                <div class="w-48 md:block hidden bg-white"></div>
                             </div>
                         </li>
 
@@ -660,7 +820,7 @@
                                 class=" overflow-hidden relative flex   max-h-0 duration-500 transition-all">
                                 <div class="w-20 absolute h-10 md:left-7 bottom-0   bg-white "></div>
                                 <div class="w-20 absolute h-10 md:right-7 bottom-0   bg-white "></div>
-                                <div class="w-40 md:block hidden bg-white"></div>
+                                <div class="w-48 md:block hidden bg-white"></div>
 
                                 <div
                                     class="bg-gradient-to-r text-sm text-zinc-800 from-[#5de0e6] rounded-b-3xl  to-[#004aad] relative p-5">
@@ -732,7 +892,7 @@
                                     <div class="bg-gradient-to-r  from-[#5de0e6]  to-[#004aad] w-full h-5 rounded-3xl">
                                     </div>
                                 </div>
-                                <div class="w-40 md:block hidden bg-white"></div>
+                                <div class="w-48 md:block hidden bg-white"></div>
                             </div>
                         </li>
 
@@ -753,7 +913,7 @@
                                 class=" overflow-hidden relative flex   max-h-0 duration-500 transition-all">
                                 <div class="w-20 absolute h-10 md:left-7 bottom-0   bg-white "></div>
                                 <div class="w-20 absolute h-10 md:right-7 bottom-0   bg-white "></div>
-                                <div class="w-40 md:block hidden bg-white"></div>
+                                <div class="w-48 md:block hidden bg-white"></div>
 
                                 <div
                                     class="bg-gradient-to-r text-sm text-zinc-800 from-[#5de0e6] rounded-b-3xl  to-[#004aad] relative p-5">
@@ -827,7 +987,7 @@
                                     <div class="bg-gradient-to-r  from-[#5de0e6]  to-[#004aad] w-full h-5 rounded-3xl">
                                     </div>
                                 </div>
-                                <div class="w-40 md:block hidden bg-white"></div>
+                                <div class="w-48 md:block hidden bg-white"></div>
                             </div>
                         </li>
 
@@ -848,7 +1008,7 @@
                                 class=" overflow-hidden relative flex   max-h-0 duration-500 transition-all">
                                 <div class="w-20 absolute h-10 md:left-7 bottom-0   bg-white "></div>
                                 <div class="w-20 absolute h-10 md:right-7 bottom-0   bg-white "></div>
-                                <div class="w-40 md:block hidden bg-white"></div>
+                                <div class="w-48 md:block hidden bg-white"></div>
 
                                 <div
                                     class="bg-gradient-to-r text-sm text-zinc-800 from-[#5de0e6] rounded-b-3xl  to-[#004aad] relative p-5">
@@ -923,7 +1083,7 @@
                                     <div class="bg-gradient-to-r  from-[#5de0e6]  to-[#004aad] w-full h-5 rounded-3xl">
                                     </div>
                                 </div>
-                                <div class="w-40 md:block hidden bg-white"></div>
+                                <div class="w-48 md:block hidden bg-white"></div>
                             </div>
                         </li>
 
@@ -944,7 +1104,7 @@
                                 class=" overflow-hidden relative flex   max-h-0 duration-500 transition-all">
                                 <div class="w-20 absolute h-10 md:left-7 bottom-0   bg-white "></div>
                                 <div class="w-20 absolute h-10 md:right-7 bottom-0   bg-white "></div>
-                                <div class="w-40 md:block hidden bg-white"></div>
+                                <div class="w-48 md:block hidden bg-white"></div>
 
                                 <div
                                     class="bg-gradient-to-r text-sm text-zinc-800 from-[#5de0e6] rounded-b-3xl  to-[#004aad] relative p-5">
@@ -1014,7 +1174,7 @@
                                     <div class="bg-gradient-to-r  from-[#5de0e6]  to-[#004aad] w-full h-5 rounded-3xl">
                                     </div>
                                 </div>
-                                <div class="w-40 md:block hidden bg-white"></div>
+                                <div class="w-48 md:block hidden bg-white"></div>
                             </div>
                         </li>
 
@@ -1035,7 +1195,7 @@
                                 class=" overflow-hidden relative flex   max-h-0 duration-500 transition-all">
                                 <div class="w-20 absolute h-10 md:left-7 bottom-0   bg-white "></div>
                                 <div class="w-20 absolute h-10 md:right-7 bottom-0   bg-white "></div>
-                                <div class="w-40 md:block hidden bg-white"></div>
+                                <div class="w-48 md:block hidden bg-white"></div>
 
                                 <div
                                     class="bg-gradient-to-r text-sm text-zinc-800 from-[#5de0e6] rounded-b-3xl  to-[#004aad] relative p-5">
@@ -1105,7 +1265,7 @@
                                     <div class="bg-gradient-to-r  from-[#5de0e6]  to-[#004aad] w-full h-5 rounded-3xl">
                                     </div>
                                 </div>
-                                <div class="w-40 md:block hidden bg-white"></div>
+                                <div class="w-48 md:block hidden bg-white"></div>
                             </div>
                         </li>
                       
@@ -1170,7 +1330,7 @@
                     <div class="mx-auto w-full md:pl-5">
                         <h2 class="pb-4 font-bold text-xl">Social</h2>
                         <ul class="flex flex-col gap-1 ">
-                            <li><a href="https://www.facebook.com/bestcostaricatours/reviews"
+                              <li><a href="https://www.facebook.com/bestcostaricatours"
                                     class="hover:underline">Facebook</a></li>
                             <li><a href="https://www.instagram.com/joshbesttours?igsh=MXh1eWxwdXFkY2xxNQ%3D%3D"
                                     class="hover:underline">Instagram</a></li>
@@ -1274,7 +1434,7 @@
                             Whatsapp
                         </button>
                     </a>
-                    <a href="https://www.facebook.com/bestcostaricatours/reviews">
+                    <a href="https://www.facebook.com/messages/e2ee/t/8057290370994120 ">
                         <button
                             class="bg-white text-black rounded-full px-9 py-2.5 flex items-center gap-3 font-medium">
                             <img src="./Docs/Assets/message.png" class="h-8" alt="">
@@ -1335,7 +1495,7 @@
                             Whatsapp
                         </button>
                     </a>
-                    <a href="https://www.facebook.com/bestcostaricatours/reviews">
+                    <a href="https://www.facebook.com/messages/e2ee/t/8057290370994120 ">
                         <button
                             class="bg-white text-black rounded-full px-9 py-2.5 flex items-center justify-center gap-3 font-medium">
                             <img src="./Docs/Assets/message.png" class="h-6" alt="">
@@ -1434,9 +1594,15 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
         integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </body>
 <script>
+
+var swiper = new Swiper(".mySwiper", {
+        effect: "cards",
+        grabCursor: true,
+    });
+    
     document.addEventListener('alpine:init', () => {
         Alpine.store('accordion', {
             tab: 0
