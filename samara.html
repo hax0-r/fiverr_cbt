@@ -11,6 +11,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./Docs/Styles/global.css">
     <script defer src="https://unpkg.com/alpinejs@3.2.3/dist/cdn.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
@@ -20,7 +21,7 @@
         style="background: url(./Docs/Assets/Samara-Main.webp) center/cover no-repeat;">
         <div
             class="bg-gradient-to-r from-[#0197b1] to-[#7dd858] flex items-center justify-between px-5 py-3 rounded-lg max-w-7xl w-full mx-auto  gap-4">
-             <a href="./index.html" class="font-semibold block text-lg text-white">Best Costa Rica Tours </a>
+            <a href="./index.html" class="font-semibold block text-lg text-white">Best Costa Rica Tours </a>
             <div class="xl:flex hidden items-center gap-4">
                 <ul class="text-white flex items-center gap-5 font-medium">
                     <li><a href="./guanacaste.html" class="">Guanacaste Tours</a></li>
@@ -120,21 +121,39 @@
                                         included in the tour, ensuring a stress-free journey from start to finish.
                                         <img src="./Docs/Assets/icon1.png" class="absolute -top-3 -left-3 h-8" alt="">
                                     </p>
-                                    <div class="flex gap-4 md:flex-row flex-col mt-3">
+
+                                    <!-- ============== -->
+                                    <div class="flex gap-4 flex-col mt-3">
                                         <div class="">
 
-                                            <p class=" rounded-2xl !leading-relaxed z-10 relative bg-white p-3">
-                                                <b>The tour
-                                                    includes:</b> transportation, snacks, an expert guide, and all the
-                                                activities listed.
-                                                <br><br>
-                                                <b>We recommend bringing:</b> a camera, sunscreen, swimsuit, towels and
-                                                a
-                                                clothe change.
-                                                <img src="./Docs/Assets/icon2.webp"
-                                                    class="absolute -top-3 -left-3 h-7 -rotate-12" alt="">
+                                            <div class="grid md:grid-cols-3 gap-3">
 
-                                            </p>
+                                                <p
+                                                    class="md:col-span-2 rounded-2xl !leading-relaxed z-10 relative bg-white p-3">
+                                                    <b>The tour
+                                                        includes:</b> transportation, snacks, an expert guide, and all
+                                                    the
+                                                    activities listed.
+                                                    <br><br>
+                                                    <b>We recommend bringing:</b> a camera, sunscreen, swimsuit, towels
+                                                    and
+                                                    a
+                                                    clothe change.
+                                                    <img src="./Docs/Assets/icon2.webp"
+                                                        class="absolute -top-3 -left-3 h-7 -rotate-12" alt="">
+
+                                                </p>
+                                                <p
+                                                    class=" rounded-2xl md:text-nowrap !leading-relaxed bg-white p-3 relative pt-7">
+                                                    <b>Pick Up:</b> <br>
+                                                    8:15am & 12:30pm
+                                                    <br>
+                                                    <b>Duration:</b> <br>
+                                                    Around 4 Hours
+                                                    <img src="./Docs/Assets/icon4.png"
+                                                        class="absolute top-1 right-1 h-7 rotate-[25deg]" alt="">
+                                                </p>
+                                            </div>
                                             <p class=" rounded-2xl relative !leading-relaxed bg-white p-3 mt-3">
                                                 <b>From Downtown Area:</b> $65 per person + tax
                                                 <br><br>
@@ -146,28 +165,45 @@
                                                 <b>Note:</b> A 13% sales tax will be added to all prices
                                                 <img src="./Docs/Assets/icon3.png"
                                                     class="absolute -top-3 -left-3 h-7 -rotate-12" alt="">
-
                                             </p>
-                                        </div>
-                                        <div class="">
-                                            <p
-                                                class=" rounded-2xl md:text-nowrap !leading-relaxed bg-white p-3 relative pt-7">
-                                                <b>Pick Up:</b> <br>
-                                                8:15am & 12:30pm
-                                                <br>
-                                                <b>Duration:</b> <br>
-                                                Around 4 Hours
-                                                <img src="./Docs/Assets/icon4.png"
-                                                    class="absolute top-1 right-1 h-7 rotate-[25deg]" alt="">
-                                            </p>
-                                            <img src="./Docs/Assets/imgs.svg"
-                                                class="max-w-[20rem] cursor-pointer w-full mx-auto  my-3" alt="">
-                                            <p class="text-white font-medium text-[16px] text-center cursor-pointer">
-                                                *Click to see <br>
-                                                more pictures</p>
 
+                                            <div
+                                                class="slider-container mt-5 mx-auto flex items-center justify-center w-full ">
+                                                <div
+                                                    class="swiper mySwiper md:h-[20rem] md:w-[25rem] h-[15rem] w-[15rem]">
+                                                    <div class="swiper-wrapper">
+                                                        <div class="swiper-slide"><img
+                                                                src="./Docs/Assets/samara/Catamaran Safari/image (1).jpg"
+                                                                alt="">
+                                                        </div>
+                                                        <div class="swiper-slide"><img
+                                                                src="./Docs/Assets/samara/Catamaran Safari/image (2).jpg"
+                                                                alt="">
+                                                        </div>
+                                                        <div class="swiper-slide"><img
+                                                                src="./Docs/Assets/samara/Catamaran Safari/image (1).png"
+                                                                alt="">
+                                                        </div>
+                                                        <div class="swiper-slide"><img
+                                                                src="./Docs/Assets/samara/Catamaran Safari/image (2).png"
+                                                                alt="">
+                                                        </div>
+                                                        <div class="swiper-slide"><img
+                                                                src="./Docs/Assets/samara/Catamaran Safari/image (3).jpg"
+                                                                alt="">
+                                                        </div>
+                                                        <div class="swiper-slide"><img
+                                                                src="./Docs/Assets/samara/Catamaran Safari/image (4).jpg"
+                                                                alt="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
+                                    <!-- ============= -->
+
+
                                     <div class="bg-gradient-to-r  from-[#5de0e6]  to-[#004aad] w-full h-5 rounded-3xl">
                                     </div>
                                 </div>
@@ -214,24 +250,40 @@
                                         spot today and experience the best sunset sails in Costa Rica with us!
                                         <img src="./Docs/Assets/icon1.png" class="absolute -top-3 -left-3 h-8" alt="">
                                     </p>
-                                    <div class="flex gap-4 md:flex-row flex-col mt-3">
+                                    <!-- ============== -->
+                                    <div class="flex gap-4 flex-col mt-3">
                                         <div class="">
 
-                                            <p class=" rounded-2xl !leading-relaxed z-10 relative bg-white p-3">
-                                                <b>The
-                                                    tour includes:</b>
-                                                lunch, transportation, a knowledgeable guide, and all the
-                                                activities listed.
-                                                <br><br>
-                                                <b>We recommend bringing:</b> a camera, swimwear, towels, binoculars,
-                                                ponchos,
-                                                insect repellent, sunscreen, a change of clothes, hiking shoes or boots,
-                                                and
-                                                water.
-                                                <img src="./Docs/Assets/icon2.webp"
-                                                    class="absolute -top-3 -left-3 h-7 -rotate-12" alt="">
+                                            <div class="grid md:grid-cols-3 gap-3">
 
-                                            </p>
+                                                <p
+                                                    class="md:col-span-2 rounded-2xl !leading-relaxed z-10 relative bg-white p-3">
+                                                    <b>The
+                                                        tour includes:</b>
+                                                    lunch, transportation, a knowledgeable guide, and all the
+                                                    activities listed.
+                                                    <br><br>
+                                                    <b>We recommend bringing:</b> a camera, swimwear, towels,
+                                                    binoculars,
+                                                    ponchos,
+                                                    insect repellent, sunscreen, a change of clothes, hiking shoes or
+                                                    boots,
+                                                    and
+                                                    water.
+                                                    <img src="./Docs/Assets/icon2.webp"
+                                                        class="absolute -top-3 -left-3 h-7 -rotate-12" alt="">
+
+                                                </p>
+                                                <p
+                                                    class=" rounded-2xl md:text-nowrap !leading-relaxed bg-white p-3 relative pt-7">
+                                                    <b>Pick Up:</b> <br>
+                                                    Around 2:00pm <br>
+                                                    <b>Return:</b> <br>
+                                                    Around 5:30pm
+                                                    <img src="./Docs/Assets/icon4.png"
+                                                        class="absolute top-1 right-1 h-7 rotate-[25deg]" alt="">
+                                                </p>
+                                            </div>
                                             <p class=" rounded-2xl relative !leading-relaxed bg-white p-3 mt-3">
                                                 <b> From Downtown Area:</b> $65 per person + tax
                                                 <br><br>
@@ -244,25 +296,47 @@
                                                 <img src="./Docs/Assets/icon3.png"
                                                     class="absolute -top-3 -left-3 h-7 -rotate-12" alt="">
                                             </p>
-                                        </div>
-                                        <div class="">
-                                            <p
-                                                class=" rounded-2xl md:text-nowrap !leading-relaxed bg-white p-3 relative pt-7">
-                                                <b>Pick Up:</b> <br>
-                                                Around 2:00pm <br>
-                                                <b>Return:</b> <br>
-                                                Around 5:30pm
-                                                <img src="./Docs/Assets/icon4.png"
-                                                    class="absolute top-1 right-1 h-7 rotate-[25deg]" alt="">
-                                            </p>
-                                            <img src="./Docs/Assets/imgs.svg"
-                                                class="max-w-[20rem] cursor-pointer w-full mx-auto  my-3" alt="">
-                                            <p class="text-white font-medium text-[16px] text-center cursor-pointer">
-                                                *Click to see <br>
-                                                more pictures</p>
 
+                                            <div
+                                                class="slider-container mt-5 mx-auto flex items-center justify-center w-full ">
+                                                <div
+                                                    class="swiper mySwiper md:h-[20rem] md:w-[25rem] h-[15rem] w-[15rem]">
+                                                    <div class="swiper-wrapper">
+                                                        <div class="swiper-slide"><img
+                                                                src="./Docs/Assets/samara/Sunset Party Catamaran/image (1).jpg"
+                                                                alt="">
+                                                        </div>
+                                                        <div class="swiper-slide"><img
+                                                                src="./Docs/Assets/samara/Sunset Party Catamaran/image (2).jpg"
+                                                                alt="">
+                                                        </div>
+                                                        <div class="swiper-slide"><img
+                                                                src="./Docs/Assets/samara/Sunset Party Catamaran/image (3).jpg"
+                                                                alt="">
+                                                        </div>
+                                                        <div class="swiper-slide"><img
+                                                                src="./Docs/Assets/samara/Sunset Party Catamaran/image (1).png"
+                                                                alt="">
+                                                        </div>
+                                                        <div class="swiper-slide"><img
+                                                                src="./Docs/Assets/samara/Sunset Party Catamaran/image (2).png"
+                                                                alt="">
+                                                        </div>
+                                                        <div class="swiper-slide"><img
+                                                                src="./Docs/Assets/samara/Sunset Party Catamaran/image (3).png"
+                                                                alt="">
+                                                        </div>
+                                                        <div class="swiper-slide"><img
+                                                                src="./Docs/Assets/samara/Sunset Party Catamaran/image (4).jpg"
+                                                                alt="">
+                                                        </div>
+                                                       
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
+                                    <!-- ============= -->
                                     <div class="bg-gradient-to-r  from-[#5de0e6]  to-[#004aad] w-full h-5 rounded-3xl">
                                     </div>
                                 </div>
@@ -311,30 +385,63 @@
                                         and guidance, ensuring you get the most out of your fishing excursion.
                                         <img src="./Docs/Assets/icon1.png" class="absolute -top-3 -left-3 h-8" alt="">
                                     </p>
-                                    <div class="flex gap-4 md:flex-row flex-col mt-3">
-                                        <div class="">
-                                            <p class=" rounded-2xl relative !leading-relaxed bg-white p-3 mt-3">
-                                                <b> Half Day Samara:</b> $400 total + tax (8:00am & 1:00pm)
-                                                <br><br>
-                                                <b> Full Day Samara:</b> $700 total + tax (8:00am)
-                                                <br><br>
-                                                <b>From Carrillo and Nosara:</b> Same price + the extra transportation
-                                                <br><br>
-                                                <b>Note:</b> A 13% sales tax will be added to all prices
-                                                <img src="./Docs/Assets/icon3.png"
-                                                    class="absolute -top-3 -left-3 h-7 -rotate-12" alt="">
-                                            </p>
-                                        </div>
+
+                                    <!-- ============== -->
+                                    <div class="flex gap-4 flex-col mt-3">
                                         <div class="">
 
-                                            <img src="./Docs/Assets/imgs.svg"
-                                                class="max-w-[20rem] cursor-pointer w-full mx-auto  my-3" alt="">
-                                            <p class="text-white font-medium text-[16px] text-center cursor-pointer">
-                                                *Click to see <br>
-                                                more pictures</p>
+                                            <div class="grid md:grid-cols-3 gap-3">
 
+                                                <p
+                                                    class="md:col-span-3 rounded-2xl !leading-relaxed z-10 relative bg-white p-3">
+                                                    <b> Half Day Samara:</b> $400 total + tax (8:00am & 1:00pm)
+                                                    <br><br>
+                                                    <b> Full Day Samara:</b> $700 total + tax (8:00am)
+                                                    <br><br>
+                                                    <b>From Carrillo and Nosara:</b> Same price + the extra
+                                                    transportation
+                                                    <br><br>
+                                                    <b>Note:</b> A 13% sales tax will be added to all prices
+                                                    <img src="./Docs/Assets/icon3.png"
+                                                        class="absolute -top-3 -left-3 h-7 -rotate-12" alt="">
+
+                                                </p>
+                                            </div>
+                                            <div
+                                                class="slider-container mt-5 mx-auto flex items-center justify-center w-full ">
+                                                <div
+                                                    class="swiper mySwiper md:h-[20rem] md:w-[25rem] h-[15rem] w-[15rem]">
+                                                    <div class="swiper-wrapper">
+                                                        <div class="swiper-slide"><img
+                                                                src="./Docs/Assets/samara/Best Samara Fishing/image (1).jpg"
+                                                                alt="">
+                                                        </div>
+                                                        <div class="swiper-slide"><img
+                                                                src="./Docs/Assets/samara/Best Samara Fishing/image (2).jpg"
+                                                                alt="">
+                                                        </div>
+                                                        <div class="swiper-slide"><img
+                                                                src="./Docs/Assets/samara/Best Samara Fishing/image (3).jpg"
+                                                                alt="">
+                                                        </div>
+                                                        <div class="swiper-slide"><img
+                                                                src="./Docs/Assets/samara/Best Samara Fishing/image (4).jpg"
+                                                                alt="">
+                                                        </div>
+                                                        <div class="swiper-slide"><img
+                                                                src="./Docs/Assets/samara/Best Samara Fishing/image (5).jpg"
+                                                                alt="">
+                                                        </div>
+                                                        <div class="swiper-slide"><img
+                                                                src="./Docs/Assets/samara/Best Samara Fishing/image (6).jpg"
+                                                                alt="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
+                                    <!-- ============= -->
                                     <div class="bg-gradient-to-r  from-[#5de0e6]  to-[#004aad] w-full h-5 rounded-3xl">
                                     </div>
                                 </div>
@@ -378,20 +485,35 @@
                                         wildlife experience.
                                         <img src="./Docs/Assets/icon1.png" class="absolute -top-3 -left-3 h-8" alt="">
                                     </p>
-                                    <div class="flex gap-4 md:flex-row flex-col mt-3">
+                                    <!-- ============== -->
+                                    <div class="flex gap-4 flex-col mt-3">
                                         <div class="">
 
-                                            <p class=" rounded-2xl !leading-relaxed z-10 relative bg-white p-3">
-                                                <b> The tour includes:</b> Riding equipment, transportation, a
-                                                knowledgeable
-                                                guide, and all the activities listed.
-                                                <br><br>
-                                                <b> We recommend bringing:</b> a camera, sunscreen, swimsuit, towels and
-                                                a clothe change.
-                                                <img src="./Docs/Assets/icon2.webp"
-                                                    class="absolute -top-3 -left-3 h-7 -rotate-12" alt="">
+                                            <div class="grid md:grid-cols-3 gap-3">
 
-                                            </p>
+                                                <p
+                                                    class="md:col-span-2 rounded-2xl !leading-relaxed z-10 relative bg-white p-3">
+                                                    <b> The tour includes:</b> Riding equipment, transportation, a
+                                                    knowledgeable
+                                                    guide, and all the activities listed.
+                                                    <br><br>
+                                                    <b> We recommend bringing:</b> a camera, sunscreen, swimsuit, towels
+                                                    and
+                                                    a clothe change.
+                                                    <img src="./Docs/Assets/icon2.webp"
+                                                        class="absolute -top-3 -left-3 h-7 -rotate-12" alt="">
+
+                                                </p>
+                                                <p
+                                                    class=" rounded-2xl md:text-nowrap !leading-relaxed bg-white p-3 relative pt-7">
+                                                    <b>Pick Up:</b> <br>
+                                                    Around 8:00am <br>
+                                                    <b>Duration:</b> <br>
+                                                    4 hours
+                                                    <img src="./Docs/Assets/icon4.png"
+                                                        class="absolute top-1 right-1 h-7 rotate-[25deg]" alt="">
+                                                </p>
+                                            </div>
                                             <p class=" rounded-2xl relative !leading-relaxed bg-white p-3 mt-3">
                                                 <b> From Downtown Area:</b> $60 per person + tax
                                                 <br><br>
@@ -402,27 +524,39 @@
                                                 <b>Note:</b> A 13% sales tax will be added to all prices.
                                                 <img src="./Docs/Assets/icon3.png"
                                                     class="absolute -top-3 -left-3 h-7 -rotate-12" alt="">
-
                                             </p>
-                                        </div>
-                                        <div class="">
-                                            <p
-                                                class=" rounded-2xl md:text-nowrap !leading-relaxed bg-white p-3 relative pt-7">
-                                                <b>Pick Up:</b> <br>
-                                                Around 8:00am <br>
-                                                <b>Duration:</b> <br>
-                                                4 hours
-                                                <img src="./Docs/Assets/icon4.png"
-                                                    class="absolute top-1 right-1 h-7 rotate-[25deg]" alt="">
-                                            </p>
-                                            <img src="./Docs/Assets/imgs.svg"
-                                                class="max-w-[20rem] cursor-pointer w-full mx-auto  my-3" alt="">
-                                            <p class="text-white font-medium text-[16px] text-center cursor-pointer">
-                                                *Click to see <br>
-                                                more pictures</p>
 
+                                            <div
+                                                class="slider-container mt-5 mx-auto flex items-center justify-center w-full ">
+                                                <div
+                                                    class="swiper mySwiper md:h-[20rem] md:w-[25rem] h-[15rem] w-[15rem]">
+                                                    <div class="swiper-wrapper">
+                                                        <div class="swiper-slide"><img
+                                                                src="./Docs/Assets/samara/Dolphins Tour/image (1).jpg"
+                                                                alt="">
+                                                        </div>
+                                                        <div class="swiper-slide"><img
+                                                                src="./Docs/Assets/samara/Dolphins Tour/image (2).jpeg"
+                                                                alt="">
+                                                        </div>
+                                                        <div class="swiper-slide"><img
+                                                                src="./Docs/Assets/samara/Dolphins Tour/image (1).png"
+                                                                alt="">
+                                                        </div>
+                                                        <div class="swiper-slide"><img
+                                                                src="./Docs/Assets/samara/Dolphins Tour/image (2).png"
+                                                                alt="">
+                                                        </div>
+                                                        <div class="swiper-slide"><img
+                                                                src="./Docs/Assets/samara/Dolphins Tour/image (3).png"
+                                                                alt="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
+                                    <!-- ============= -->
                                     <div class="bg-gradient-to-r  from-[#5de0e6]  to-[#004aad] w-full h-5 rounded-3xl">
                                     </div>
                                 </div>
@@ -471,20 +605,36 @@
                                         you take in the vibrant hues of the evening sky.
                                         <img src="./Docs/Assets/icon1.png" class="absolute -top-3 -left-3 h-8" alt="">
                                     </p>
-                                    <div class="flex gap-4 md:flex-row flex-col mt-3">
+                                    <!-- ============== -->
+                                    <div class="flex gap-4 flex-col mt-3">
                                         <div class="">
 
-                                            <p class=" rounded-2xl !leading-relaxed z-10 relative bg-white p-3">
-                                                <b> The tour includes:</b> Riding equipment, transportation, a
-                                                knowledgeable
-                                                guide, and all the activities listed.
-                                                <br><br>
-                                                <b> We recommend bringing:</b> a camera, sunscreen, swimsuit, towels and
-                                                a clothe change.
-                                                <img src="./Docs/Assets/icon2.webp"
-                                                    class="absolute -top-3 -left-3 h-7 -rotate-12" alt="">
+                                            <div class="grid md:grid-cols-3 gap-3">
 
-                                            </p>
+                                                <p
+                                                    class="md:col-span-2 rounded-2xl !leading-relaxed z-10 relative bg-white p-3">
+                                                    <b> The tour includes:</b> Riding equipment, transportation, a
+                                                    knowledgeable
+                                                    guide, and all the activities listed.
+                                                    <br><br>
+                                                    <b> We recommend bringing:</b> a camera, sunscreen, swimsuit, towels
+                                                    and
+                                                    a clothe change.
+                                                    <img src="./Docs/Assets/icon2.webp"
+                                                        class="absolute -top-3 -left-3 h-7 -rotate-12" alt="">
+                                                </p>
+                                                <p
+                                                    class=" rounded-2xl md:text-nowrap !leading-relaxed bg-white p-3 relative pt-7">
+                                                    <b>Pick Up:</b> <br>
+                                                    Around 3:00pm
+
+                                                    <br>
+                                                    <b>Return:</b> <br>
+                                                    Around 6:00pm
+                                                    <img src="./Docs/Assets/icon4.png"
+                                                        class="absolute top-1 right-1 h-7 rotate-[25deg]" alt="">
+                                                </p>
+                                            </div>
                                             <p class=" rounded-2xl relative !leading-relaxed bg-white p-3 mt-3">
                                                 <b>From
                                                     Downtown Area:</b> $72 per person + tax
@@ -495,29 +645,43 @@
                                                 <b>Note:</b> A 13% sales tax will be added to all prices.
                                                 <img src="./Docs/Assets/icon3.png"
                                                     class="absolute -top-3 -left-3 h-7 -rotate-12" alt="">
-
                                             </p>
-                                        </div>
-                                        <div class="">
-                                            <p
-                                                class=" rounded-2xl md:text-nowrap !leading-relaxed bg-white p-3 relative pt-7">
-                                                <b>Pick Up:</b> <br>
-                                                Around 3:00pm
 
-                                                <br>
-                                                <b>Return:</b> <br>
-                                                Around 6:00pm
-                                                <img src="./Docs/Assets/icon4.png"
-                                                    class="absolute top-1 right-1 h-7 rotate-[25deg]" alt="">
-                                            </p>
-                                            <img src="./Docs/Assets/imgs.svg"
-                                                class="max-w-[20rem] cursor-pointer w-full mx-auto  my-3" alt="">
-                                            <p class="text-white font-medium text-[16px] text-center cursor-pointer">
-                                                *Click to see <br>
-                                                more pictures</p>
-
+                                            <div
+                                                class="slider-container mt-5 mx-auto flex items-center justify-center w-full ">
+                                                <div
+                                                    class="swiper mySwiper md:h-[20rem] md:w-[25rem] h-[15rem] w-[15rem]">
+                                                    <div class="swiper-wrapper">
+                                                        <div class="swiper-slide"><img
+                                                                src="./Docs/Assets/samara/Sunset Boat Ride/image (1).jpg"
+                                                                alt="">
+                                                        </div>
+                                                        <div class="swiper-slide"><img
+                                                                src="./Docs/Assets/samara/Sunset Boat Ride/image (2).jpg"
+                                                                alt="">
+                                                        </div>
+                                                        <div class="swiper-slide"><img
+                                                                src="./Docs/Assets/samara/Sunset Boat Ride/image (3).jpg"
+                                                                alt="">
+                                                        </div>
+                                                        <div class="swiper-slide"><img
+                                                                src="./Docs/Assets/samara/Sunset Boat Ride/image (4).jpg"
+                                                                alt="">
+                                                        </div>
+                                                        <div class="swiper-slide"><img
+                                                                src="./Docs/Assets/samara/Sunset Boat Ride/image (5).jpg"
+                                                                alt="">
+                                                        </div>
+                                                        <div class="swiper-slide"><img
+                                                                src="./Docs/Assets/samara/Sunset Boat Ride/image (6).jpg"
+                                                                alt="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
+                                    <!-- ============= -->
                                     <div class="bg-gradient-to-r  from-[#5de0e6]  to-[#004aad] w-full h-5 rounded-3xl">
                                     </div>
                                 </div>
@@ -563,21 +727,38 @@
                                         setting, this tour is perfect for you.
                                         <img src="./Docs/Assets/icon1.png" class="absolute -top-3 -left-3 h-8" alt="">
                                     </p>
-                                    <div class="flex gap-4 md:flex-row flex-col mt-3">
+                                    <!-- ============== -->
+                                    <div class="flex gap-4 flex-col mt-3">
                                         <div class="">
 
-                                            <p class=" rounded-2xl !leading-relaxed z-10 relative bg-white p-3">
-                                                <b> The tour includes:</b> transportation, snacks. an expert guide, and
-                                                all the
-                                                activities listed.
-                                                <br><br>
-                                                <b> We recommend bringing:</b> a camera, sunscreen, swimsuit, towels and
-                                                a
-                                                clothe change.
-                                                <img src="./Docs/Assets/icon2.webp"
-                                                    class="absolute -top-3 -left-3 h-7 -rotate-12" alt="">
+                                            <div class="grid md:grid-cols-3 gap-3">
 
-                                            </p>
+                                                <p
+                                                    class="md:col-span-2 rounded-2xl !leading-relaxed z-10 relative bg-white p-3">
+                                                    <b> The tour includes:</b> transportation, snacks. an expert guide,
+                                                    and
+                                                    all the
+                                                    activities listed.
+                                                    <br><br>
+                                                    <b> We recommend bringing:</b> a camera, sunscreen, swimsuit, towels
+                                                    and
+                                                    a
+                                                    clothe change.
+                                                    <img src="./Docs/Assets/icon2.webp"
+                                                        class="absolute -top-3 -left-3 h-7 -rotate-12" alt="">
+                                                </p>
+                                                <p
+                                                    class=" rounded-2xl md:text-nowrap !leading-relaxed bg-white p-3 relative pt-7">
+                                                    <b>Pick Up:</b> <br>
+                                                    Morning low tide <br> (depends on date)
+
+                                                    <br>
+                                                    <b>Duration:</b> <br>
+                                                    Around 3 Hours
+                                                    <img src="./Docs/Assets/icon5.svg"
+                                                        class="absolute -top-2 -right-2 h-9 " alt="">
+                                                </p>
+                                            </div>
                                             <p class=" rounded-2xl relative !leading-relaxed bg-white p-3 mt-3">
                                                 <b> From Downtown Area:</b> $60 per person + tax
                                                 <br><br>
@@ -591,27 +772,43 @@
                                                 <img src="./Docs/Assets/icon3.png"
                                                     class="absolute -top-3 -left-3 h-7 -rotate-12" alt="">
                                             </p>
-                                        </div>
-                                        <div class="">
-                                            <p
-                                                class=" rounded-2xl md:text-nowrap !leading-relaxed bg-white p-3 relative">
-                                                <b>Pick Up:</b> <br>
-                                                Morning low tide <br> (depends on date)
 
-                                                <br>
-                                                <b>Duration:</b> <br>
-                                                Around 3 Hours
-                                                <img src="./Docs/Assets/icon5.svg" class="absolute -top-2 -right-2 h-9 "
-                                                    alt="">
-                                            </p>
-                                            <img src="./Docs/Assets/imgs.svg"
-                                                class="max-w-[20rem] cursor-pointer w-full mx-auto  my-3" alt="">
-                                            <p class="text-white font-medium text-[16px] text-center cursor-pointer">
-                                                *Click to see <br>
-                                                more pictures</p>
-
+                                            <div
+                                                class="slider-container mt-5 mx-auto flex items-center justify-center w-full ">
+                                                <div
+                                                    class="swiper mySwiper md:h-[20rem] md:w-[25rem] h-[15rem] w-[15rem]">
+                                                    <div class="swiper-wrapper">
+                                                        <div class="swiper-slide"><img
+                                                                src="./Docs/Assets/samara/Beach Kayaking/image (1).jpg"
+                                                                alt="">
+                                                        </div>
+                                                        <div class="swiper-slide"><img
+                                                                src="./Docs/Assets/samara/Beach Kayaking/image (2).jpg"
+                                                                alt="">
+                                                        </div>
+                                                        <div class="swiper-slide"><img
+                                                                src="./Docs/Assets/samara/Beach Kayaking/image (3).jpg"
+                                                                alt="">
+                                                        </div>
+                                                        <div class="swiper-slide"><img
+                                                                src="./Docs/Assets/samara/Beach Kayaking/image (4).jpg"
+                                                                alt="">
+                                                        </div>
+                                                        <div class="swiper-slide"><img
+                                                                src="./Docs/Assets/samara/Beach Kayaking/image (5).jpg"
+                                                                alt="">
+                                                        </div>
+                                                        <div class="swiper-slide"><img
+                                                                src="./Docs/Assets/samara/Beach Kayaking/image (6).jpg"
+                                                                alt="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
+                                    <!-- ============= -->
+
                                     <div class="bg-gradient-to-r  from-[#5de0e6]  to-[#004aad] w-full h-5 rounded-3xl">
                                     </div>
                                 </div>
@@ -657,21 +854,37 @@
 
                                         <img src="./Docs/Assets/icon1.png" class="absolute -top-3 -left-3 h-8" alt="">
                                     </p>
-                                    <div class="flex gap-4 md:flex-row flex-col mt-3">
+
+                                    <!-- ============== -->
+                                    <div class="flex gap-4 flex-col mt-3">
                                         <div class="">
 
-                                            <p class=" rounded-2xl !leading-relaxed z-10 relative bg-white p-3">
-                                                <b>The tour includes:</b> transportation, lunch, an expert guide, and
-                                                all the
-                                                activities listed.
-                                                <br><br>
-                                                <b>We recommend bringing:</b> a camera, sunscreen, swimsuit, towels and
-                                                a clothe change.
+                                            <div class="grid md:grid-cols-3 gap-3">
 
-                                                <img src="./Docs/Assets/icon2.webp"
-                                                    class="absolute -top-3 -left-3 h-7 -rotate-12" alt="">
+                                                <p
+                                                    class="md:col-span-2 rounded-2xl !leading-relaxed z-10 relative bg-white p-3">
+                                                    <b>The tour includes:</b> transportation, lunch, an expert guide,
+                                                    and
+                                                    all the
+                                                    activities listed.
+                                                    <br><br>
+                                                    <b>We recommend bringing:</b> a camera, sunscreen, swimsuit, towels
+                                                    and
+                                                    a clothe change.
 
-                                            </p>
+                                                    <img src="./Docs/Assets/icon2.webp"
+                                                        class="absolute -top-3 -left-3 h-7 -rotate-12" alt="">
+                                                </p>
+                                                <p
+                                                    class=" rounded-2xl md:text-nowrap !leading-relaxed bg-white p-3 relative pt-7">
+                                                    <b>Pick Up:</b> <br>
+                                                    Morning low tide <br> (depends on date) <br>
+                                                    <b>Duration:</b> <br>
+                                                    Around 3 Hours
+                                                    <img src="./Docs/Assets/icon4.png"
+                                                        class="absolute top-1 right-1 h-7 rotate-[25deg]" alt="">
+                                                </p>
+                                            </div>
                                             <p class=" rounded-2xl relative !leading-relaxed bg-white p-3 mt-3">
                                                 <b> From Downtown Area:</b> $70 per person + tax
                                                 <br><br>
@@ -683,25 +896,43 @@
                                                 <img src="./Docs/Assets/icon3.png"
                                                     class="absolute -top-3 -left-3 h-7 -rotate-12" alt="">
                                             </p>
-                                        </div>
-                                        <div class="">
-                                            <p
-                                                class=" rounded-2xl md:text-nowrap !leading-relaxed bg-white p-3 relative pt-7">
-                                                <b>Pick Up:</b> <br>
-                                                Morning low tide <br> (depends on date) <br>
-                                                <b>Duration:</b> <br>
-                                                Around 3 Hours
-                                                <img src="./Docs/Assets/icon4.png"
-                                                    class="absolute top-1 right-1 h-7 rotate-[25deg]" alt="">
-                                            </p>
-                                            <img src="./Docs/Assets/imgs.svg"
-                                                class="max-w-[20rem] cursor-pointer w-full mx-auto  my-3" alt="">
-                                            <p class="text-white font-medium text-[16px] text-center cursor-pointer">
-                                                *Click to see <br>
-                                                more pictures</p>
 
+                                            <div
+                                                class="slider-container mt-5 mx-auto flex items-center justify-center w-full ">
+                                                <div
+                                                    class="swiper mySwiper md:h-[20rem] md:w-[25rem] h-[15rem] w-[15rem]">
+                                                    <div class="swiper-wrapper">
+                                                        <div class="swiper-slide"><img
+                                                                src="./Docs/Assets/samara/Mangrove Kayaking/image (1).jpg"
+                                                                alt="">
+                                                        </div>
+                                                        <div class="swiper-slide"><img
+                                                                src="./Docs/Assets/samara/Mangrove Kayaking/image (2).jpg"
+                                                                alt="">
+                                                        </div>
+                                                        <div class="swiper-slide"><img
+                                                                src="./Docs/Assets/samara/Mangrove Kayaking/image (3).jpg"
+                                                                alt="">
+                                                        </div>
+                                                        <div class="swiper-slide"><img
+                                                                src="./Docs/Assets/samara/Mangrove Kayaking/image (4).jpg"
+                                                                alt="">
+                                                        </div>
+                                                        <div class="swiper-slide"><img
+                                                                src="./Docs/Assets/samara/Mangrove Kayaking/image (5).jpg"
+                                                                alt="">
+                                                        </div>
+                                                        <div class="swiper-slide"><img
+                                                                src="./Docs/Assets/samara/Mangrove Kayaking/image (6).jpg"
+                                                                alt="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
+                                    <!-- ============= -->
+
                                     <div class="bg-gradient-to-r  from-[#5de0e6]  to-[#004aad] w-full h-5 rounded-3xl">
                                     </div>
                                 </div>
@@ -748,53 +979,84 @@
                                             today and witness this amazing spectacle!
                                         </p>
                                     </div>
-                                    <div class="flex gap-4 md:flex-row flex-col mt-3">
+
+                                    <!-- ============== -->
+                                    <div class="flex gap-4 flex-col mt-3">
                                         <div class="">
 
-                                            <p class=" rounded-2xl !leading-relaxed z-10 relative bg-white p-3"><b>The
-                                                    tour includes:</b>
-                                                lunch, transportation, a knowledgeable guide, and all the
-                                                activities listed.
-                                                <br><br>
-                                                <b>We recommend bringing:</b> a camera, ponchos, insect repellent,
-                                                hiking shoes or boots, and water
+                                            <div class="grid md:grid-cols-3 gap-3">
 
-                                                <img src="./Docs/Assets/icon2.webp"
-                                                    class="absolute -top-3 -left-3 h-7 -rotate-12" alt="">
+                                                <p
+                                                    class="md:col-span-2 rounded-2xl !leading-relaxed z-10 relative bg-white p-3">
+                                                    <b>The
+                                                        tour includes:</b>
+                                                    lunch, transportation, a knowledgeable guide, and all the
+                                                    activities listed.
+                                                    <br><br>
+                                                    <b>We recommend bringing:</b> a camera, ponchos, insect repellent,
+                                                    hiking shoes or boots, and water
 
-                                            </p>
+                                                    <img src="./Docs/Assets/icon2.webp"
+                                                        class="absolute -top-3 -left-3 h-7 -rotate-12" alt="">
+                                                </p>
+                                                <p
+                                                    class=" rounded-2xl md:text-nowrap !leading-relaxed bg-white p-3 relative pt-7">
+                                                    <b>Pick Up:</b> <br>
+                                                    From 5:00pm to 7:00pm
+
+                                                    <br>
+                                                    <b>Duration:</b> <br>
+                                                    4 Hours
+                                                    <img src="./Docs/Assets/icon4.png"
+                                                        class="absolute top-1 right-1 h-7 rotate-[25deg]" alt="">
+                                                </p>
+                                            </div>
                                             <p class=" rounded-2xl relative !leading-relaxed bg-white p-3 mt-3">
-                                              <b>  Corozalito Tour:</b> $65 per person + tax
+                                                <b> Corozalito Tour:</b> $65 per person + tax
                                                 <br><br>
-                                             <b>   Ostional Tour:</b> $95 per person + tax
+                                                <b> Ostional Tour:</b> $95 per person + tax
                                                 <br><br>
-                                              <b>  Pick ups from Outside Downtown:</b> same price plus the extra transportation
+                                                <b> Pick ups from Outside Downtown:</b> same price plus the extra
+                                                transportation
                                                 <br><br>
                                                 <b>Note:</b> A 13% sales tax will be added to all prices
                                                 <img src="./Docs/Assets/icon3.png"
                                                     class="absolute -top-3 -left-3 h-7 -rotate-12" alt="">
                                             </p>
-                                        </div>
-                                        <div class="">
-                                            <p
-                                                class=" rounded-2xl md:text-nowrap !leading-relaxed bg-white p-3 relative pt-7">
-                                                <b>Pick Up:</b> <br>
-                                                From 5:00pm to 7:00pm
 
-                                                <br>
-                                                <b>Duration:</b> <br>
-                                                4 Hours
-                                                <img src="./Docs/Assets/icon4.png"
-                                                    class="absolute top-1 right-1 h-7 rotate-[25deg]" alt="">
-                                            </p>
-                                            <img src="./Docs/Assets/imgs.svg"
-                                                class="max-w-[20rem] cursor-pointer w-full mx-auto  my-3" alt="">
-                                            <p class="text-white font-medium text-[16px] text-center cursor-pointer">
-                                                *Click to see <br>
-                                                more pictures</p>
-
+                                            <div
+                                                class="slider-container mt-5 mx-auto flex items-center justify-center w-full ">
+                                                <div
+                                                    class="swiper mySwiper md:h-[20rem] md:w-[25rem] h-[15rem] w-[15rem]">
+                                                    <div class="swiper-wrapper">
+                                                        <div class="swiper-slide"><img
+                                                                src="./Docs/Assets/samara/Turtle Hatching (Night)/image (1).jpg"
+                                                                alt="">
+                                                        </div>
+                                                        <div class="swiper-slide"><img
+                                                                src="./Docs/Assets/samara/Turtle Hatching (Night)/image (1).jpeg"
+                                                                alt="">
+                                                        </div>
+                                                        <div class="swiper-slide"><img
+                                                                src="./Docs/Assets/samara/Turtle Hatching (Night)/image (2).jpg"
+                                                                alt="">
+                                                        </div>
+                                                        <div class="swiper-slide"><img
+                                                                src="./Docs/Assets/samara/Turtle Hatching (Night)/image (3).jpg"
+                                                                alt="">
+                                                        </div>
+                                                        <div class="swiper-slide"><img
+                                                                src="./Docs/Assets/samara/Turtle Hatching (Night)/image (4).jpg"
+                                                                alt="">
+                                                        </div>
+                                                     
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
+                                    <!-- ============= -->
+                                 
                                     <div class="bg-gradient-to-r  from-[#5de0e6]  to-[#004aad] w-full h-5 rounded-3xl">
                                     </div>
                                 </div>
@@ -862,7 +1124,7 @@
                     <div class="mx-auto w-full md:pl-5">
                         <h2 class="pb-4 font-bold text-xl">Social</h2>
                         <ul class="flex flex-col gap-1 ">
-                              <li><a href="https://www.facebook.com/bestcostaricatours"
+                            <li><a href="https://www.facebook.com/bestcostaricatours"
                                     class="hover:underline">Facebook</a></li>
                             <li><a href="https://www.instagram.com/joshbesttours?igsh=MXh1eWxwdXFkY2xxNQ%3D%3D"
                                     class="hover:underline">Instagram</a></li>
@@ -1128,9 +1390,16 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
         integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
 </body>
 <script>
+
+    var swiper = new Swiper(".mySwiper", {
+        effect: "cards",
+        grabCursor: true,
+    });
+
     document.addEventListener('alpine:init', () => {
         Alpine.store('accordion', {
             tab: 0
